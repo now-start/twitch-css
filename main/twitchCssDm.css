@@ -522,7 +522,7 @@ html.darkmode #article-list #article-list-menu>.btn.write:hover {
 }
 
 html.darkmode .btn-primary {
-    background: white;
+    background: transparent;
     color: var(--colorDm);
     border: 1px solid var(--colorDm);
     border-radius: 4px;
