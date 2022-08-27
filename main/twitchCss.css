@@ -272,6 +272,7 @@ header #header-bar #header-top-notice strong.notice-badge {
     border-radius: 6px;
     border-top: 2px solid var(--color) !important;
     border: 2px solid var(--color);
+
 }
 
 .dropdown .dropdown-menu,
@@ -340,7 +341,7 @@ header #header-bar #header-top-notice strong.notice-badge {
     border-radius: 8px;
 }
 
-html.darkmode #article-list #article-list-category #board-home-link-btn {
+#article-list #article-list-category #board-home-link-btn {
     background: white;
 }
 
@@ -564,6 +565,10 @@ input[type='text'] {
     border: 1px solid var(--color);
     border-radius: 4px;
 
+}
+
+.btn {
+    border-radius: 8px;
 }
 
 .btn-primary:hover {

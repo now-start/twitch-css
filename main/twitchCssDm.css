@@ -1,10 +1,12 @@
+@import url(https://now-start.github.io/twitchCss/main/twitchCss.css);
+
 :root {
     /* 트게더 문구 */
     --headerImgDm: url(https://now-start.github.io/twitchCss/resource/headerImgDm.png);
     /* 색상 */
     --colorDm: #802222;
-    --bgcolorDm: #36365e;
-    --bgcolorDm2: #141425;
+    --bgcolorDm: #3e3e72;
+    --bgcolorDm2: #272736;
 }
 
 @font-face {
@@ -17,7 +19,7 @@
 /* darkMode */
 html.darkmode, html.darkmode body,
 html.darkmode html {
-    background: linear-gradient(to bottom,var(--bgcolorDm2), var(--bgcolorDm));
+    background: linear-gradient(to bottom,var(--bgcolorDm2), var(--bgcolorDm2));
     height: auto !important;
 }
 
@@ -320,12 +322,14 @@ html.darkmode #article-list #article-list-category>a {
     border-radius: 8px;
 }
 
-html.darkmode #article-list #article-list-category>a:hover {
-    background: var(--colorDm);
+html.darkmode #article-list #article-list-category>a:hover,
+html.darkmode #article-list #article-list-category #board-home-link-btn:hover{
+    background: var(--bgcolorDm2);
 }
 
-html.darkmode #article-list #article-list-category>a.active {
-    background: var(--colorDm);
+html.darkmode #article-list #article-list-category>a.active,
+html.darkmode #article-list #article-list-category #board-home-link-btn.active{
+    background: var(--bgcolorDm2);
     border-radius: 8px;
 }
 
@@ -337,8 +341,7 @@ html.darkmode #article-list>.article-list-row>.item>.list-header>span {
     background-color: var(--colorDm);
 }
 
-html.darkmode #article-list>.article-list-row>.item>.list-header.v0>span,
-html.darkmode #article-list>.article-list-row>.item>.list-header.v0>span:hover{
+html.darkmode #article-list>.article-list-row>.item>.list-header.v0>span{
     color: var(--bgcolorDm2);
     background: var(--bgcolorDm2);
 }
@@ -545,6 +548,10 @@ html.darkmode .btn {
     border-radius: 8px;
 }
 
+html.darkmode #boardSearchForm > input.form-control{
+    z-index: 100;
+}
+
 html.darkmode .btn-group-sm>.btn,
 html.darkmode .btn-sm {
     border-radius: 8px;
@@ -689,7 +696,8 @@ html.darkmode a:focus {
 }
 
 html.darkmode header #right-search-form>input[type='text'] {
-    background: linear-gradient(to bottom, #fff3f0, white, #fff3f0);
+    background: var(--bgcolorDm2);
+    color: white;
     margin-top: 0;
     border: 3px SOLID var(--colorDm);
     border-top-left-radius: 10px;
@@ -701,7 +709,8 @@ html.darkmode header #right-search-form>input[type='text'] {
 
 html.darkmode header #right-search-form>input[type=text]:hover,
 html.darkmode header #right-search-form>input[type=text]:focus {
-    background: linear-gradient(to bottom, white, #fff3f0, white);
+    background: var(--bgcolorDm2);
+    color: white;
     border-color: #c7b0ab;
 }
 
