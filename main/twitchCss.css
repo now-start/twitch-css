@@ -8,7 +8,7 @@
     /* 커서 이미지 */
     --cursorImg: url(https://cdn.discordapp.com/attachments/712634687562055684/878207936831291422/we111.png);
     /* 접속자 수 앞 문구 */
-    --preFix: "";
+    --preFix: "오짱단 ";
     /* 접속자 수 뒤 문구 */
     --postFix: "명 치바즈보 외치는 중";
     /* 색상 (줄) */

@@ -8,7 +8,7 @@
     /* 커서 이미지 */
     --cursorImg: url(https://now-start.github.io/twitchCss/resource/cursorImg.png);
     /* 접속자 수 앞 문구 */
-    --preFix: "";
+    --preFix: "오짱단 ";
     /* 접속자 수 뒤 문구 */
     --postFix: "명 치바즈보 외치는 중";
     --headerImgDm: url(https://now-start.github.io/twitchCss/resource/headerImgDm.png);
