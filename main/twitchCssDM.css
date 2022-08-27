@@ -1,17 +1,37 @@
 :root {
-
+    /* 트게더 문구 */
+    --headerImg: url(https://now-start.github.io/twitchCss/resource/headerImgDm.png);
+    /* 위로가기 이미지 */
+    --moveToTopImg: url(https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_a12b4ac60dd5429d9de14ff831e9d981/default/light/1.0);
+    /* 프로필 이미지 */
+    --profileImg: url(https://now-start.github.io/twitchCss/resource/profileImg.png);
+    /* 커서 이미지 */
+    --cursorImg: url(https://now-start.github.io/twitchCss/resource/cursorImg.png);
+    /* 접속자 수 앞 문구 */
+    --preFix: "";
+    /* 접속자 수 뒤 문구 */
+    --postFix: "명 치바즈보 외치는 중";
+    --headerImgDm: url(https://now-start.github.io/twitchCss/resource/headerImgDm.png);
     /* 색상 */
-    --colorDm: #ffffff;
-    --bgcolorDm: #ffffff;
-    --bgcolorDm2: #ffffff;
+    --colorDm: #ff6969;
+    --bgcolorDm: #ffc400;
+    --bgcolorDm2: #fcdc70;
 }
+
+@font-face {
+    font-family: 'Katuri';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/Katuri.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* defualtMod */
-html.darkmode html {
+html {
     background: linear-gradient(to bottom, var(--bgcolorDm), var(--bgcolorDm2));
     height: auto !important;
 }
 
-html.darkmode body {
+body {
     letter-spacing: -0.05em !important;
     background: transparent;
     font-family: 'Katuri', sans-serif;
@@ -19,64 +39,64 @@ html.darkmode body {
 }
 
 /* 상단 메뉴 */
-header #header-bar>.row,
-#main .menu-wrapper,
-#main #main-content>div.frame {
+html.darkmode header #header-bar>.row,
+html.darkmode #main .menu-wrapper,
+html.darkmode #main #main-content>div.frame {
     border-radius: 10px;
-    border-top: 3px solid var(--color) !important;
-    border: 3px solid var(--color);
+    border-top: 3px solid var(--colorDm) !important;
+    border: 3px solid var(--colorDm);
 }
 
 /*공지 숨기기 버튼*/
-#article-option-area-toggle-btn{
+html.darkmode #article-option-area-toggle-btn{
     visibility: hidden;
 }
 
 /*헤더 제목*/
-header .row>div:nth-child(1)>a {
+html.darkmode header .row>div:nth-child(1)>a {
     display: block;
     width: 130px;
     height: 50px;
-    background: var(--headerImg) no-repeat;
+    background: var(--headerImgDm) no-repeat;
     background-size: auto 50px;
 }
 
 /*기존 트게더 이미지 삭제*/
-header .row>div:nth-child(1)>a>img {
+html.darkmode header .row>div:nth-child(1)>a>img {
     display: none;
 }
 /*상단 메뉴 End*/
 
 /*최상단 메뉴*/
-#main .menu-wrapper a:nth-last-child(1) {
+html.darkmode #main .menu-wrapper a:nth-last-child(1) {
     border-radius: 0px 0px 8px 8px;
 }
 
-#main .menu-wrapper {
-    border: 4px solid var(--color);
+html.darkmode #main .menu-wrapper {
+    border: 4px solid var(--colorDm);
     border-top: none !important;
 }
 
-#main .menu-wrapper>.header {
-    background: var(--color);
+html.darkmode #main .menu-wrapper>.header {
+    background: var(--colorDm);
     color: black;
     border-radius: 8px 8px 0 0;
 }
 
-#main .menu-wrapper>a>em {
-    color: var(--color);
+html.darkmode #main .menu-wrapper>a>em {
+    color: var(--colorDm);
 }
 
-#main .menu-wrapper .spacer {
-    background: var(--color);
+html.darkmode #main .menu-wrapper .spacer {
+    background: var(--colorDm);
 }
 
-#main .menu-wrapper a:nth-last-child(1) {
+html.darkmode #main .menu-wrapper a:nth-last-child(1) {
     border-radius: 0px 0px 8px 8px;
 }
 
 /*메뉴 에니메이션*/
-.menu-wrapper>a {
+html.darkmode .menu-wrapper>a {
     display: block;
     width: 100%;
     padding: 20px;
@@ -90,7 +110,7 @@ header .row>div:nth-child(1)>a>img {
     -webkit-box-sizing: border-box;
 }
 
-.menu-wrapper>a:after {
+html.darkmode .menu-wrapper>a:after {
     content: "";
     height: 100%;
     left: 0;
@@ -102,36 +122,36 @@ header .row>div:nth-child(1)>a>img {
     z-index: -1;
 }
 
-.menu-wrapper>a:hover:after {
+html.darkmode .menu-wrapper>a:hover:after {
     width: 100%;
 }
 
-.menu-wrapper>a:first-child:after,
-.menu-wrapper>a:nth-child(1):after,
-.menu-wrapper>a:nth-child(2):after,
-.menu-wrapper>a:nth-child(3):after,
-.menu-wrapper>a:nth-child(4):after,
-.menu-wrapper>a:nth-child(5):after,
-.menu-wrapper>a:nth-child(6):after,
-.menu-wrapper>a:nth-child(7):after,
-.menu-wrapper>a:nth-child(8):after,
-.menu-wrapper>a:nth-child(9):after,
-.menu-wrapper>a:nth-child(10):after,
-.menu-wrapper>a:nth-child(11):after,
-.menu-wrapper>a:nth-child(12):after,
-.menu-wrapper>a:nth-child(13):after,
-.menu-wrapper>a:nth-child(14):after,
-.menu-wrapper>a:nth-child(15):after,
-.menu-wrapper>a:nth-child(16):after,
-.menu-wrapper>a:nth-child(17):after,
-.menu-wrapper>a:nth-child(18):after,
-.menu-wrapper>a:nth-child(19):after,
-.menu-wrapper>a:nth-child(20):after,
-.menu-wrapper>a:last-child:after {
-    background-color: var(--color);
+html.darkmode .menu-wrapper>a:first-child:after,
+html.darkmode .menu-wrapper>a:nth-child(1):after,
+html.darkmode .menu-wrapper>a:nth-child(2):after,
+html.darkmode .menu-wrapper>a:nth-child(3):after,
+html.darkmode .menu-wrapper>a:nth-child(4):after,
+html.darkmode .menu-wrapper>a:nth-child(5):after,
+html.darkmode .menu-wrapper>a:nth-child(6):after,
+html.darkmode .menu-wrapper>a:nth-child(7):after,
+html.darkmode .menu-wrapper>a:nth-child(8):after,
+html.darkmode .menu-wrapper>a:nth-child(9):after,
+html.darkmode .menu-wrapper>a:nth-child(10):after,
+html.darkmode .menu-wrapper>a:nth-child(11):after,
+html.darkmode .menu-wrapper>a:nth-child(12):after,
+html.darkmode .menu-wrapper>a:nth-child(13):after,
+html.darkmode .menu-wrapper>a:nth-child(14):after,
+html.darkmode .menu-wrapper>a:nth-child(15):after,
+html.darkmode .menu-wrapper>a:nth-child(16):after,
+html.darkmode .menu-wrapper>a:nth-child(17):after,
+html.darkmode .menu-wrapper>a:nth-child(18):after,
+html.darkmode .menu-wrapper>a:nth-child(19):after,
+html.darkmode .menu-wrapper>a:nth-child(20):after,
+html.darkmode .menu-wrapper>a:last-child:after {
+    background-color: var(--colorDm);
 }
 
-#main .menu-wrapper #fav-shortcut-area>a {
+html.darkmode #main .menu-wrapper #fav-shortcut-area>a {
     display: block;
     width: 100%;
     border-left: 5px solid;
@@ -144,11 +164,11 @@ header .row>div:nth-child(1)>a>img {
     -webkit-box-sizing: border-box;
 }
 
-#main .menu-wrapper #fav-shortcut-area>a {
+html.darkmode #main .menu-wrapper #fav-shortcut-area>a {
     border-left: 0px solid white;
 }
 
-#main .menu-wrapper #fav-shortcut-area>a:after {
+html.darkmode #main .menu-wrapper #fav-shortcut-area>a:after {
     content: "";
     height: 100%;
     left: 0;
@@ -160,75 +180,75 @@ header .row>div:nth-child(1)>a>img {
     z-index: -1;
 }
 
-#main .menu-wrapper #fav-shortcut-area>a:hover:after {
+html.darkmode #main .menu-wrapper #fav-shortcut-area>a:hover:after {
     width: 100%;
 }
 
-#main .menu-wrapper #fav-shortcut-area>a:after {
-    background-color: var(--color);
+html.darkmode #main .menu-wrapper #fav-shortcut-area>a:after {
+    background-color: var(--colorDm);
 }
 
 /* 게시판 목록 */
-#main #main-content>div.frame {
-    border-top: 3px solid var(--color) !important;
-    border: 3px solid var(--color);
+html.darkmode #main #main-content>div.frame {
+    border-top: 3px solid var(--colorDm) !important;
+    border: 3px solid var(--colorDm);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
-#article-reply-area #reply-real-area .reply>.reply-header,
-#article-reply-area #reply-best-area .reply>.reply-header {
+html.darkmode #article-reply-area #reply-real-area .reply>.reply-header,
+html.darkmode #article-reply-area #reply-best-area .reply>.reply-header {
     background: #e8e8e8;
 }
 
-#article-list>.article-list-row:hover {
+html.darkmode #article-list>.article-list-row:hover {
     -moz-animation: text1 1.4s ease-out 8ms;
     animation: text1 1.4s ease-out 8ms;
 }
 
-header #right-search-form>#right-search-btn {
-    color: var(--color);
+html.darkmode header #right-search-form>#right-search-btn {
+    color: var(--colorDm);
 }
 
-#article-list>.article-list-row>.item>.list-checkbox,
-#article-list>.article-list-row>.item>.list-header,
-#article-list>.article-list-row>.item>.list-category,
-#article-list>.article-list-row>.item>.list-title,
-#article-list>.article-list-row>.item>.list-blocked,
-#article-list>.article-list-row>.item>.list-time {
+html.darkmode #article-list>.article-list-row>.item>.list-checkbox,
+html.darkmode #article-list>.article-list-row>.item>.list-header,
+html.darkmode #article-list>.article-list-row>.item>.list-category,
+html.darkmode #article-list>.article-list-row>.item>.list-title,
+html.darkmode #article-list>.article-list-row>.item>.list-blocked,
+html.darkmode #article-list>.article-list-row>.item>.list-time {
     border: 0;
 }
 
-#article-list>.article-list-row.notice {
+html.darkmode #article-list>.article-list-row.notice {
     background-color: var(--bgcolorDm);
     border-radius: 5px;
     margin: 2px 0;
 }
 
-#article-list>.article-list-row {
+html.darkmode #article-list>.article-list-row {
     border: 2px solid var(--bgcolorDm2);
     background-color: var(--bgcolorDm2);
     border-radius: 6px;
     margin: 4px 0;
 }
 
-header #right-search-form>#right-search-btn:hover,
-header #right-search-form>#right-search-btn:focus {
+html.darkmode header #right-search-form>#right-search-btn:hover,
+html.darkmode header #right-search-form>#right-search-btn:focus {
     transform: scale(1.25);
     transition: 0.2s;
 }
 
-header #header-bar #header-top-notice strong.notice-badge {
-    background: var(--color);
+html.darkmode header #header-bar #header-top-notice strong.notice-badge {
+    background: var(--colorDm);
 }
 
-#article-list>.article-list-row>.item>.list-title>.list-writer>span {
+html.darkmode #article-list>.article-list-row>.item>.list-title>.list-writer>span {
     width: 120px !important;
 }
 
-#article-list>.article-list-row>.item>.list-title>a {
+html.darkmode #article-list>.article-list-row>.item>.list-title>a {
     color: #000000 !important;
     text-decoration: none;
     line-height: 18px;
@@ -243,18 +263,18 @@ header #header-bar #header-top-notice strong.notice-badge {
 }
 
 /* 드롭다운 버튼 및 인풋 박스 */
-.dropdown.open .dropdown-menu,
-.input-group-btn.open .dropdown-menu {
+html.darkmode .dropdown.open .dropdown-menu,
+html.darkmode .input-group-btn.open .dropdown-menu {
     opacity: unset;
     transform: unset;
     border: 2px solid white;
     border-radius: 6px;
-    border-top: 2px solid var(--color) !important;
-    border: 2px solid var(--color);
+    border-top: 2px solid var(--colorDm) !important;
+    border: 2px solid var(--colorDm);
 }
 
-.dropdown .dropdown-menu,
-.input-group-btn .dropdown-menu {
+html.darkmode .dropdown .dropdown-menu,
+html.darkmode .input-group-btn .dropdown-menu {
     display: block !important;
     opacity: 0;
     transform: scale(0);
@@ -263,223 +283,196 @@ header #header-bar #header-top-notice strong.notice-badge {
     padding: 8px 0 3px 0px;
 }
 
-.input-group-btn.btn {
+html.darkmode .input-group-btn.btn {
     border-radius: 8px;
 }
 
-.dropdown-menu>li>a {
+html.darkmode .dropdown-menu>li>a {
     transition: 0.1s;
 }
 
-.dropdown-menu>li>a:hover {
+html.darkmode .dropdown-menu>li>a:hover {
     background: transparent;
     transform: scaleX(1.04);
     transition: 0.1s;
 }
 
-#latestDropdownMenu>li>a>span.delrow,
-#favoriteDropdownMenu>li>a>span.delrow {
-    color: var(--color);
+html.darkmode #latestDropdownMenu>li>a>span.delrow,
+html.darkmode #favoriteDropdownMenu>li>a>span.delrow {
+    color: var(--colorDm);
 }
 
-#latestDropdownMenu>li>a>span.delrow:hover,
-#favoriteDropdownMenu>li>a>span.delrow:hover {
+html.darkmode #latestDropdownMenu>li>a>span.delrow:hover,
+html.darkmode #favoriteDropdownMenu>li>a>span.delrow:hover {
     background: transparent;
 }
 
-#favoriteDropdownMenu>li>a>span.label.label-default {
-    background-color: var(--color);
+html.darkmode #favoriteDropdownMenu>li>a>span.label.label-default {
+    background-color: var(--colorDm);
 }
 
-.dropdown-menu .divider {
-    background-color: var(--color);
+html.darkmode .dropdown-menu .divider {
+    background-color: var(--colorDm);
     height: 2px;
     margin: 3px 0;
 }
 
 /* 카테고리 */
-#article-list #article-list-category {
+html.darkmode #article-list #article-list-category {
     background: white;
-    border-top: 3px solid var(--color) !important;
-    border: 3px solid var(--color);
+    border-top: 3px solid var(--colorDm) !important;
+    border: 3px solid var(--colorDm);
     border-radius: 8px;
 }
 
-#article-list #article-list-category>a {
-    background: white;
-    border-radius: 8px;
-}
-
-#article-list #article-list-category>a:hover {
-    background: white;
-}
-
-#article-list #article-list-category>a.active {
+html.darkmode #article-list #article-list-category>a {
     background: white;
     border-radius: 8px;
 }
 
-#article-list>.article-list-row>.item>.list-header>span {
-    background-color: var(--color);
+html.darkmode #article-list #article-list-category>a:hover {
+    background: white;
 }
 
-#article-list>.article-list-row>.item>.list-header.v0>span {
+html.darkmode #article-list #article-list-category>a.active {
+    background: white;
+    border-radius: 8px;
+}
+
+html.darkmode #article-list>.article-list-row>.item>.list-header>span {
+    background-color: var(--colorDm);
+}
+
+html.darkmode #article-list>.article-list-row>.item>.list-header.v0>span {
     color: var(--bgcolorDm2);
     background: var(--bgcolorDm2);
 }
 
-#article-list>.article-list-row>.item>.list-title>small.comment-count {
-    color: var(--color);
+html.darkmode #article-list>.article-list-row>.item>.list-title>small.comment-count {
+    color: var(--colorDm);
 }
 
-.pagination>.active>a,
-.pagination>.active>a:focus,
-.pagination>.active>a:hover {
-    border: 1px solid var(--color);
+html.darkmode .pagination>.active>a,
+html.darkmode .pagination>.active>a:focus,
+html.darkmode .pagination>.active>a:hover {
+    border: 1px solid var(--colorDm);
 }
 
-.pagination>li>a,
-.pagination>li>span {
-    color: var(--color);
-    border: 1px solid var(--color);
-    border-bottom: 3px solid var(--color);
+html.darkmode .pagination>li>a,
+html.darkmode .pagination>li>span {
+    color: var(--colorDm);
+    border: 1px solid var(--colorDm);
+    border-bottom: 3px solid var(--colorDm);
 }
 
-.pagination>.active>a,
-.pagination>.active>a:focus,
-.pagination>.active>a:hover,
-.pagination>.active>span,
-.pagination>.active>span:focus,
-.pagination>.active>span:hover {
-    background: var(--color);
+html.darkmode .pagination>.active>a,
+html.darkmode .pagination>.active>a:focus,
+html.darkmode .pagination>.active>a:hover,
+html.darkmode .pagination>.active>span,
+html.darkmode .pagination>.active>span:focus,
+html.darkmode .pagination>.active>span:hover {
+    background: var(--colorDm);
     margin-top: 2px;
 }
 
-.pagination>li>a:focus,
-.pagination>li>a:hover,
-.pagination>li>span:focus,
-.pagination>li>span:hover {
+html.darkmode .pagination>li>a:focus,
+html.darkmode .pagination>li>a:hover,
+html.darkmode .pagination>li>span:focus,
+html.darkmode .pagination>li>span:hover {
     color: white;
-    background: var(--color);
-    border: 1px solid var(--color);
+    background: var(--colorDm);
+    border: 1px solid var(--colorDm);
 
     margin-top: 2px;
 }
 
-#article-content-wrapper>.header {
-    border-top: 2px solid var(--color);
+html.darkmode #article-content-wrapper>.header {
+    border-top: 2px solid var(--colorDm);
 }
 
-#article-reply-area #reply-real-area .reply>.reply-header>.reply-writer.logged,
-#article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged {
-    color: var(--color);
+html.darkmode #article-reply-area #reply-real-area .reply>.reply-header>.reply-writer.logged,
+html.darkmode #article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged {
+    color: var(--colorDm);
 }
 
-#article-info>h2 {
+html.darkmode #article-info>h2 {
 
 }
 
-#article-info>h2>span.category {
-    color: var(--color) !important;
+html.darkmode #article-info>h2>span.category {
+    color: var(--colorDm) !important;
 }
 
-#article-reply-area>.header h5 {
-    color: var(--color);
+html.darkmode #article-reply-area>.header h5 {
+    color: var(--colorDm);
 }
 
 
-#main .menu-wrapper>a {
+html.darkmode #main .menu-wrapper>a {
     padding: 0.5em 1.4em 0.5em 0.7em !important;
 }
 
-#article-list>.article-list-row>.item>a.list-title>.list-writer.logged>span {
+html.darkmode #article-list>.article-list-row>.item>a.list-title>.list-writer.logged>span {
     color: #000000;
 }
 
-#article-list #article-list-menu {
+html.darkmode #article-list #article-list-menu {
     box-sizing: border-box;
     width: unset;
     margin: 8px;
 }
 
-#article-list #boardSearchForm {
+html.darkmode #article-list #boardSearchForm {
     padding-bottom: 8px;
     height: unset;
 }
 
-#article-list #article-list-menu>.btn.best {
+html.darkmode #article-list #article-list-menu>.btn.best {
     border: 1px solid rgba(0, 0, 0, 0)
 }
 
 @-webkit-keyframes text1 {
     30% {
         opacity: 0.5;
-        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 5px 5px var(--color), 0 0 0 5px rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 5px 5px var(--colorDm), 0 0 0 5px rgba(255, 255, 255, 0.5);
     }
 }
 
 @-moz-keyframes text1 {
     30% {
         opacity: 0.5;
-        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 5px 5px var(--color), 0 0 0 5px rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 5px 5px var(--colorDm), 0 0 0 5px rgba(255, 255, 255, 0.5);
     }
 }
 
 @keyframes text1 {
     30% {
         opacity: 0.5;
-        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 5px 5px var(--color), 0 0 0 5px rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 5px 5px var(--colorDm), 0 0 0 5px rgba(255, 255, 255, 0.5);
     }
 }
 
-small.favo i.fa.fa-heart {
+html.darkmode small.favo i.fa.fa-heart {
     animation: heartbeat 1s infinite;
 }
 
-/* 커서 관련 */
-html,
-body,
-.fr-popup.emoticons,
-.fr-top,
-select.form-control,
-input[type=checkbox],
-input[type=radio],
-.opt #right-search-form>#right-search-btn,
-#board-info #board-info-bottom #addFavoriteBtn,
-#article-list #article-option-area>#article-option-area-toggle-btn,
-#article-list>.article-list-row>.item>.list-title>.list-writer>span,
-.reply>.reply-header>.reply-writer.logged,
-.reply-menu,
-.btn,
-.fr-toolbar .fr-command.fr-btn,
-.fr-popup .fr-command.fr-btn,
-.fr-view img,
-.pull-left,
-span#viewers,
-#article-list #boardSearchForm .form-control,
-.fr-view,
-.fr-box.fr-basic.fr-element,
-input[type='text'] {
-    cursor: var(--cursorImgActive) 0 0, auto !important;
-}
-
-#board-info #viewers-area {
-    color: var(--color);
+html.darkmode #board-info #viewers-area {
+    color: var(--colorDm);
 
     font-size: 18px;
 }
 
-#board-info #viewers-area #viewers:before {
+html.darkmode #board-info #viewers-area #viewers:before {
     content: var(--preFix);
-    color: var(--color);
+    color: var(--colorDm);
     cursor: text;
 
     font-size: 18px;
 }
 
-#board-info #viewers-area #viewers:after {
+html.darkmode #board-info #viewers-area #viewers:after {
     content: var(--postFix);
-    color: var(--color);
+    color: var(--colorDm);
     cursor: text;
     font-weight: normal;
     font-size: large;
@@ -487,136 +480,136 @@ input[type='text'] {
     font-size: 18px;
 }
 
-#board-info-bottom {
+html.darkmode #board-info-bottom {
     position: absolute;
     top: 57px;
     left: 480px;
 }
 
-#viewers-area>i {
+html.darkmode #viewers-area>i {
     padding-left: 3px;
     padding-top: 1px;
-    color: var(--color);
+    color: var(--colorDm);
 }
 
-#board-info h1 {
+html.darkmode #board-info h1 {
     width: calc(100% - 50px);
     float: left;
     border: 50px;
 }
 
-#board-info img {
+html.darkmode #board-info img {
     float: left !important;
-    border: 2px SOLID var(--color);
+    border: 2px SOLID var(--colorDm);
     border-radius: 8px;
 }
 
-#article-list #article-list-menu>.btn.write {
+html.darkmode #article-list #article-list-menu>.btn.write {
     position: absolute;
     right: 0;
-    border: solid 1px var(--color);
-    border-bottom: solid 3px var(--color);
+    border: solid 1px var(--colorDm);
+    border-bottom: solid 3px var(--colorDm);
     border-radius: 4px;
 }
 
-#article-list #article-list-menu>.btn.write:hover {
+html.darkmode #article-list #article-list-menu>.btn.write:hover {
     position: absolute;
     right: 0;
-    border: solid 1px var(--color);
-    border-bottom: solid 1px var(--color);
+    border: solid 1px var(--colorDm);
+    border-bottom: solid 1px var(--colorDm);
     border-radius: 4px;
 }
 
-.btn-primary {
+html.darkmode .btn-primary {
     background: white;
-    color: var(--color);
-    border: 1px solid var(--color);
+    color: var(--colorDm);
+    border: 1px solid var(--colorDm);
     border-radius: 4px;
 
 }
 
-.btn-primary:hover {
+html.darkmode .btn-primary:hover {
     color: white;
-    background-color: var(--color);
+    background-color: var(--colorDm);
     margin-top: 2px;
 }
 
-.btn-primary.focus,
-.btn-primary:focus {
+html.darkmode .btn-primary.focus,
+html.darkmode .btn-primary:focus {
     color: white;
-    background-color: var(--color);
-    border-color: var(--color);
+    background-color: var(--colorDm);
+    border-color: var(--colorDm);
 }
 
-.btn {
+html.darkmode .btn {
     border-radius: 8px;
 }
 
-.btn-group-sm>.btn,
-.btn-sm {
+html.darkmode .btn-group-sm>.btn,
+html.darkmode .btn-sm {
     border-radius: 8px;
 }
 
-.btn-outline-success {
-    color: var(--color);
-    border-color: var(--color);
+html.darkmode .btn-outline-success {
+    color: var(--colorDm);
+    border-color: var(--colorDm);
 }
 
 
-#article-list #article-list-menu>.btn.best {
+html.darkmode #article-list #article-list-menu>.btn.best {
     border-radius: 4px;
-    border-bottom: solid 3px var(--color);
-    border-color: var(--color);
-    color: var(--color);
+    border-bottom: solid 3px var(--colorDm);
+    border-color: var(--colorDm);
+    color: var(--colorDm);
 }
 
-#article-list #article-list-menu>.btn.best:hover {
+html.darkmode #article-list #article-list-menu>.btn.best:hover {
     border-radius: 4px;
     margin-top: 2px;
-    border-bottom: solid 1px var(--color);
-    background-color: var(--color);
-    border-color: var(--color);
+    border-bottom: solid 1px var(--colorDm);
+    background-color: var(--colorDm);
+    border-color: var(--colorDm);
     color: white;
 }
 
-#article-list #article-list-menu>.btn.cog {
+html.darkmode #article-list #article-list-menu>.btn.cog {
     border-radius: 4px;
-    border-bottom: solid 3px var(--color);
-    border-color: var(--color);
-    color: var(--color);
+    border-bottom: solid 3px var(--colorDm);
+    border-color: var(--colorDm);
+    color: var(--colorDm);
 }
 
-#article-list #article-list-menu>.btn.cog:hover {
+html.darkmode #article-list #article-list-menu>.btn.cog:hover {
     border-radius: 4px;
     margin-top: 2px;
-    border-bottom: solid 1px var(--color);
-    background-color: var(--color);
-    border-color: var(--color);
+    border-bottom: solid 1px var(--colorDm);
+    background-color: var(--colorDm);
+    border-color: var(--colorDm);
     color: white;
 }
 
-#article-list #article-list-menu>.btn.del {
+html.darkmode #article-list #article-list-menu>.btn.del {
     border-radius: 4px;
-    border-bottom: solid 3px var(--color);
+    border-bottom: solid 3px var(--colorDm);
     background-color: white;
-    border-color: var(--color);
-    color: var(--color);
+    border-color: var(--colorDm);
+    color: var(--colorDm);
 }
 
-#article-list #article-list-menu>.btn.del:hover {
+html.darkmode #article-list #article-list-menu>.btn.del:hover {
     border-radius: 4px;
     margin-top: 2px;
-    border-bottom: solid 1px var(--color);
-    background-color: var(--color);
-    border-color: var(--color);
+    border-bottom: solid 1px var(--colorDm);
+    background-color: var(--colorDm);
+    border-color: var(--colorDm);
     color: white;
 }
 
-#movetotop img {
+html.darkmode #movetotop img {
     display: none
 }
 
-#movetotop {
+html.darkmode #movetotop {
     display: inline-block;
     opacity: 1;
     background: var(--moveToTopImg);
@@ -625,17 +618,17 @@ input[type='text'] {
     background-size: contain;
 }
 
-#board-info #board-info-bottom a {
-    color: var(--color);
+html.darkmode #board-info #board-info-bottom a {
+    color: var(--colorDm);
 }
 
-#board-info h1>a:not(.badge-live) {
+html.darkmode #board-info h1>a:not(.badge-live) {
     padding-left: 55px;
     font-size: 32px !important;
     color: #000000;
 }
 
-#board-info h1>a::before {
+html.darkmode #board-info h1>a::before {
     content: '';
     background: var(--profileImg) no-repeat;
     background-size: 105px 105px;
@@ -646,7 +639,7 @@ input[type='text'] {
     top: 0px;
     margin-top: -24px;
     z-index: 100;
-    border: 3px solid var(--color);
+    border: 3px solid var(--colorDm);
     border-radius: 50px;
     display: inline-block;
     box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);
@@ -670,31 +663,31 @@ input[type='text'] {
     }
 }
 
-#article-list>.article-list-row>.item>.list-title>a:visited {
+html.darkmode #article-list>.article-list-row>.item>.list-title>a:visited {
     color: #adadad !important;
 }
 
 
-.pagination>.active>a,
-.pagination>.active>a:focus,
-.pagination>.active>a:hover,
-.pagination>.active>span,
-.pagination>.active>span:focus,
-.pagination>.active>span:hover {
-    background-color: var(--color);
-    border-color: var(--color);
+html.darkmode .pagination>.active>a,
+html.darkmode .pagination>.active>a:focus,
+html.darkmode .pagination>.active>a:hover,
+html.darkmode .pagination>.active>span,
+html.darkmode .pagination>.active>span:focus,
+html.darkmode .pagination>.active>span:hover {
+    background-color: var(--colorDm);
+    border-color: var(--colorDm);
 }
 
-a,
-a:hover,
-a:focus {
-    color: var(--color);
+html.darkmode a,
+html.darkmode a:hover,
+html.darkmode a:focus {
+    color: var(--colorDm);
 }
 
-header #right-search-form>input[type='text'] {
+html.darkmode header #right-search-form>input[type='text'] {
     background: linear-gradient(to bottom, #fff3f0, white, #fff3f0);
     margin-top: 0;
-    border: 3px SOLID var(--color);
+    border: 3px SOLID var(--colorDm);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -702,24 +695,24 @@ header #right-search-form>input[type='text'] {
     border-radius: 10px;
 }
 
-header #right-search-form>input[type=text]:hover,
-header #right-search-form>input[type=text]:focus {
+html.darkmode header #right-search-form>input[type=text]:hover,
+html.darkmode header #right-search-form>input[type=text]:focus {
     background: linear-gradient(to bottom, white, #fff3f0, white);
     border-color: #c7b0ab;
 }
 
-#article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
+html.darkmode #article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
     color: #83686c;
 }
 
-.form-control {
-    border: 1px solid var(--color);
+html.darkmode .form-control {
+    border: 1px solid var(--colorDm);
 }
 
-.btn.square {
-    border: 1px solid var(--color);
+html.darkmode .btn.square {
+    border: 1px solid var(--colorDm);
 }
 
-header #tgd-home-nav {
-    color: var(--color);
+html.darkmode header #tgd-home-nav {
+    color: var(--colorDm);
 }

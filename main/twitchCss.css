@@ -7,8 +7,6 @@
     --profileImg: url(https://static-cdn.jtvnw.net/jtv_user_pictures/cc73140b-c050-472d-a7f8-c9ef5d7476d8-profile_image-150x150.png);
     /* 커서 이미지 */
     --cursorImg: url(https://cdn.discordapp.com/attachments/712634687562055684/878207936831291422/we111.png);
-    /* 커서 이미지 (active)*/
-    --cursorImgActive: url(https://cdn.discordapp.com/attachments/712634687562055684/878207936831291422/we111.png);
     /* 접속자 수 앞 문구 */
     --preFix: "";
     /* 접속자 수 뒤 문구 */
@@ -38,7 +36,7 @@ body {
     letter-spacing: -0.05em !important;
     background: transparent;
     font-family: 'Katuri', sans-serif;
-    
+
 }
 
 /* 상단 메뉴 */
@@ -385,7 +383,7 @@ header #header-bar #header-top-notice strong.notice-badge {
     color: white;
     background: var(--color);
     border: 1px solid var(--color);
-    
+
     margin-top: 2px;
 }
 
@@ -399,7 +397,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 }
 
 #article-info>h2 {
-    
+
 }
 
 #article-info>h2>span.category {
@@ -488,7 +486,7 @@ input[type='text'] {
 
 #board-info #viewers-area {
     color: var(--color);
-    
+
     font-size: 18px;
 }
 
@@ -496,7 +494,7 @@ input[type='text'] {
     content: var(--preFix);
     color: var(--color);
     cursor: text;
-    
+
     font-size: 18px;
 }
 
@@ -506,7 +504,7 @@ input[type='text'] {
     cursor: text;
     font-weight: normal;
     font-size: large;
-    
+
     font-size: 18px;
 }
 
@@ -555,7 +553,7 @@ input[type='text'] {
     color: var(--color);
     border: 1px solid var(--color);
     border-radius: 4px;
-    
+
 }
 
 .btn-primary:hover {
