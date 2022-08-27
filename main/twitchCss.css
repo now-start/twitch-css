@@ -37,7 +37,7 @@ body {
     font-weight: bold;
 }
 
-body {
+/* body {
     background-image: url();
     -webkit-animation: snow 25s linear infinite;
     -moz-animation: snow 25s linear infinite;
@@ -85,8 +85,9 @@ body {
     100% {
         background-position: 500px 1000px, 400px 400px, 300px 300px;
     }
-}
+} */
 
+/* 상단 메뉴 */
 header #header-bar>.row,
 #main .menu-wrapper,
 #main #main-content>div.frame {
@@ -111,6 +112,7 @@ header .row>div:nth-child(1)>a>img {
     color: var(--color);
 }
 
+/* 왼쪽 메뉴 */
 #main-menu {
     position: sticky;
     top: 6px;
@@ -257,6 +259,7 @@ header .row>div:nth-child(1)>a>img {
     background-color: var(--color);
 }
 
+/* 게시판 목록 */
 #article-reply-area #reply-real-area .reply>.reply-header,
 #article-reply-area #reply-best-area .reply>.reply-header {
     background: #e8e8e8;
@@ -265,27 +268,6 @@ header .row>div:nth-child(1)>a>img {
 #article-list>.article-list-row:hover {
     -moz-animation: text1 1.4s ease-out 8ms;
     animation: text1 1.4s ease-out 8ms;
-}
-
-@-webkit-keyframes text1 {
-    30% {
-        opacity: 0.5;
-        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 5px 5px var(--color), 0 0 0 5px rgba(255, 255, 255, 0.5);
-    }
-}
-
-@-moz-keyframes text1 {
-    30% {
-        opacity: 0.5;
-        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 5px 5px var(--color), 0 0 0 5px rgba(255, 255, 255, 0.5);
-    }
-}
-
-@keyframes text1 {
-    30% {
-        opacity: 0.5;
-        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 5px 5px var(--color), 0 0 0 5px rgba(255, 255, 255, 0.5);
-    }
 }
 
 header #right-search-form>#right-search-btn {
@@ -309,6 +291,7 @@ header #right-search-form>#right-search-btn {
 
 #article-list>.article-list-row {
     border: 2px solid #fff6d9;
+    background-color: #fff6d9;
     border-radius: 6px;
     margin: 4px 0;
 }
@@ -327,10 +310,6 @@ header #header-bar #header-top-notice strong.notice-badge {
     width: 120px !important;
 }
 
-#article-list>.article-list-row>.item>.list-title>a:visited {
-    color: #000000 !important;
-}
-
 #article-list>.article-list-row>.item>.list-title>a {
     color: #000000 !important;
     text-decoration: none;
@@ -345,6 +324,7 @@ header #header-bar #header-top-notice strong.notice-badge {
     float: left;
 }
 
+/* 드롭다운 버튼 및 인풋 박스 */
 .dropdown.open .dropdown-menu,
 .input-group-btn.open .dropdown-menu {
     opacity: unset;
@@ -365,7 +345,7 @@ header #header-bar #header-top-notice strong.notice-badge {
     padding: 8px 0 3px 0px;
 }
 
-.input-group-btn.btn{
+.input-group-btn.btn {
     border-radius: 8px;
 }
 
@@ -399,6 +379,7 @@ header #header-bar #header-top-notice strong.notice-badge {
     margin: 3px 0;
 }
 
+/* 카테고리 */
 #article-list #article-list-category {
     background: white;
     border-top: 3px solid var(--color) !important;
@@ -512,10 +493,32 @@ header #header-bar #header-top-notice strong.notice-badge {
     border: 1px solid rgba(0, 0, 0, 0)
 }
 
+@-webkit-keyframes text1 {
+    30% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 5px 5px var(--color), 0 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+}
+
+@-moz-keyframes text1 {
+    30% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 5px 5px var(--color), 0 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+}
+
+@keyframes text1 {
+    30% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 5px 5px var(--color), 0 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+}
+
 small.favo i.fa.fa-heart {
     animation: heartbeat 1s infinite;
 }
 
+/* 커서 관련 */
 html,
 body,
 .fr-popup.emoticons,
@@ -523,11 +526,7 @@ body,
 select.form-control,
 input[type=checkbox],
 input[type=radio],
-.opt {
-    cursor: var(--cursorImg) 0 0, auto !important;
-}
-
-#right-search-form>#right-search-btn,
+.opt #right-search-form>#right-search-btn,
 #board-info #board-info-bottom #addFavoriteBtn,
 #article-list #article-option-area>#article-option-area-toggle-btn,
 #article-list>.article-list-row>.item>.list-title>.list-writer>span,
@@ -538,10 +537,6 @@ input[type=radio],
 .fr-popup .fr-command.fr-btn,
 .fr-view img,
 .pull-left,
-a {
-    cursor: var(--cursorImgActive) 0 0, auto !important;
-}
-
 span#viewers,
 #article-list #boardSearchForm .form-control,
 .fr-view,
@@ -810,4 +805,3 @@ header #right-search-form>input[type=text]:focus {
 header #tgd-home-nav {
     color: var(--color);
 }
-
