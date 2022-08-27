@@ -1,21 +1,11 @@
+@import url(https://now-start.github.io/twitchCss/main/twitchCss.css);
 :root {
     /* 트게더 문구 */
-    --headerImg: url(https://now-start.github.io/twitchCss/resource/headerImgDm.png);
-    /* 위로가기 이미지 */
-    --moveToTopImg: url(https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_a12b4ac60dd5429d9de14ff831e9d981/default/light/1.0);
-    /* 프로필 이미지 */
-    --profileImg: url(https://now-start.github.io/twitchCss/resource/profileImg.png);
-    /* 커서 이미지 */
-    --cursorImg: url(https://now-start.github.io/twitchCss/resource/cursorImg.png);
-    /* 접속자 수 앞 문구 */
-    --preFix: "오짱단 ";
-    /* 접속자 수 뒤 문구 */
-    --postFix: "명 치바즈보 외치는 중";
     --headerImgDm: url(https://now-start.github.io/twitchCss/resource/headerImgDm.png);
     /* 색상 */
-    --colorDm: #ff6969;
-    --bgcolorDm: #ffc400;
-    --bgcolorDm2: #fcdc70;
+    --colorDm: #802222;
+    --bgcolorDm: #36365e;
+    --bgcolorDm2: #141425;
 }
 
 @font-face {
@@ -25,13 +15,14 @@
     font-style: normal;
 }
 
-/* defualtMod */
-html {
-    background: linear-gradient(to bottom, var(--bgcolorDm), var(--bgcolorDm2));
+/* darkMode */
+html.darkmode, html.darkmode body,
+html.darkmode html {
+    background: linear-gradient(to bottom,var(--bgcolorDm2), var(--bgcolorDm));
     height: auto !important;
 }
 
-body {
+html.darkmode body {
     letter-spacing: -0.05em !important;
     background: transparent;
     font-family: 'Katuri', sans-serif;
@@ -79,7 +70,7 @@ html.darkmode #main .menu-wrapper {
 
 html.darkmode #main .menu-wrapper>.header {
     background: var(--colorDm);
-    color: black;
+    color: white;
     border-radius: 8px 8px 0 0;
 }
 
@@ -158,7 +149,7 @@ html.darkmode #main .menu-wrapper #fav-shortcut-area>a {
     position: relative;
     z-index: 2;
     text-decoration: none;
-    color: black;
+    color: white;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -249,7 +240,7 @@ html.darkmode #article-list>.article-list-row>.item>.list-title>.list-writer>spa
 }
 
 html.darkmode #article-list>.article-list-row>.item>.list-title>a {
-    color: #000000 !important;
+    color: white !important;
     text-decoration: none;
     line-height: 18px;
     word-break: break-all;
@@ -319,33 +310,43 @@ html.darkmode .dropdown-menu .divider {
 
 /* 카테고리 */
 html.darkmode #article-list #article-list-category {
-    background: white;
+    background: var(--bgcolorDm2);
     border-top: 3px solid var(--colorDm) !important;
     border: 3px solid var(--colorDm);
     border-radius: 8px;
 }
 
 html.darkmode #article-list #article-list-category>a {
-    background: white;
+    background: var(--colorDm);
     border-radius: 8px;
 }
 
 html.darkmode #article-list #article-list-category>a:hover {
-    background: white;
+    background: var(--colorDm);
 }
 
 html.darkmode #article-list #article-list-category>a.active {
-    background: white;
+    background: var(--colorDm);
     border-radius: 8px;
+}
+
+html.darkmode #article-list #article-list-category #board-home-link-btn {
+    background: var(--colorDm);
 }
 
 html.darkmode #article-list>.article-list-row>.item>.list-header>span {
     background-color: var(--colorDm);
 }
 
-html.darkmode #article-list>.article-list-row>.item>.list-header.v0>span {
+html.darkmode #article-list>.article-list-row>.item>.list-header.v0>span,
+html.darkmode #article-list>.article-list-row>.item>.list-header.v0>span:hover{
     color: var(--bgcolorDm2);
     background: var(--bgcolorDm2);
+}
+
+html.darkmode #article-list>.article-list-row>.item>.list-header.v1>strong,
+html.darkmode #article-list>.article-list-row>.item>.list-header.v0>strong{
+    color: var(--colorDm);
 }
 
 html.darkmode #article-list>.article-list-row>.item>.list-title>small.comment-count {
@@ -360,7 +361,7 @@ html.darkmode .pagination>.active>a:hover {
 
 html.darkmode .pagination>li>a,
 html.darkmode .pagination>li>span {
-    color: var(--colorDm);
+    color: white;
     border: 1px solid var(--colorDm);
     border-bottom: 3px solid var(--colorDm);
 }
@@ -413,7 +414,7 @@ html.darkmode #main .menu-wrapper>a {
 }
 
 html.darkmode #article-list>.article-list-row>.item>a.list-title>.list-writer.logged>span {
-    color: #000000;
+    color: white;
 }
 
 html.darkmode #article-list #article-list-menu {
@@ -591,7 +592,7 @@ html.darkmode #article-list #article-list-menu>.btn.cog:hover {
 html.darkmode #article-list #article-list-menu>.btn.del {
     border-radius: 4px;
     border-bottom: solid 3px var(--colorDm);
-    background-color: white;
+    background-color: transparent;
     border-color: var(--colorDm);
     color: var(--colorDm);
 }
@@ -625,7 +626,7 @@ html.darkmode #board-info #board-info-bottom a {
 html.darkmode #board-info h1>a:not(.badge-live) {
     padding-left: 55px;
     font-size: 32px !important;
-    color: #000000;
+    color: white;
 }
 
 html.darkmode #board-info h1>a::before {
@@ -649,6 +650,10 @@ html.darkmode #board-info h1>a::before {
     animation-iteration-count: infinite;
 }
 
+html.darkmode .fa-square:before {
+    color: var(--colorDm);
+}
+
 @keyframes h1updown {
     0% {
         transform: translateY(0%);
@@ -664,7 +669,7 @@ html.darkmode #board-info h1>a::before {
 }
 
 html.darkmode #article-list>.article-list-row>.item>.list-title>a:visited {
-    color: #adadad !important;
+    color: #666666 !important;
 }
 
 
