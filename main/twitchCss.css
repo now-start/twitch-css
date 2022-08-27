@@ -13,8 +13,12 @@
     --preFix: "";
     /* 접속자 수 뒤 문구 */
     --postFix: "명 치바즈보 외치는 중";
-    /* 색상 */
+    /* 색상 (줄) */
     --color: #ffa6b2;
+    /* 색상 (노티 배경) */
+    --bgcolor: #fff2c9;
+    /* 색상 (게시판 배경)*/
+    --bgcolor2: #fff6d9;
 }
 
 @font-face {
@@ -26,7 +30,7 @@
 
 /* defualtMod */
 html {
-    background: linear-gradient(to bottom, #fff2c9, #fff6d9);
+    background: linear-gradient(to bottom, var(--bgcolor), var(--bgcolor2));
     height: auto !important;
 }
 
@@ -34,58 +38,8 @@ body {
     letter-spacing: -0.05em !important;
     background: transparent;
     font-family: 'Katuri', sans-serif;
-    font-weight: bold;
+    
 }
-
-/* body {
-    background-image: url();
-    -webkit-animation: snow 25s linear infinite;
-    -moz-animation: snow 25s linear infinite;
-    -ms-animation: snow 25s linear infinite;
-    animation: snow 25s linear infinite;
-}
-
-@keyframes snow {
-    0% {
-        background-position: 0px 0px, 0px 0px, 0px 0px;
-    }
-
-    100% {
-        background-position: 500px 1000px, 400px 400px, 300px 300px;
-    }
-}
-
-@-moz-keyframes snow {
-    0% {
-        background-position: 0px 0px, 0px 0px, 0px 0px;
-    }
-
-    100% {
-        background-position: 500px 1000px, 400px 400px, 300px 300px;
-    }
-}
-
-@-webkit-keyframes snow {
-    0% {
-        background-position: 0px 0px, 0px 0px, 0px 0px;
-    }
-
-    50% {}
-
-    100% {
-        background-position: 500px 1000px, 400px 400px, 300px 300px;
-    }
-}
-
-@-ms-keyframes snow {
-    0% {
-        background-position: 0px 0px, 0px 0px, 0px 0px;
-    }
-
-    100% {
-        background-position: 500px 1000px, 400px 400px, 300px 300px;
-    }
-} */
 
 /* 상단 메뉴 */
 header #header-bar>.row,
@@ -96,10 +50,12 @@ header #header-bar>.row,
     border: 3px solid var(--color);
 }
 
+/*공지 숨기기 버튼*/
 #article-option-area-toggle-btn{
     visibility: hidden;
 }
 
+/*헤더 제목*/
 header .row>div:nth-child(1)>a {
     display: block;
     width: 130px;
@@ -108,18 +64,15 @@ header .row>div:nth-child(1)>a {
     background-size: auto 50px;
 }
 
+/*기존 트게더 이미지 삭제*/
 header .row>div:nth-child(1)>a>img {
     display: none;
 }
+/*상단 메뉴 End*/
 
-.fa-square:before {
-    color: var(--color);
-}
-
-/* 왼쪽 메뉴 */
-#main-menu {
-    position: sticky;
-    top: 6px;
+/*최상단 메뉴*/
+#main .menu-wrapper a:nth-last-child(1) {
+    border-radius: 0px 0px 8px 8px;
 }
 
 #main .menu-wrapper {
@@ -129,13 +82,8 @@ header .row>div:nth-child(1)>a>img {
 
 #main .menu-wrapper>.header {
     background: var(--color);
-    color: #000;
+    color: black;
     border-radius: 8px 8px 0 0;
-}
-
-#main .menu-wrapper>a,
-#main .menu-wrapper>.header>a {
-    color: none;
 }
 
 #main .menu-wrapper>a>em {
@@ -150,22 +98,7 @@ header .row>div:nth-child(1)>a>img {
     border-radius: 0px 0px 8px 8px;
 }
 
-#main #main-content>div.frame {
-    border-top: 3px solid var(--color) !important;
-    border: 3px solid var(--color);
-}
-
-#main #main-content>div.frame {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-#main .menu-wrapper a:nth-last-child(1) {
-    border-radius: 0px 0px 8px 8px;
-}
-
+/*메뉴 에니메이션*/
 .menu-wrapper>a {
     display: block;
     width: 100%;
@@ -221,11 +154,6 @@ header .row>div:nth-child(1)>a>img {
     background-color: var(--color);
 }
 
-
-.menu-wrapper>a:last-child:after {
-    background-color: var(--color);
-}
-
 #main .menu-wrapper #fav-shortcut-area>a {
     display: block;
     width: 100%;
@@ -233,14 +161,14 @@ header .row>div:nth-child(1)>a>img {
     position: relative;
     z-index: 2;
     text-decoration: none;
-    color: #444;
+    color: black;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
 
 #main .menu-wrapper #fav-shortcut-area>a {
-    border-left: 0px solid #b4f0bf;
+    border-left: 0px solid white;
 }
 
 #main .menu-wrapper #fav-shortcut-area>a:after {
@@ -264,6 +192,15 @@ header .row>div:nth-child(1)>a>img {
 }
 
 /* 게시판 목록 */
+#main #main-content>div.frame {
+    border-top: 3px solid var(--color) !important;
+    border: 3px solid var(--color);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
 #article-reply-area #reply-real-area .reply>.reply-header,
 #article-reply-area #reply-best-area .reply>.reply-header {
     background: #e8e8e8;
@@ -288,14 +225,14 @@ header #right-search-form>#right-search-btn {
 }
 
 #article-list>.article-list-row.notice {
-    background-color: #fff2c9;
+    background-color: var(--bgcolor);
     border-radius: 5px;
     margin: 2px 0;
 }
 
 #article-list>.article-list-row {
-    border: 2px solid #fff6d9;
-    background-color: #fff6d9;
+    border: 2px solid var(--bgcolor2);
+    background-color: var(--bgcolor2);
     border-radius: 6px;
     margin: 4px 0;
 }
@@ -410,8 +347,8 @@ header #header-bar #header-top-notice strong.notice-badge {
 }
 
 #article-list>.article-list-row>.item>.list-header.v0>span {
-    color: rgba(0, 0, 0, 0);
-    background: rgba(0, 0, 0, 0);
+    color: var(--bgcolor2);
+    background: var(--bgcolor2);
 }
 
 #article-list>.article-list-row>.item>.list-title>small.comment-count {
@@ -448,7 +385,7 @@ header #header-bar #header-top-notice strong.notice-badge {
     color: white;
     background: var(--color);
     border: 1px solid var(--color);
-    font-weight: bold;
+    
     margin-top: 2px;
 }
 
@@ -462,7 +399,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 }
 
 #article-info>h2 {
-    font-weight: bold;
+    
 }
 
 #article-info>h2>span.category {
@@ -551,7 +488,7 @@ input[type='text'] {
 
 #board-info #viewers-area {
     color: var(--color);
-    font-weight: bold;
+    
     font-size: 18px;
 }
 
@@ -559,7 +496,7 @@ input[type='text'] {
     content: var(--preFix);
     color: var(--color);
     cursor: text;
-    font-weight: bold;
+    
     font-size: 18px;
 }
 
@@ -569,7 +506,7 @@ input[type='text'] {
     cursor: text;
     font-weight: normal;
     font-size: large;
-    font-weight: bold;
+    
     font-size: 18px;
 }
 
@@ -618,7 +555,7 @@ input[type='text'] {
     color: var(--color);
     border: 1px solid var(--color);
     border-radius: 4px;
-    font-weight: bold;
+    
 }
 
 .btn-primary:hover {
