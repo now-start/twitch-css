@@ -315,27 +315,28 @@ html.darkmode #article-list #article-list-category {
     border-radius: 8px;
 }
 
-html.darkmode #article-list #article-list-category>a {
+#article-list #article-list-category > a:hover,
+#article-list #article-list-category #board-home-link-btn:hover {
+    background: var(--colorDm) !important;
+}
+
+html.darkmode #article-list #article-list-category > a.nav-link.active,
+html.darkmode #article-list #article-list-category #board-home-link-btn.active {
     background: var(--colorDm);
     border-radius: 8px;
 }
 
-html.darkmode #article-list #article-list-category>a:hover,
-html.darkmode #article-list #article-list-category #board-home-link-btn:hover{
-    background: var(--bgcolorDm2);
-}
-
-html.darkmode #article-list #article-list-category>a.active,
-html.darkmode #article-list #article-list-category #board-home-link-btn.active{
+html.darkmode #article-list #article-list-category > a {
     background: var(--bgcolorDm2);
     border-radius: 8px;
 }
 
 html.darkmode #article-list #article-list-category #board-home-link-btn {
-    background: var(--colorDm);
+    background: var(--bgcolorDm2);
+    color: white;
 }
 
-html.darkmode #article-list>.article-list-row>.item>.list-header>span {
+html.darkmode #article-list > .article-list-row > .item > .list-header > span {
     background-color: var(--colorDm);
 }
 
