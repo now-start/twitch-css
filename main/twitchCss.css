@@ -738,7 +738,7 @@ a:focus {
 }
 
 header #right-search-form>input[type='text'] {
-    background: linear-gradient(to bottom, #fff3f0, white, #fff3f0);
+    background: white;
     margin-top: 0;
     border: 3px SOLID var(--color);
     border-top-left-radius: 10px;
@@ -750,7 +750,7 @@ header #right-search-form>input[type='text'] {
 
 header #right-search-form>input[type=text]:hover,
 header #right-search-form>input[type=text]:focus {
-    background: linear-gradient(to bottom, white, #fff3f0, white);
+    background: white;
     border-color: #c7b0ab;
 }
 
