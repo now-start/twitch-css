@@ -322,7 +322,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 /* 카테고리 */
 #article-list #article-list-category {
     background: white;
-    border-top: 3px solid var(--color);
+    border-top: 3px solid var(--color) !important;
     border: 3px solid var(--color);
     border-radius: 8px;
 }
