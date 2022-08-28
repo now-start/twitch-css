@@ -4,9 +4,9 @@
     /* 위로가기 이미지 */
     --moveToTopImg: url(https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_a12b4ac60dd5429d9de14ff831e9d981/default/light/1.0);
     /* 프로필 이미지 */
-    --profileImg: url(https://static-cdn.jtvnw.net/jtv_user_pictures/cc73140b-c050-472d-a7f8-c9ef5d7476d8-profile_image-150x150.png);
+    --profileImg: url(https://now-start.github.io/twitchCss/resource/profileImg.png);
     /* 커서 이미지 */
-    --cursorImg: url(https://cdn.discordapp.com/attachments/712634687562055684/878207936831291422/we111.png);
+    --cursorImg: url(https://now-start.github.io/twitchCss/resource/cusorImg.png);
     /* 접속자 수 앞 문구 */
     --preFix: "오짱단 ";
     /* 접속자 수 뒤 문구 */

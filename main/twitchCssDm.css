@@ -1,6 +1,7 @@
 :root {
     /* 트게더 문구 */
     --headerImgDm: url(https://now-start.github.io/twitchCss/resource/headerImgDm.png);
+    --cursorImgDm: url(https://now-start.github.io/twitchCss/resource/cusorImgDm.png);
     /* 색상 */
     --colorDm: #be6262;
     --bgcolorDm: #3e3e72;
@@ -456,6 +457,34 @@ html.darkmode #article-list #article-list-menu>.btn.best {
 html.darkmode small.favo i.fa.fa-heart {
     animation: heartbeat 1s infinite;
 }
+
+/* 커서 관련 */
+html,
+body,
+.fr-popup.emoticons,
+.fr-top,
+select.form-control,
+input[type=checkbox],
+input[type=radio],
+.opt #right-search-form > #right-search-btn,
+#board-info #board-info-bottom #addFavoriteBtn,
+#article-list #article-option-area > #article-option-area-toggle-btn,
+#article-list > .article-list-row > .item > .list-title > .list-writer > span,
+.reply > .reply-header > .reply-writer.logged,
+.reply-menu,
+.btn,
+.fr-toolbar .fr-command.fr-btn,
+.fr-popup .fr-command.fr-btn,
+.fr-view img,
+.pull-left,
+span#viewers,
+#article-list #boardSearchForm .form-control,
+.fr-view,
+.fr-box.fr-basic.fr-element,
+input[type='text'] {
+    cursor: var(--cursorImgDm) 0 0, auto !important;
+}
+
 
 html.darkmode #board-info #viewers-area {
     color: var(--colorDm);
