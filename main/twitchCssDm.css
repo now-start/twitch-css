@@ -317,7 +317,7 @@ html.darkmode #article-list #article-list-category {
 
 #article-list #article-list-category > a:hover,
 #article-list #article-list-category #board-home-link-btn:hover {
-    background: var(--colorDm);
+    background: var(--colorDm) !important;
 }
 
 html.darkmode #article-list #article-list-category > a.nav-link.active,
