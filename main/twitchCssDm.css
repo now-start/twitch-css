@@ -331,6 +331,7 @@ html.darkmode #article-list #article-list-category #board-home-link-btn.active {
 }
 
 html.darkmode #article-list #article-list-category #board-home-link-btn {
+    background-color: #242434;
     color: white;
 }
 
