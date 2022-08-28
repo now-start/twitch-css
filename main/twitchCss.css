@@ -332,11 +332,13 @@ header #header-bar #header-top-notice strong.notice-badge {
     border-radius: 8px;
 }
 
-#article-list #article-list-category>a:hover {
+#article-list #article-list-category > a:hover,
+#article-list #article-list-category #board-home-link-btn:hover {
     background: var(--bgcolor2);
 }
 
-#article-list #article-list-category>a.active {
+#article-list #article-list-category > a.active,
+#article-list #article-list-category #board-home-link-btn.active {
     background: var(--bgcolor2);
     border-radius: 8px;
 }
