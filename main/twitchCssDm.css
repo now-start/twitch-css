@@ -320,13 +320,13 @@ html.darkmode #article-list #article-list-category > a {
 
 html.darkmode #article-list #article-list-category > a:hover,
 html.darkmode #article-list #article-list-category #board-home-link-btn:hover {
-    background: var(--bgcolorDm2) !important;
+    background: var(--bgcolorDm) !important;
     border-radius: 8px;
 }
 
 html.darkmode #article-list #article-list-category > a.nav-link.active,
 html.darkmode #article-list #article-list-category #board-home-link-btn.active {
-    background: var(--bgcolorDm2);
+    background: var(--bgcolorDm);
     border-radius: 8px;
 }
 
