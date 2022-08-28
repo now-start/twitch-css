@@ -344,7 +344,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 }
 
 #article-list #article-list-category #board-home-link-btn {
-    background: white;
+    background: var(--bgcolor2);
 }
 
 /*게시판*/
