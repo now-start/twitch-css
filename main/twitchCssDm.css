@@ -309,14 +309,12 @@ html.darkmode .dropdown-menu .divider {
 
 /* 카테고리 */
 html.darkmode #article-list #article-list-category {
-    background: black;
     border-top: 3px solid var(--colorDm) !important;
     border: 3px solid var(--colorDm);
     border-radius: 8px;
 }
 
 html.darkmode #article-list #article-list-category > a {
-    background: black;
     border-radius: 8px;
 }
 
@@ -332,7 +330,6 @@ html.darkmode #article-list #article-list-category #board-home-link-btn.active {
 }
 
 html.darkmode #article-list #article-list-category #board-home-link-btn {
-    background: black;
     color: white;
 }
 
