@@ -28,7 +28,7 @@
 
 /* defualtMod */
 html {
-    background: linear-gradient(to bottom, var(--bgcolor), var(--bgcolor2));
+    background: linear-gradient(to bottom, var(--bgcolor2), var(--bgcolor1));
     height: auto !important;
 }
 
