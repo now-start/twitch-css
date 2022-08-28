@@ -667,13 +667,17 @@ input[type='text'] {
     color: var(--color);
 }
 
-#board-info h1>a:not(.badge-live) {
+#score-area {
+    visibility: hidden;
+}
+
+#board-info h1 > a:not(.badge-live) {
     padding-left: 55px;
     font-size: 32px !important;
     color: #000000;
 }
 
-#board-info h1>a::before {
+#board-info h1 > a::before {
     content: '';
     background: var(--profileImg) no-repeat;
     background-size: 105px 105px;

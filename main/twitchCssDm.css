@@ -627,13 +627,17 @@ html.darkmode #board-info #board-info-bottom a {
     color: var(--colorDm);
 }
 
-html.darkmode #board-info h1>a:not(.badge-live) {
+#score-area {
+    visibility: hidden;
+}
+
+html.darkmode #board-info h1 > a:not(.badge-live) {
     padding-left: 55px;
     font-size: 32px !important;
     color: white;
 }
 
-html.darkmode #board-info h1>a::before {
+html.darkmode #board-info h1 > a::before {
     content: '';
     background: var(--profileImg) no-repeat;
     background-size: 105px 105px;
