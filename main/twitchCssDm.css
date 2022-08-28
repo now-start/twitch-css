@@ -310,14 +310,14 @@ html.darkmode .dropdown-menu .divider {
 /* 카테고리 */
 html.darkmode #article-list #article-list-category {
     background: var(--bgcolorDm2);
-    border-top: 3px solid var(--colorDm) !important;
+    border-top: 3px solid var(--colorDm);
     border: 3px solid var(--colorDm);
     border-radius: 8px;
 }
 
 #article-list #article-list-category > a:hover,
 #article-list #article-list-category #board-home-link-btn:hover {
-    background: var(--colorDm) !important;
+    background: var(--colorDm);
 }
 
 html.darkmode #article-list #article-list-category > a.nav-link.active,
