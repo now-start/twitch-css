@@ -761,16 +761,14 @@ html.darkmode header #tgd-home-nav {
     color: var(--colorDm);
 }
 
-html.darkmode #boardSearchForm > span:nth-child(2) > button{
-    border-top-left-radius: 8px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 0px;
+html.darkmode #boardSearchForm > span:nth-child(2) > button {
+    border-radius: 8px 0px 0px 8px;
 }
 
-html.darkmode #boardSearchForm > span:nth-child(4) > button{
-    border-top-left-radius: 0px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 8px;
+html.darkmode #boardSearchForm > span:nth-child(3) > button {
+    border-radius: 8px 0px 0px 8px;
+}
+
+html.darkmode #boardSearchForm > span:nth-child(4) > button {
+    border-radius: 0px 8px 8px 0px;
 }
