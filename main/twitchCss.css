@@ -474,16 +474,21 @@ small.favo i.fa.fa-heart {
 /* 커서 관련 */
 html,
 body,
+a,
 .fr-popup.emoticons,
 .fr-top,
 select.form-control,
+#header-bar > .row,
 input[type=checkbox],
 input[type=radio],
-.opt #right-search-form>#right-search-btn,
+.opt #right-search-form > #right-search-btn,
 #board-info #board-info-bottom #addFavoriteBtn,
-#article-list #article-option-area>#article-option-area-toggle-btn,
-#article-list>.article-list-row>.item>.list-title>.list-writer>span,
-.reply>.reply-header>.reply-writer.logged,
+#article-list #article-option-area > #article-option-area-toggle-btn,
+#article-list > .article-list-row > .item > .list-title > .list-writer > span,
+#article-list #article-list-category > a:hover,
+#article-list #article-list-category #board-home-link-btn:hover,
+#main .menu-wrapper > a:hover,
+.reply > .reply-header > .reply-writer.logged,
 .reply-menu,
 .btn,
 .fr-toolbar .fr-command.fr-btn,
@@ -742,10 +747,6 @@ header #right-search-form>input[type='text'] {
     background: white;
     margin-top: 0;
     border: 3px SOLID var(--color);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
     border-radius: 10px;
 }
 
@@ -771,16 +772,10 @@ header #tgd-home-nav {
     color: var(--color);
 }
 
-#boardSearchForm > span:nth-child(2) > button{
-    border-top-left-radius: 8px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 0px;
+#boardSearchForm > span:nth-child(2) > button {
+    border-radius: 8px 0px 0px 8px !important;
 }
 
-#boardSearchForm > span:nth-child(4) > button{
-    border-top-left-radius: 0px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 8px;
+#boardSearchForm > span:nth-child(4) > button {
+    border-radius: 0px 8px 8px 0px !important;
 }
