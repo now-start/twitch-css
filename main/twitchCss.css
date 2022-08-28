@@ -340,7 +340,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 
 #article-list #article-list-category > a.active,
 #article-list #article-list-category #board-home-link-btn.active {
-    background: var(--bgcolor);
+    background: var(--bgcolor) !important;
     border-radius: 8px;
 }
 
