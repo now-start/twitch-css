@@ -2,7 +2,7 @@
     /* 트게더 문구 */
     --headerImgDm: url(https://now-start.github.io/twitchCss/resource/headerImgDm.png);
     --cursorImgDm: url(https://now-start.github.io/twitchCss/resource/cusorImgDm.png);
-    /* 색상 */
+    /* 색상 (줄) */
     --colorDm: #be6262;
     --bgcolorDm: #3e3e72;
     --bgcolorDm2: #242434;
@@ -15,258 +15,37 @@
     font-style: normal;
 }
 
-/* mb.darkmode */
-html.mb.darkmode, html.mb.darkmode body,
-html.mb.darkmode html {
-    background: linear-gradient(to bottom, var(--bgcolorDm2), var(--bgcolorDm2));
-    height: auto !important;
+body {
+    font-family: 'Katuri', fantasy;
 }
 
-html.mb.darkmode body {
-    letter-spacing: -0.05em !important;
-    background: transparent;
-    font-family: 'Katuri', sans-serif;
-
-}
-
-/* 상단 메뉴 */
-html.mb.darkmode header #header-bar > .row,
-html.mb.darkmode #main .menu-wrapper,
-html.mb.darkmode #main #main-content > div.frame {
-    border-radius: 10px;
-    border-top: 3px solid var(--colorDm) !important;
-    border: 3px solid var(--colorDm);
-}
-
-/*공지 숨기기 버튼*/
-html.mb.darkmode #article-option-area-toggle-btn {
-    visibility: hidden;
-}
-
-/*헤더 제목*/
-html.mb.darkmode header .row > div:nth-child(1) > a {
-    display: block;
-    width: 130px;
-    height: 50px;
-    background: var(--headerImgDm) no-repeat;
-    background-size: auto 50px;
-}
-
-/*기존 트게더 이미지 삭제*/
-html.mb.darkmode header .row > div:nth-child(1) > a > img {
-    display: none;
-}
-
-/*상단 메뉴 End*/
-
-/*최상단 메뉴*/
-html.mb.darkmode #main .menu-wrapper a:nth-last-child(1) {
-    border-radius: 0px 0px 8px 8px;
-}
-
-html.mb.darkmode #main .menu-wrapper {
-    border: 4px solid var(--colorDm);
-    border-top: none !important;
-}
-
-html.mb.darkmode #main .menu-wrapper > .header {
-    background: var(--colorDm);
-    color: white;
-    border-radius: 8px 8px 0 0;
-}
-
-html.mb.darkmode #main .menu-wrapper > a > em {
+header > #header-area > #header-bar-link {
     color: var(--colorDm);
+    top: 10px;
 }
 
-html.mb.darkmode #main .menu-wrapper .spacer {
+nav#nav {
+    background: var(--bgcolorDm);
+}
+
+nav#nav > .nav-header {
     background: var(--colorDm);
+    color: #fff;
 }
 
-html.mb.darkmode #main .menu-wrapper a:nth-last-child(1) {
-    border-radius: 0px 0px 8px 8px;
-}
-
-/*메뉴 에니메이션*/
-html.mb.darkmode .menu-wrapper > a {
-    display: block;
-    width: 100%;
-    padding: 20px;
-    border-left: 0px solid;
-    position: relative;
-    z-index: 2;
-    text-decoration: none;
-    color: #444;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-}
-
-html.mb.darkmode .menu-wrapper > a:after {
-    content: "";
-    height: 100%;
-    left: 0;
-    top: 0;
-    width: 0px;
-    position: absolute;
-    transition: all 0.3s ease 0s;
-    -webkit-transition: all 0.3s ease 0s;
-    z-index: -1;
-}
-
-html.mb.darkmode .menu-wrapper > a:hover:after {
-    width: 100%;
-}
-
-html.mb.darkmode .menu-wrapper > a:first-child:after,
-html.mb.darkmode .menu-wrapper > a:nth-child(1):after,
-html.mb.darkmode .menu-wrapper > a:nth-child(2):after,
-html.mb.darkmode .menu-wrapper > a:nth-child(3):after,
-html.mb.darkmode .menu-wrapper > a:nth-child(4):after,
-html.mb.darkmode .menu-wrapper > a:nth-child(5):after,
-html.mb.darkmode .menu-wrapper > a:nth-child(6):after,
-html.mb.darkmode .menu-wrapper > a:nth-child(7):after,
-html.mb.darkmode .menu-wrapper > a:nth-child(8):after,
-html.mb.darkmode .menu-wrapper > a:nth-child(9):after,
-html.mb.darkmode .menu-wrapper > a:nth-child(10):after,
-html.mb.darkmode .menu-wrapper > a:nth-child(11):after,
-html.mb.darkmode .menu-wrapper > a:nth-child(12):after,
-html.mb.darkmode .menu-wrapper > a:nth-child(13):after,
-html.mb.darkmode .menu-wrapper > a:nth-child(14):after,
-html.mb.darkmode .menu-wrapper > a:nth-child(15):after,
-html.mb.darkmode .menu-wrapper > a:nth-child(16):after,
-html.mb.darkmode .menu-wrapper > a:nth-child(17):after,
-html.mb.darkmode .menu-wrapper > a:nth-child(18):after,
-html.mb.darkmode .menu-wrapper > a:nth-child(19):after,
-html.mb.darkmode .menu-wrapper > a:nth-child(20):after,
-html.mb.darkmode .menu-wrapper > a:last-child:after {
-    background-color: var(--colorDm);
-}
-
-html.mb.darkmode #main .menu-wrapper #fav-shortcut-area > a {
-    display: block;
-    width: 100%;
-    border-left: 5px solid;
-    position: relative;
-    z-index: 2;
-    text-decoration: none;
-    color: white;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-}
-
-html.mb.darkmode #main .menu-wrapper #fav-shortcut-area > a {
-    border-left: 0px solid white;
-}
-
-html.mb.darkmode #main .menu-wrapper #fav-shortcut-area > a:after {
-    content: "";
-    height: 100%;
-    left: 0;
-    top: 0;
-    width: 0px;
-    position: absolute;
-    transition: all 0.3s ease 0s;
-    -webkit-transition: all 0.3s ease 0s;
-    z-index: -1;
-}
-
-html.mb.darkmode #main .menu-wrapper #fav-shortcut-area > a:hover:after {
-    width: 100%;
-}
-
-html.mb.darkmode #main .menu-wrapper #fav-shortcut-area > a:after {
-    background-color: var(--colorDm);
-}
-
-/* 게시판 목록 */
-html.mb.darkmode #main #main-content > div.frame {
-    border-top: 3px solid var(--colorDm) !important;
-    border: 3px solid var(--colorDm);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-html.mb.darkmode #article-reply-area #reply-real-area .reply > .reply-header,
-html.mb.darkmode #article-reply-area #reply-best-area .reply > .reply-header {
-    background: #e8e8e8;
-}
-
-html.mb.darkmode #article-list > .article-list-row:hover {
-    -moz-animation: text1 1.4s ease-out 8ms;
-    animation: text1 1.4s ease-out 8ms;
-}
-
-html.mb.darkmode header #right-search-form > #right-search-btn {
-    color: var(--colorDm);
-}
-
-html.mb.darkmode #article-list > .article-list-row > .item > .list-checkbox,
-html.mb.darkmode #article-list > .article-list-row > .item > .list-header,
-html.mb.darkmode #article-list > .article-list-row > .item > .list-category,
-html.mb.darkmode #article-list > .article-list-row > .item > .list-title,
-html.mb.darkmode #article-list > .article-list-row > .item > .list-blocked,
-html.mb.darkmode #article-list > .article-list-row > .item > .list-time {
-    border: 0;
-}
-
-html.mb.darkmode #article-list > .article-list-row.notice {
-    background-color: var(--bgcolorDm);
-    border-radius: 5px;
-    margin: 2px 0;
-}
-
-html.mb.darkmode #article-list > .article-list-row {
-    border: 2px solid var(--bgcolorDm2);
-    background-color: var(--bgcolorDm2);
-    border-radius: 6px;
-    margin: 4px 0;
-}
-
-html.mb.darkmode header #right-search-form > #right-search-btn:hover,
-html.mb.darkmode header #right-search-form > #right-search-btn:focus {
-    transform: scale(1.25);
-    transition: 0.2s;
-}
-
-html.mb.darkmode header #header-bar #header-top-notice strong.notice-badge {
-    background: var(--colorDm);
-}
-
-html.mb.darkmode #article-list > .article-list-row > .item > .list-title > .list-writer > span {
-    width: 120px !important;
-}
-
-html.mb.darkmode #article-list > .article-list-row > .item > .list-title > a {
-    color: white !important;
-    text-decoration: none;
-    line-height: 18px;
-    word-break: break-all;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    max-width: 450px;
-    height: 18px;
-    overflow: hidden;
-    margin-right: 5px;
-    float: left;
-}
-
-/* 드롭다운 버튼 및 인풋 박스 */
-html.mb.darkmode .dropdown.open .dropdown-menu,
-html.mb.darkmode .input-group-btn.open .dropdown-menu {
+.dropdown.open .dropdown-menu,
+.input-group-btn.open .dropdown-menu {
     opacity: unset;
     transform: unset;
-    border: 2px solid white;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--colorDm), 0 0 0 7px #fff;
     border-radius: 6px;
     border-top: 2px solid var(--colorDm) !important;
     border: 2px solid var(--colorDm);
 }
 
-html.mb.darkmode .dropdown .dropdown-menu,
-html.mb.darkmode .input-group-btn .dropdown-menu {
+.dropdown .dropdown-menu,
+.input-group-btn .dropdown-menu {
     display: block !important;
     opacity: 0;
     transform: scale(0);
@@ -275,271 +54,169 @@ html.mb.darkmode .input-group-btn .dropdown-menu {
     padding: 8px 0 3px 0px;
 }
 
-html.mb.darkmode .input-group-btn.btn {
-    border-radius: 8px;
-}
-
-html.mb.darkmode .dropdown-menu > li > a {
+.dropdown-menu > li > a {
     transition: 0.1s;
 }
 
-html.mb.darkmode .dropdown-menu > li > a:hover {
+.dropdown-menu > li > a:hover {
     background: transparent;
     transform: scaleX(1.04);
     transition: 0.1s;
 }
 
-html.mb.darkmode #latestDropdownMenu > li > a > span.delrow,
-html.mb.darkmode #favoriteDropdownMenu > li > a > span.delrow {
+#latestDropdownMenu > li > a > span.delrow,
+#favoriteDropdownMenu > li > a > span.delrow {
     color: var(--colorDm);
 }
 
-html.mb.darkmode #latestDropdownMenu > li > a > span.delrow:hover,
-html.mb.darkmode #favoriteDropdownMenu > li > a > span.delrow:hover {
+#latestDropdownMenu > li > a > span.delrow:hover,
+#favoriteDropdownMenu > li > a > span.delrow:hover {
     background: transparent;
 }
 
-html.mb.darkmode #favoriteDropdownMenu > li > a > span.label.label-default {
+#favoriteDropdownMenu > li > a > span.label.label-default {
     background-color: var(--colorDm);
 }
 
-html.mb.darkmode .dropdown-menu .divider {
+.dropdown-menu .divider {
     background-color: var(--colorDm);
     height: 2px;
     margin: 3px 0;
 }
 
-/* 카테고리 */
-html.mb.darkmode #article-list #article-list-category {
-    border-top: 3px solid var(--colorDm) !important;
-    border: 3px solid var(--colorDm);
-    border-radius: 8px;
+header > #header-area > a > h1 {
+    background: var(--headerImgDm) no-repeat;
+    background-size: auto 32px;
+    width: 128px;
 }
 
-html.mb.darkmode #article-list #article-list-category > a {
-    border-radius: 8px;
+header {
+    border-bottom: 3px solid var(--colorDm);
+    background: var(--bgcolorDm);
 }
 
-html.mb.darkmode #article-list #article-list-category > a:hover,
-html.mb.darkmode #article-list #article-list-category #board-home-link-btn:hover {
-    background: var(--bgcolorDm) !important;
-    border-radius: 8px;
+header > #header-search-bar #header-search-input {
+    border: 2px solid var(--colorDm);
+    border-radius: 15px;
 }
 
-html.mb.darkmode #article-list #article-list-category > a.nav-link.active,
-html.mb.darkmode #article-list #article-list-category #board-home-link-btn.active {
-    background: var(--bgcolorDm) !important;
-    border-radius: 8px;
+header > #header-area > #header-search-link {
+    color: var(--colorDm);
 }
 
-html.mb.darkmode #article-list #article-list-category #board-home-link-btn {
-    background-color: #242424 !important;
-    color: white;
+header > #header-search-bar #header-search-btn {
+    color: var(--colorDm);
 }
 
-html.mb.darkmode #article-list > .article-list-row > .item > .list-header > span {
+#header-top-notice strong.notice-badge {
+    background: var(--colorDm);
+}
+
+#board-info #viewers-area {
+    color: var(--colorDm);
+}
+
+#board-info #viewers-area #viewers:before {
+    content: var(--preFix);
+    cursor: text;
+}
+
+#board-info #viewers-area #viewers:after {
+    content: var(--postFix);
+    cursor: text;
+}
+
+#article-list #article-list-category {
+    border-top: 1px var(--colorDm);
+    border-bottom: 1px var(--colorDm);
+    background-color: var(--bgcolorDm2);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 0 2px var(--colorDm),
+    0 0 0 3px #fff,
+    0 0 0 4px var(--colorDm);
+}
+
+#article-list #article-list-category > a {
+    background-color: var(--bgcolorDm2);
+}
+
+#article-list > .article-list-row > .item > a.list-title > .list-writer.logged > span {
+    color: #e39284;
+    font-weight: bold;
+}
+
+a,
+a:hover,
+a:focus {
+    color: var(--colorDm);
+}
+
+#article-list > .article-list-row {
+    border: 2px solid var(--colorDm);
+    background: var(--bgcolorDm2);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    margin-bottom: 0.5em;
+}
+
+#article-list > .article-list-row.notice {
+    background-color: var(--bgcolorDm);
+}
+
+#article-list > .article-list-row > .item > .list-header > span {
     background-color: var(--colorDm);
 }
 
-html.mb.darkmode #article-list > .article-list-row > .item > .list-header.v0 > span {
-    color: var(--bgcolorDm2);
-    background: var(--bgcolorDm2);
-}
-
-html.mb.darkmode #article-list > .article-list-row > .item > .list-header.v1 > strong,
-html.mb.darkmode #article-list > .article-list-row > .item > .list-header.v0 > strong {
+#article-list > .article-list-row > .item > a.list-title > small.comment-count {
     color: var(--colorDm);
 }
 
-html.mb.darkmode #article-list > .article-list-row > .item > .list-title > small.comment-count {
+.btn-outline-success {
     color: var(--colorDm);
+    border-color: var(--colorDm);
 }
 
-html.mb.darkmode .pagination > .active > a,
-html.mb.darkmode .pagination > .active > a:focus,
-html.mb.darkmode .pagination > .active > a:hover {
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover {
     border: 1px solid var(--colorDm);
 }
 
-html.mb.darkmode .pagination > li > a,
-html.mb.darkmode .pagination > li > span {
-    color: white;
+.pagination > li > a, .pagination > li > span {
+    color: var(--colorDm);
     border: 1px solid var(--colorDm);
     border-bottom: 3px solid var(--colorDm);
 }
 
-html.mb.darkmode .pagination > .active > a,
-html.mb.darkmode .pagination > .active > a:focus,
-html.mb.darkmode .pagination > .active > a:hover,
-html.mb.darkmode .pagination > .active > span,
-html.mb.darkmode .pagination > .active > span:focus,
-html.mb.darkmode .pagination > .active > span:hover {
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
     background: var(--colorDm);
     margin-top: 2px;
 }
 
-html.mb.darkmode .pagination > li > a:focus,
-html.mb.darkmode .pagination > li > a:hover,
-html.mb.darkmode .pagination > li > span:focus,
-html.mb.darkmode .pagination > li > span:hover {
-    color: white;
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+    color: #fff;
     background: var(--colorDm);
     border: 1px solid var(--colorDm);
-
+    font-weight: bold;
     margin-top: 2px;
 }
 
-html.mb.darkmode #article-content-wrapper > .header {
-    border-top: 2px solid var(--colorDm);
-}
-
-html.mb.darkmode #article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged,
-html.mb.darkmode #article-reply-area #reply-best-area .reply > .reply-header > .reply-writer.logged,
-html.mb.darkmode #article-reply-area #reply-real-area .reply > .reply-header > .reply-menu > a,
-html.mb.darkmode #article-reply-area #reply-best-area .reply > .reply-header > .reply-menu > a,
-html.mb.darkmode #article-reply-area #reply-real-area .reply > .reply-header > .reply-menu > span,
-html.mb.darkmode #article-reply-area #reply-best-area .reply > .reply-header > .reply-menu > span {
-    color: var(--colorDm) !important;
-}
-
-html.mb.darkmode #article-info > h2 {
-
-}
-
-html.mb.darkmode #article-info > h2 > span.category {
-    color: var(--colorDm) !important;
-}
-
-html.mb.darkmode #article-reply-area > .header h5 {
-    color: var(--colorDm);
-}
-
-
-html.mb.darkmode #main .menu-wrapper > a {
-    padding: 0.5em 1.4em 0.5em 0.7em !important;
-}
-
-html.mb.darkmode #article-list > .article-list-row > .item > a.list-title > .list-writer.logged > span {
-    color: white;
-}
-
-html.mb.darkmode #article-list #article-list-menu {
-    box-sizing: border-box;
-    width: unset;
-    margin: 8px;
-}
-
-html.mb.darkmode #article-list #boardSearchForm {
-    padding-bottom: 8px;
-    height: unset;
-}
-
-html.mb.darkmode #article-list #article-list-menu > .btn.best {
-    border: 1px solid rgba(0, 0, 0, 0)
-}
-
-@-webkit-keyframes text1 {
-    30% {
-        opacity: 0.5;
-        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 5px 5px var(--colorDm), 0 0 0 5px rgba(255, 255, 255, 0.5);
-    }
-}
-
-@-moz-keyframes text1 {
-    30% {
-        opacity: 0.5;
-        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 5px 5px var(--colorDm), 0 0 0 5px rgba(255, 255, 255, 0.5);
-    }
-}
-
-@keyframes text1 {
-    30% {
-        opacity: 0.5;
-        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 5px 5px var(--colorDm), 0 0 0 5px rgba(255, 255, 255, 0.5);
-    }
-}
-
-html.mb.darkmode small.favo i.fa.fa-heart {
-    animation: heartbeat 1s infinite;
-}
-
-/* 커서 관련 */
-/*html.mb.darkmode html,*/
-/*html.mb.darkmode body,*/
-/*html.mb.darkmode .fr-popup.emoticons,*/
-/*html.mb.darkmode .fr-top,*/
-/*html.mb.darkmode select.form-control,*/
-/*html.mb.darkmode input[type=checkbox],*/
-/*html.mb.darkmode input[type=radio],*/
-/*html.mb.darkmode .opt #right-search-form > #right-search-btn,*/
-/*html.mb.darkmode #board-info #board-info-bottom #addFavoriteBtn,*/
-/*html.mb.darkmode #article-list #article-option-area > #article-option-area-toggle-btn,*/
-/*html.mb.darkmode #article-list > .article-list-row > .item > .list-title > .list-writer > span,*/
-/*html.mb.darkmode .reply > .reply-header > .reply-writer.logged,*/
-/*html.mb.darkmode .reply-menu,*/
-/*html.mb.darkmode .btn,*/
-/*html.mb.darkmode .fr-toolbar .fr-command.fr-btn,*/
-/*html.mb.darkmode .fr-popup .fr-command.fr-btn,*/
-/*html.mb.darkmode .fr-view img,*/
-/*html.mb.darkmode .pull-left,*/
-/*html.mb.darkmode span#viewers,*/
-/*html.mb.darkmode #article-list #boardSearchForm .form-control,*/
-/*html.mb.darkmode .fr-view,*/
-/*html.mb.darkmode .fr-box.fr-basic.fr-element,*/
-/*html.mb.darkmode input[type='text'] {*/
-/*    cursor: var(--cursorImgDm) 0 0, auto !important;*/
-/*}*/
-
-
-html.mb.darkmode #board-info #viewers-area {
-    color: var(--colorDm);
-
-    font-size: 18px;
-}
-
-html.mb.darkmode #board-info #viewers-area #viewers:before {
-    content: var(--preFix);
-    color: var(--colorDm);
-    cursor: text;
-
-    font-size: 18px;
-}
-
-html.mb.darkmode #board-info #viewers-area #viewers:after {
-    content: var(--postFix);
-    color: var(--colorDm);
-    cursor: text;
-    font-weight: normal;
-    font-size: large;
-
-    font-size: 18px;
-}
-
-html.mb.darkmode #board-info-bottom {
-    position: absolute;
-    top: 57px;
-    left: 480px;
-}
-
-html.mb.darkmode #viewers-area > i {
-    padding-left: 3px;
-    padding-top: 1px;
-    color: var(--colorDm);
-}
-
-html.mb.darkmode #board-info h1 {
-    width: calc(100% - 50px);
-    float: left;
-    border: 50px;
-}
-
-html.mb.darkmode #board-info img {
-    float: left !important;
-    border: 2px SOLID var(--colorDm);
-    border-radius: 8px;
-}
-
-html.mb.darkmode #article-list #article-list-menu > .btn.write {
+#article-list #article-list-menu > .btn.write {
     position: absolute;
     right: 0;
     border: solid 1px var(--colorDm);
@@ -547,7 +224,7 @@ html.mb.darkmode #article-list #article-list-menu > .btn.write {
     border-radius: 4px;
 }
 
-html.mb.darkmode #article-list #article-list-menu > .btn.write:hover {
+#article-list #article-list-menu > .btn.write:hover {
     position: absolute;
     right: 0;
     border: solid 1px var(--colorDm);
@@ -555,110 +232,60 @@ html.mb.darkmode #article-list #article-list-menu > .btn.write:hover {
     border-radius: 4px;
 }
 
-html.mb.darkmode .btn-primary {
-    background: transparent;
-    color: var(--colorDm);
+.btn-primary,
+.btn-default,
+.btn-default.best {
+    background: #fff;
     border: 1px solid var(--colorDm);
     border-radius: 4px;
-
+    color: var(--colorDm);
 }
 
-html.mb.darkmode .btn-primary:hover {
-    color: white;
+.btn-primary:hover,
+.btn-default:hover,
+.btn-default.best:hover {
+    color: #fff;
     background-color: var(--colorDm);
     margin-top: 2px;
 }
 
-html.mb.darkmode .btn-primary.focus,
-html.mb.darkmode .btn-primary:focus {
-    color: white;
+.btn-primary.focus,
+.btn-default:focus,
+.btn-default.best:focus {
+    color: #fff;
     background-color: var(--colorDm);
     border-color: var(--colorDm);
 }
 
-html.mb.darkmode .btn {
-    border-radius: 8px;
-}
 
-html.mb.darkmode #boardSearchForm > input.form-control {
-    z-index: 100;
-}
-
-html.mb.darkmode .btn-group-sm > .btn,
-html.mb.darkmode .btn-sm {
-    border-radius: 8px;
-}
-
-html.mb.darkmode .btn-outline-success {
+#article-list #article-list-menu > .btn.best {
     color: var(--colorDm);
     border-color: var(--colorDm);
-}
-
-
-html.mb.darkmode #article-list #article-list-menu > .btn.best {
     border-radius: 4px;
     border-bottom: solid 3px var(--colorDm);
-    border-color: var(--colorDm);
-    color: var(--colorDm);
 }
 
-html.mb.darkmode #article-list #article-list-menu > .btn.best:hover {
+#article-list #article-list-menu > .btn.best:hover {
     border-radius: 4px;
+    background-color: var(--colorDm);
+    color: #fff;
     margin-top: 2px;
     border-bottom: solid 1px var(--colorDm);
-    background-color: var(--colorDm);
-    border-color: var(--colorDm);
-    color: white;
 }
 
-html.mb.darkmode #article-list #article-list-menu > .btn.cog {
+
+#article-list #article-list-menu > .btn.cog {
+    border-color: var(--colorDm);
     border-radius: 4px;
     border-bottom: solid 3px var(--colorDm);
-    border-color: var(--colorDm);
-    color: var(--colorDm);
 }
 
-html.mb.darkmode #article-list #article-list-menu > .btn.cog:hover {
+#article-list #article-list-menu > .btn.cog:hover {
     border-radius: 4px;
+    background-color: var(--colorDm);
+    color: #fff;
     margin-top: 2px;
     border-bottom: solid 1px var(--colorDm);
-    background-color: var(--colorDm);
-    border-color: var(--colorDm);
-    color: white;
-}
-
-html.mb.darkmode #article-list #article-list-menu > .btn.del {
-    border-radius: 4px;
-    border-bottom: solid 3px var(--colorDm);
-    background-color: transparent;
-    border-color: var(--colorDm);
-    color: var(--colorDm);
-}
-
-html.mb.darkmode #article-list #article-list-menu > .btn.del:hover {
-    border-radius: 4px;
-    margin-top: 2px;
-    border-bottom: solid 1px var(--colorDm);
-    background-color: var(--colorDm);
-    border-color: var(--colorDm);
-    color: white;
-}
-
-html.mb.darkmode #movetotop img {
-    display: none
-}
-
-html.mb.darkmode #movetotop {
-    display: inline-block;
-    opacity: 1;
-    background: var(--moveToTopImg);
-    width: 50px;
-    height: 50px;
-    background-size: contain;
-}
-
-html.mb.darkmode #board-info #board-info-bottom a {
-    color: var(--colorDm);
 }
 
 #score-area {
@@ -666,94 +293,25 @@ html.mb.darkmode #board-info #board-info-bottom a {
     visibility: hidden;
 }
 
-html.mb.darkmode #board-info h1 > a:not(.badge-live) {
-    padding-left: 55px;
-    font-size: 24px !important;
-    color: white;
-}
-
-html.mb.darkmode .fa-square:before {
+#tgd-home-nav > i {
     color: var(--colorDm);
 }
 
-@keyframes h1updown {
-    0% {
-        transform: translateY(0%);
-    }
-
-    50% {
-        transform: translateY(6%);
-    }
-
-    100% {
-        transform: translateY(0%);
-    }
-}
-
-html.mb.darkmode #article-list > .article-list-row > .item > .list-title > a:visited {
-    color: #666666 !important;
-}
-
-
-html.mb.darkmode .pagination > .active > a,
-html.mb.darkmode .pagination > .active > a:focus,
-html.mb.darkmode .pagination > .active > a:hover,
-html.mb.darkmode .pagination > .active > span,
-html.mb.darkmode .pagination > .active > span:focus,
-html.mb.darkmode .pagination > .active > span:hover {
-    background-color: var(--colorDm);
-    border-color: var(--colorDm);
-}
-
-html.mb.darkmode a,
-html.mb.darkmode a:hover,
-html.mb.darkmode a:focus {
-    color: var(--colorDm);
-}
-
-html.mb.darkmode header #right-search-form > input[type='text'] {
-    background: var(--bgcolorDm2);
-    color: white;
-    margin-top: 0;
-    border: 3px SOLID var(--colorDm);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-radius: 10px;
-}
-
-html.mb.darkmode header #right-search-form > input[type=text]:hover,
-html.mb.darkmode header #right-search-form > input[type=text]:focus {
-    background: var(--bgcolorDm2);
-    color: white;
-    border-color: #c7b0ab;
-}
-
-html.mb.darkmode #article-list > .article-list-row > .item > .list-title > .list-writer.logged > span {
-    color: #83686c;
-}
-
-html.mb.darkmode .form-control {
-    border: 1px solid var(--colorDm);
-}
-
-html.mb.darkmode .btn.square {
-    border: 1px solid var(--colorDm);
-}
-
-html.mb.darkmode header #tgd-home-nav {
-    color: var(--colorDm);
-}
-
-html.mb.darkmode #boardSearchForm > span:nth-child(2) > button {
+#boardSearchForm > span:nth-child(2) > button {
     border-radius: 8px 0px 0px 8px !important;
 }
 
-html.mb.darkmode #boardSearchForm > span:nth-child(3) > button {
+#boardSearchForm > span:nth-child(3) > button {
     border-radius: 8px 0px 0px 8px !important;
 }
 
-html.mb.darkmode #boardSearchForm > span:nth-child(4) > button {
+#boardSearchForm > span:nth-child(5) > button {
     border-radius: 0px 8px 8px 0px !important;
+}
+
+#nav > hr,
+#nav > div.nav-menu-area > div.right > a:hover,
+#nav > div.nav-menu-area > div.left > a:hover,
+#nav > div.nav-menu-area > div.right > a:hover {
+    color: var(--colorDm);
 }
