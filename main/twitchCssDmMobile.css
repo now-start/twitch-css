@@ -156,7 +156,7 @@ html.mb.darkmode a:focus {
 }
 
 html.mb.darkmode #article-list > .article-list-row {
-    border: 2px solid var(--colorDm);
+    border: 2px solid var(--colorDm) !important;
     background: var(--bgcolorDm2) !important;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
