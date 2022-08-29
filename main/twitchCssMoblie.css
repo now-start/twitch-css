@@ -299,6 +299,11 @@ a:focus {
     border-bottom: solid 1px var(--color);
 }
 
+#article-option-area-toggle-btn {
+    width: 0px;
+    visibility: hidden;
+}
+
 #score-area {
     width: 0px;
     visibility: hidden;
