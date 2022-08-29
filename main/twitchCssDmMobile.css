@@ -30,15 +30,15 @@ html.mb.darkmode nav#nav {
 
 html.mb.darkmode nav#nav > .nav-header {
     background: var(--colorDm);
-    color: #666666;
+    color: #ffffff;
 }
 
 html.mb.darkmode .dropdown.open .dropdown-menu,
 html.mb.darkmode .input-group-btn.open .dropdown-menu {
     opacity: unset;
     transform: unset;
-    border: 2px solid #666666;
-    box-shadow: 0 0 0 2px #666666, 0 0 0 4px var(--colorDm), 0 0 0 7px #666666;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 0 2px #444444, 0 0 0 4px var(--colorDm), 0 0 0 7px #444444;
     border-radius: 6px;
     border-top: 2px solid var(--colorDm) !important;
     border: 2px solid var(--colorDm);
@@ -137,7 +137,7 @@ html.mb.darkmode #article-list #article-list-category {
     margin-top: 10px;
     margin-bottom: 10px;
     box-shadow: 0 0 0 2px var(--colorDm),
-    0 0 0 3px #666666,
+    0 0 0 3px #444444,
     0 0 0 4px var(--colorDm);
 }
 
@@ -146,8 +146,7 @@ html.mb.darkmode #article-list #article-list-category > a {
 }
 
 html.mb.darkmode #article-list > .article-list-row > .item > a.list-title > .list-writer.logged > span {
-    color: #e39284;
-    font-weight: bold;
+    color: #83686c;
 }
 
 html.mb.darkmode a,
@@ -209,10 +208,9 @@ html.mb.darkmode .pagination > li > a:focus,
 html.mb.darkmode .pagination > li > a:hover,
 html.mb.darkmode .pagination > li > span:focus,
 html.mb.darkmode .pagination > li > span:hover {
-    color: #666666;
+    color: #ffffff;
     background: var(--colorDm);
     border: 1px solid var(--colorDm);
-    font-weight: bold;
     margin-top: 2px;
 }
 
@@ -235,7 +233,7 @@ html.mb.darkmode #article-list #article-list-menu > .btn.write:hover {
 html.mb.darkmode .btn-primary,
 html.mb.darkmode .btn-default,
 html.mb.darkmode .btn-default.best {
-    background: #666666;
+    background: #ffffff;
     border: 1px solid var(--colorDm);
     border-radius: 4px;
     color: var(--colorDm);
@@ -244,7 +242,7 @@ html.mb.darkmode .btn-default.best {
 html.mb.darkmode .btn-primary:hover,
 html.mb.darkmode .btn-default:hover,
 html.mb.darkmode .btn-default.best:hover {
-    color: #666666;
+    color: #ffffff;
     background-color: var(--colorDm);
     margin-top: 2px;
 }
@@ -252,7 +250,7 @@ html.mb.darkmode .btn-default.best:hover {
 html.mb.darkmode .btn-primary.focus,
 html.mb.darkmode .btn-default:focus,
 html.mb.darkmode .btn-default.best:focus {
-    color: #666666;
+    color: #ffffff;
     background-color: var(--colorDm);
     border-color: var(--colorDm);
 }
@@ -268,7 +266,7 @@ html.mb.darkmode #article-list #article-list-menu > .btn.best {
 html.mb.darkmode #article-list #article-list-menu > .btn.best:hover {
     border-radius: 4px;
     background-color: var(--colorDm);
-    color: #666666;
+    color: #ffffff;
     margin-top: 2px;
     border-bottom: solid 1px var(--colorDm);
 }
@@ -283,7 +281,7 @@ html.mb.darkmode #article-list #article-list-menu > .btn.cog {
 html.mb.darkmode #article-list #article-list-menu > .btn.cog:hover {
     border-radius: 4px;
     background-color: var(--colorDm);
-    color: #666666;
+    color: #ffffff;
     margin-top: 2px;
     border-bottom: solid 1px var(--colorDm);
 }
@@ -319,4 +317,8 @@ html.mb.darkmode #nav > div.nav-menu-area > div.right > a:hover,
 html.mb.darkmode #nav > div.nav-menu-area > div.left > a:hover,
 html.mb.darkmode #nav > div.nav-menu-area > div.right > a:hover {
     color: var(--colorDm);
+}
+
+html.mb.darkmode #article-list > .article-list-row > .item > .list-title > a:visited {
+    color: #666666 !important;
 }
