@@ -405,8 +405,10 @@ header #header-bar #header-top-notice strong.notice-badge {
     border-top: 2px solid var(--color);
 }
 
-#article-reply-area #reply-real-area .reply>.reply-header>.reply-writer.logged,
-#article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged {
+#article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged,
+#article-reply-area #reply-best-area .reply > .reply-header > .reply-writer.logged,
+#article-reply-area #reply-real-area .reply > .reply-header > .reply-menu,
+#article-reply-area #reply-best-area .reply > .reply-header > .reply-menu {
     color: var(--color);
 }
 

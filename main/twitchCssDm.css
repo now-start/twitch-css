@@ -392,9 +392,11 @@ html.darkmode #article-content-wrapper>.header {
     border-top: 2px solid var(--colorDm);
 }
 
-html.darkmode #article-reply-area #reply-real-area .reply>.reply-header>.reply-writer.logged,
-html.darkmode #article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged {
-    color: var(--colorDm);
+html.darkmode #article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged,
+html.darkmode #article-reply-area #reply-best-area .reply > .reply-header > .reply-writer.logged,
+html.darkmode #article-reply-area #reply-real-area .reply > .reply-header > .reply-menu > a,
+html.darkmode #article-reply-area #reply-best-area .reply > .reply-header > .reply-menu > a {
+    color: var(--colorDm) !important;
 }
 
 html.darkmode #article-info>h2 {
