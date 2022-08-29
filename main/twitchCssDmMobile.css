@@ -25,7 +25,7 @@ html.mb.darkmode header > #header-area > #header-bar-link {
 }
 
 html.mb.darkmode nav#nav {
-    background: var(--bgcolorDm);
+    background: var(--bgcolorDm2);
 }
 
 html.mb.darkmode nav#nav > .nav-header {
@@ -85,13 +85,14 @@ html.mb.darkmode .dropdown-menu .divider {
 }
 
 html.mb.darkmode header > #header-area > a > h1 {
+    margin-left: 70px;
     background: var(--headerImgDm) no-repeat;
     background-size: auto 32px;
     width: 128px;
 }
 
 html.mb.darkmode header {
-    border-bottom: 3px solid var(--colorDm);
+    border-bottom: 3px solid var(--colorDm) !important;
     background: var(--bgcolorDm);
 }
 
@@ -200,6 +201,7 @@ html.mb.darkmode .pagination > .active > a:hover,
 html.mb.darkmode .pagination > .active > span,
 html.mb.darkmode .pagination > .active > span:focus,
 html.mb.darkmode .pagination > .active > span:hover {
+    color: #ffffff;
     background: var(--colorDm);
     margin-top: 2px;
 }
@@ -230,26 +232,20 @@ html.mb.darkmode #article-list #article-list-menu > .btn.write:hover {
     border-radius: 4px;
 }
 
-html.mb.darkmode .btn-primary,
-html.mb.darkmode .btn-default,
-html.mb.darkmode .btn-default.best {
-    background: #ffffff;
+html.mb.darkmode .btn-primary {
+    background-color: #444444;
     border: 1px solid var(--colorDm);
     border-radius: 4px;
     color: var(--colorDm);
 }
 
-html.mb.darkmode .btn-primary:hover,
-html.mb.darkmode .btn-default:hover,
-html.mb.darkmode .btn-default.best:hover {
+html.mb.darkmode .btn-primary:hover {
     color: #ffffff;
     background-color: var(--colorDm);
     margin-top: 2px;
 }
 
-html.mb.darkmode .btn-primary.focus,
-html.mb.darkmode .btn-default:focus,
-html.mb.darkmode .btn-default.best:focus {
+html.mb.darkmode .btn-primary.focus {
     color: #ffffff;
     background-color: var(--colorDm);
     border-color: var(--colorDm);
@@ -257,6 +253,7 @@ html.mb.darkmode .btn-default.best:focus {
 
 
 html.mb.darkmode #article-list #article-list-menu > .btn.best {
+    background-color: #444444;
     color: var(--colorDm);
     border-color: var(--colorDm);
     border-radius: 4px;
@@ -273,6 +270,7 @@ html.mb.darkmode #article-list #article-list-menu > .btn.best:hover {
 
 
 html.mb.darkmode #article-list #article-list-menu > .btn.cog {
+    background-color: #444444;
     border-color: var(--colorDm);
     border-radius: 4px;
     border-bottom: solid 3px var(--colorDm);
@@ -298,18 +296,6 @@ html.mb.darkmode #score-area {
 
 html.mb.darkmode #tgd-home-nav > i {
     color: var(--colorDm);
-}
-
-html.mb.darkmode #boardSearchForm > span:nth-child(2) > button {
-    border-radius: 8px 0px 0px 8px !important;
-}
-
-html.mb.darkmode #boardSearchForm > span:nth-child(3) > button {
-    border-radius: 8px 0px 0px 8px !important;
-}
-
-html.mb.darkmode #boardSearchForm > span:nth-child(5) > button {
-    border-radius: 0px 8px 8px 0px !important;
 }
 
 html.mb.darkmode #nav > hr,

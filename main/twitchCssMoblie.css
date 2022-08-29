@@ -96,6 +96,7 @@ nav#nav > .nav-header {
 }
 
 header > #header-area > a > h1 {
+    margin-left: 70px;
     background: var(--headerImg) no-repeat;
     background-size: auto 32px;
     width: 128px;
@@ -241,26 +242,20 @@ a:focus {
     border-radius: 4px;
 }
 
-.btn-primary,
-.btn-default,
-.btn-default.best {
+.btn-primary {
     background: #fff;
     border: 1px solid var(--color);
     border-radius: 4px;
     color: var(--color);
 }
 
-.btn-primary:hover,
-.btn-default:hover,
-.btn-default.best:hover {
+.btn-primary:hover {
     color: #fff;
     background-color: var(--color);
     margin-top: 2px;
 }
 
-.btn-primary.focus,
-.btn-default:focus,
-.btn-default.best:focus {
+.btn-primary.focus {
     color: #fff;
     background-color: var(--color);
     border-color: var(--color);
@@ -309,18 +304,6 @@ a:focus {
 
 #tgd-home-nav > i {
     color: var(--color);
-}
-
-#boardSearchForm > span:nth-child(2) > button {
-    border-radius: 8px 0px 0px 8px !important;
-}
-
-#boardSearchForm > span:nth-child(3) > button {
-    border-radius: 8px 0px 0px 8px !important;
-}
-
-#boardSearchForm > span:nth-child(5) > button {
-    border-radius: 0px 8px 8px 0px !important;
 }
 
 #nav > hr,
