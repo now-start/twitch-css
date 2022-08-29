@@ -316,6 +316,10 @@ a:focus {
     color: #666666 !important;
 }
 
+#movetotop img {
+    display: none
+}
+
 #movetotop {
     display: inline-block;
     opacity: 1;

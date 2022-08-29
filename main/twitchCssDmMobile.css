@@ -312,6 +312,10 @@ html.mb.darkmode #article-list > .article-list-row > .item > .list-title > a:vis
     color: #666666 !important;
 }
 
+html.mb.darkmode #movetotop img {
+    display: none
+}
+
 html.mb.darkmode #movetotop {
     display: inline-block;
     opacity: 1;
