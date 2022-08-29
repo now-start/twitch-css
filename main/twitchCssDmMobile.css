@@ -15,26 +15,26 @@
     font-style: normal;
 }
 
-body {
+html.darkmode body {
     font-family: 'Katuri', fantasy;
 }
 
-header > #header-area > #header-bar-link {
+html.darkmode header > #header-area > #header-bar-link {
     color: var(--colorDm);
     top: 10px;
 }
 
-nav#nav {
+html.darkmode nav#nav {
     background: var(--bgcolorDm);
 }
 
-nav#nav > .nav-header {
+html.darkmode nav#nav > .nav-header {
     background: var(--colorDm);
     color: #fff;
 }
 
-.dropdown.open .dropdown-menu,
-.input-group-btn.open .dropdown-menu {
+html.darkmode .dropdown.open .dropdown-menu,
+html.darkmode .input-group-btn.open .dropdown-menu {
     opacity: unset;
     transform: unset;
     border: 2px solid #ffffff;
@@ -44,8 +44,8 @@ nav#nav > .nav-header {
     border: 2px solid var(--colorDm);
 }
 
-.dropdown .dropdown-menu,
-.input-group-btn .dropdown-menu {
+html.darkmode .dropdown .dropdown-menu,
+html.darkmode .input-group-btn .dropdown-menu {
     display: block !important;
     opacity: 0;
     transform: scale(0);
@@ -54,79 +54,79 @@ nav#nav > .nav-header {
     padding: 8px 0 3px 0px;
 }
 
-.dropdown-menu > li > a {
+html.darkmode .dropdown-menu > li > a {
     transition: 0.1s;
 }
 
-.dropdown-menu > li > a:hover {
+html.darkmode .dropdown-menu > li > a:hover {
     background: transparent;
     transform: scaleX(1.04);
     transition: 0.1s;
 }
 
-#latestDropdownMenu > li > a > span.delrow,
-#favoriteDropdownMenu > li > a > span.delrow {
+html.darkmode #latestDropdownMenu > li > a > span.delrow,
+html.darkmode #favoriteDropdownMenu > li > a > span.delrow {
     color: var(--colorDm);
 }
 
-#latestDropdownMenu > li > a > span.delrow:hover,
-#favoriteDropdownMenu > li > a > span.delrow:hover {
+html.darkmode #latestDropdownMenu > li > a > span.delrow:hover,
+html.darkmode #favoriteDropdownMenu > li > a > span.delrow:hover {
     background: transparent;
 }
 
-#favoriteDropdownMenu > li > a > span.label.label-default {
+html.darkmode #favoriteDropdownMenu > li > a > span.label.label-default {
     background-color: var(--colorDm);
 }
 
-.dropdown-menu .divider {
+html.darkmode .dropdown-menu .divider {
     background-color: var(--colorDm);
     height: 2px;
     margin: 3px 0;
 }
 
-header > #header-area > a > h1 {
+html.darkmode header > #header-area > a > h1 {
     background: var(--headerImgDm) no-repeat;
     background-size: auto 32px;
     width: 128px;
 }
 
-header {
+html.darkmode header {
     border-bottom: 3px solid var(--colorDm);
     background: var(--bgcolorDm);
 }
 
-header > #header-search-bar #header-search-input {
+html.darkmode header > #header-search-bar #header-search-input {
     border: 2px solid var(--colorDm);
     border-radius: 15px;
 }
 
-header > #header-area > #header-search-link {
+html.darkmode header > #header-area > #header-search-link {
     color: var(--colorDm);
 }
 
-header > #header-search-bar #header-search-btn {
+html.darkmode header > #header-search-bar #header-search-btn {
     color: var(--colorDm);
 }
 
-#header-top-notice strong.notice-badge {
+html.darkmode #header-top-notice strong.notice-badge {
     background: var(--colorDm);
 }
 
-#board-info #viewers-area {
+html.darkmode #board-info #viewers-area {
     color: var(--colorDm);
 }
 
-#board-info #viewers-area #viewers:before {
+html.darkmode #board-info #viewers-area #viewers:before {
     content: var(--preFix);
     cursor: text;
 }
 
-#board-info #viewers-area #viewers:after {
+html.darkmode #board-info #viewers-area #viewers:after {
     content: var(--postFix);
     cursor: text;
 }
 
-#article-list #article-list-category {
+html.darkmode #article-list #article-list-category {
     border-top: 1px var(--colorDm);
     border-bottom: 1px var(--colorDm);
     background-color: var(--bgcolorDm2);
@@ -141,22 +141,22 @@ header > #header-search-bar #header-search-btn {
     0 0 0 4px var(--colorDm);
 }
 
-#article-list #article-list-category > a {
+html.darkmode #article-list #article-list-category > a {
     background-color: var(--bgcolorDm2);
 }
 
-#article-list > .article-list-row > .item > a.list-title > .list-writer.logged > span {
+html.darkmode #article-list > .article-list-row > .item > a.list-title > .list-writer.logged > span {
     color: #e39284;
     font-weight: bold;
 }
 
-a,
-a:hover,
-a:focus {
+html.darkmode a,
+html.darkmode a:hover,
+html.darkmode a:focus {
     color: var(--colorDm);
 }
 
-#article-list > .article-list-row {
+html.darkmode #article-list > .article-list-row {
     border: 2px solid var(--colorDm);
     background: var(--bgcolorDm2);
     border-top-left-radius: 6px;
@@ -166,49 +166,49 @@ a:focus {
     margin-bottom: 0.5em;
 }
 
-#article-list > .article-list-row.notice {
+html.darkmode #article-list > .article-list-row.notice {
     background-color: var(--bgcolorDm);
 }
 
-#article-list > .article-list-row > .item > .list-header > span {
+html.darkmode #article-list > .article-list-row > .item > .list-header > span {
     background-color: var(--colorDm);
 }
 
-#article-list > .article-list-row > .item > a.list-title > small.comment-count {
+html.darkmode #article-list > .article-list-row > .item > a.list-title > small.comment-count {
     color: var(--colorDm);
 }
 
-.btn-outline-success {
+html.darkmode .btn-outline-success {
     color: var(--colorDm);
     border-color: var(--colorDm);
 }
 
-.pagination > .active > a,
-.pagination > .active > a:focus,
-.pagination > .active > a:hover {
+html.darkmode .pagination > .active > a,
+html.darkmode .pagination > .active > a:focus,
+html.darkmode .pagination > .active > a:hover {
     border: 1px solid var(--colorDm);
 }
 
-.pagination > li > a, .pagination > li > span {
+html.darkmode .pagination > li > a, .pagination > li > span {
     color: var(--colorDm);
     border: 1px solid var(--colorDm);
     border-bottom: 3px solid var(--colorDm);
 }
 
-.pagination > .active > a,
-.pagination > .active > a:focus,
-.pagination > .active > a:hover,
-.pagination > .active > span,
-.pagination > .active > span:focus,
-.pagination > .active > span:hover {
+html.darkmode .pagination > .active > a,
+html.darkmode .pagination > .active > a:focus,
+html.darkmode .pagination > .active > a:hover,
+html.darkmode .pagination > .active > span,
+html.darkmode .pagination > .active > span:focus,
+html.darkmode .pagination > .active > span:hover {
     background: var(--colorDm);
     margin-top: 2px;
 }
 
-.pagination > li > a:focus,
-.pagination > li > a:hover,
-.pagination > li > span:focus,
-.pagination > li > span:hover {
+html.darkmode .pagination > li > a:focus,
+html.darkmode .pagination > li > a:hover,
+html.darkmode .pagination > li > span:focus,
+html.darkmode .pagination > li > span:hover {
     color: #fff;
     background: var(--colorDm);
     border: 1px solid var(--colorDm);
@@ -216,7 +216,7 @@ a:focus {
     margin-top: 2px;
 }
 
-#article-list #article-list-menu > .btn.write {
+html.darkmode #article-list #article-list-menu > .btn.write {
     position: absolute;
     right: 0;
     border: solid 1px var(--colorDm);
@@ -224,7 +224,7 @@ a:focus {
     border-radius: 4px;
 }
 
-#article-list #article-list-menu > .btn.write:hover {
+html.darkmode #article-list #article-list-menu > .btn.write:hover {
     position: absolute;
     right: 0;
     border: solid 1px var(--colorDm);
@@ -232,40 +232,40 @@ a:focus {
     border-radius: 4px;
 }
 
-.btn-primary,
-.btn-default,
-.btn-default.best {
+html.darkmode .btn-primary,
+html.darkmode .btn-default,
+html.darkmode .btn-default.best {
     background: #fff;
     border: 1px solid var(--colorDm);
     border-radius: 4px;
     color: var(--colorDm);
 }
 
-.btn-primary:hover,
-.btn-default:hover,
-.btn-default.best:hover {
+html.darkmode .btn-primary:hover,
+html.darkmode .btn-default:hover,
+html.darkmode .btn-default.best:hover {
     color: #fff;
     background-color: var(--colorDm);
     margin-top: 2px;
 }
 
-.btn-primary.focus,
-.btn-default:focus,
-.btn-default.best:focus {
+html.darkmode .btn-primary.focus,
+html.darkmode .btn-default:focus,
+html.darkmode .btn-default.best:focus {
     color: #fff;
     background-color: var(--colorDm);
     border-color: var(--colorDm);
 }
 
 
-#article-list #article-list-menu > .btn.best {
+html.darkmode #article-list #article-list-menu > .btn.best {
     color: var(--colorDm);
     border-color: var(--colorDm);
     border-radius: 4px;
     border-bottom: solid 3px var(--colorDm);
 }
 
-#article-list #article-list-menu > .btn.best:hover {
+html.darkmode #article-list #article-list-menu > .btn.best:hover {
     border-radius: 4px;
     background-color: var(--colorDm);
     color: #fff;
@@ -274,13 +274,13 @@ a:focus {
 }
 
 
-#article-list #article-list-menu > .btn.cog {
+html.darkmode #article-list #article-list-menu > .btn.cog {
     border-color: var(--colorDm);
     border-radius: 4px;
     border-bottom: solid 3px var(--colorDm);
 }
 
-#article-list #article-list-menu > .btn.cog:hover {
+html.darkmode #article-list #article-list-menu > .btn.cog:hover {
     border-radius: 4px;
     background-color: var(--colorDm);
     color: #fff;
@@ -288,30 +288,30 @@ a:focus {
     border-bottom: solid 1px var(--colorDm);
 }
 
-#score-area {
+html.darkmode #score-area {
     width: 0px;
     visibility: hidden;
 }
 
-#tgd-home-nav > i {
+html.darkmode #tgd-home-nav > i {
     color: var(--colorDm);
 }
 
-#boardSearchForm > span:nth-child(2) > button {
+html.darkmode #boardSearchForm > span:nth-child(2) > button {
     border-radius: 8px 0px 0px 8px !important;
 }
 
-#boardSearchForm > span:nth-child(3) > button {
+html.darkmode #boardSearchForm > span:nth-child(3) > button {
     border-radius: 8px 0px 0px 8px !important;
 }
 
-#boardSearchForm > span:nth-child(5) > button {
+html.darkmode #boardSearchForm > span:nth-child(5) > button {
     border-radius: 0px 8px 8px 0px !important;
 }
 
-#nav > hr,
-#nav > div.nav-menu-area > div.right > a:hover,
-#nav > div.nav-menu-area > div.left > a:hover,
-#nav > div.nav-menu-area > div.right > a:hover {
+html.darkmode #nav > hr,
+html.darkmode #nav > div.nav-menu-area > div.right > a:hover,
+html.darkmode #nav > div.nav-menu-area > div.left > a:hover,
+html.darkmode #nav > div.nav-menu-area > div.right > a:hover {
     color: var(--colorDm);
 }
