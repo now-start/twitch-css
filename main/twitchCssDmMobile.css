@@ -167,7 +167,7 @@ html.mb.darkmode #article-list > .article-list-row {
 }
 
 html.mb.darkmode #article-list > .article-list-row.notice {
-    background-color: var(--bgcolorDm);
+    background-color: var(--bgcolorDm) !important;
 }
 
 html.mb.darkmode #article-list > .article-list-row > .item > .list-header > span {

@@ -340,17 +340,22 @@ html.darkmode #article-list > .article-list-row > .item > .list-header > span {
     background-color: var(--colorDm);
 }
 
-html.darkmode #article-list>.article-list-row>.item>.list-header.v0>span{
+html.darkmode #article-list > .article-list-row > .item > .list-header.v0 > span {
     color: var(--bgcolorDm2);
     background: var(--bgcolorDm2);
 }
 
-html.darkmode #article-list>.article-list-row>.item>.list-header.v1>strong,
-html.darkmode #article-list>.article-list-row>.item>.list-header.v0>strong{
+html.darkmode #article-list > .article-list-row:hover > .item > .list-header.v0 > span {
+    color: transparent;
+    background: transparent;
+}
+
+html.darkmode #article-list > .article-list-row > .item > .list-header.v1 > strong,
+html.darkmode #article-list > .article-list-row > .item > .list-header.v0 > strong {
     color: var(--colorDm);
 }
 
-html.darkmode #article-list>.article-list-row>.item>.list-title>small.comment-count {
+html.darkmode #article-list > .article-list-row > .item > .list-title > small.comment-count {
     color: var(--colorDm);
 }
 
