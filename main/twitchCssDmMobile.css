@@ -92,7 +92,7 @@ html.mb.darkmode header > #header-area > a > h1 {
 
 html.mb.darkmode header {
     border-bottom: 3px solid var(--colorDm) !important;
-    background: var(--bgcolorDm);
+    background: var(--bgcolorDm2) !important;
 }
 
 html.mb.darkmode header > #header-search-bar #header-search-input {
