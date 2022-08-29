@@ -182,6 +182,10 @@ html.mb.darkmode .btn-outline-success {
     border-color: var(--colorDm);
 }
 
+#article-list-category > a.nav-link.active {
+    background: #444444 !important;
+}
+
 html.mb.darkmode .pagination > .active > a,
 html.mb.darkmode .pagination > .active > a:focus,
 html.mb.darkmode .pagination > .active > a:hover {
@@ -304,7 +308,7 @@ html.mb.darkmode #nav > div.nav-menu-area > div.right > a:hover {
     color: var(--colorDm);
 }
 
-html.mb.darkmode #article-list > .article-list-row > .item > .list-title > a:visited {
+html.mb.darkmode #article-list > .article-list-row > .item > .list-title > a:visited > .title-value {
     color: #666666 !important;
 }
 
