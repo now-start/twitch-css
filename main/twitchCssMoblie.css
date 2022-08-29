@@ -278,6 +278,7 @@ a:focus {
 
 
 #article-list #article-list-menu > .btn.cog {
+    color: var(--color);
     border-color: var(--color);
     border-radius: 4px;
     border-bottom: solid 3px var(--color);
