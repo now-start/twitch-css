@@ -395,7 +395,9 @@ html.darkmode #article-content-wrapper>.header {
 html.darkmode #article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged,
 html.darkmode #article-reply-area #reply-best-area .reply > .reply-header > .reply-writer.logged,
 html.darkmode #article-reply-area #reply-real-area .reply > .reply-header > .reply-menu > a,
-html.darkmode #article-reply-area #reply-best-area .reply > .reply-header > .reply-menu > a {
+html.darkmode #article-reply-area #reply-best-area .reply > .reply-header > .reply-menu > a,
+html.darkmode #article-reply-area #reply-real-area .reply > .reply-header > .reply-menu > span,
+html.darkmode #article-reply-area #reply-best-area .reply > .reply-header > .reply-menu > span {
     color: var(--colorDm) !important;
 }
 
