@@ -1,0 +1,328 @@
+:root {
+    /* 트게더 문구 */
+    --headerImg: url(https://now-start.github.io/twitchCss/resource/headerImg.png);
+    /* 위로가기 이미지 */
+    --moveToTopImg: url(https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_a12b4ac60dd5429d9de14ff831e9d981/default/light/1.0);
+    /* 프로필 이미지 */
+    --profileImg: url(https://now-start.github.io/twitchCss/resource/profileImg.png);
+    /* 커서 이미지 */
+    --cursorImg: url(https://now-start.github.io/twitchCss/resource/cusorImg.png);
+    /* 접속자 수 앞 문구 */
+    --preFix: "오짱단 ";
+    /* 접속자 수 뒤 문구 */
+    --postFix: "명이 치바즈보를 외치는 중";
+    /* 색상 (줄) */
+    --color: #ffa6b2;
+    /* 색상 (노티 배경) */
+    --bgcolor: #ffebb1;
+    /* 색상 (게시판 배경)*/
+    --bgcolor2: #fff6d9;
+}
+
+@font-face {
+    font-family: 'Katuri';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/Katuri.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Katuri', fantasy;
+}
+
+header > #header-area > #header-bar-link {
+    color: var(--color);
+    top: 10px;
+}
+
+nav#nav {
+    background: var(--bgcolor);
+}
+
+nav#nav > .nav-header {
+    background: var(--color);
+    color: #fff;
+}
+
+.dropdown.open .dropdown-menu,
+.input-group-btn.open .dropdown-menu {
+    opacity: unset;
+    transform: unset;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--color), 0 0 0 7px #fff;
+    border-radius: 6px;
+    border-top: 2px solid var(--color) !important;
+    border: 2px solid var(--color);
+}
+
+.dropdown .dropdown-menu,
+.input-group-btn .dropdown-menu {
+    display: block !important;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: top;
+    transition: all 0.4s cubic-bezier(0.18, 1.5, 0, 1);
+    padding: 8px 0 3px 0px;
+}
+
+.dropdown-menu > li > a {
+    transition: 0.1s;
+}
+
+.dropdown-menu > li > a:hover {
+    background: transparent;
+    transform: scaleX(1.04);
+    transition: 0.1s;
+}
+
+#latestDropdownMenu > li > a > span.delrow,
+#favoriteDropdownMenu > li > a > span.delrow {
+    color: var(--color);
+}
+
+#latestDropdownMenu > li > a > span.delrow:hover,
+#favoriteDropdownMenu > li > a > span.delrow:hover {
+    background: transparent;
+}
+
+#favoriteDropdownMenu > li > a > span.label.label-default {
+    background-color: var(--color);
+}
+
+.dropdown-menu .divider {
+    background-color: var(--color);
+    height: 2px;
+    margin: 3px 0;
+}
+
+header > #header-area > a > h1 {
+    background: var(--headerImg) no-repeat;
+    background-size: auto 32px;
+    width: 128px;
+}
+
+header {
+    border-bottom: 3px solid var(--color);
+    background: var(--bgcolor);
+}
+
+header > #header-search-bar #header-search-input {
+    border: 2px solid var(--color);
+    border-radius: 15px;
+}
+
+header > #header-area > #header-search-link {
+    color: var(--color);
+}
+
+header > #header-search-bar #header-search-btn {
+    color: var(--color);
+}
+
+#header-top-notice strong.notice-badge {
+    background: var(--color);
+}
+
+#board-info #viewers-area {
+    color: var(--color);
+}
+
+#board-info #viewers-area #viewers:before {
+    content: var(--preFix);
+    cursor: text;
+}
+
+#board-info #viewers-area #viewers:after {
+    content: var(--postFix);
+    cursor: text;
+}
+
+#article-list #article-list-category {
+    border-top: 1px var(--color);
+    border-bottom: 1px var(--color);
+    background-color: var(--bgcolor2);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 0 2px var(--color),
+    0 0 0 3px #fff,
+    0 0 0 4px var(--color);
+}
+
+#article-list #article-list-category > a {
+    background-color: var(--bgcolor2);
+}
+
+#article-list > .article-list-row > .item > a.list-title > .list-writer.logged > span {
+    color: #e39284;
+    font-weight: bold;
+}
+
+a,
+a:hover,
+a:focus {
+    color: var(--color);
+}
+
+#article-list > .article-list-row {
+    border: 2px solid var(--color);
+    background: var(--bgcolor2);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    margin-bottom: 0.5em;
+}
+
+#article-list > .article-list-row.notice {
+    background-color: var(--bgcolor);
+}
+
+#article-list > .article-list-row > .item > .list-header > span {
+    background-color: var(--color);
+}
+
+#article-list > .article-list-row > .item > a.list-title > small.comment-count {
+    color: var(--color);
+}
+
+.btn-outline-success {
+    color: var(--color);
+    border-color: var(--color);
+}
+
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover {
+    border: 1px solid var(--color);
+}
+
+.pagination > li > a, .pagination > li > span {
+    color: var(--color);
+    border: 1px solid var(--color);
+    border-bottom: 3px solid var(--color);
+}
+
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+    background: var(--color);
+    margin-top: 2px;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+    color: #fff;
+    background: var(--color);
+    border: 1px solid var(--color);
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+#article-list #article-list-menu > .btn.write {
+    position: absolute;
+    right: 0;
+    border: solid 1px var(--color);
+    border-bottom: solid 3px var(--color);
+    border-radius: 4px;
+}
+
+#article-list #article-list-menu > .btn.write:hover {
+    position: absolute;
+    right: 0;
+    border: solid 1px var(--color);
+    border-bottom: solid 1px var(--color);
+    border-radius: 4px;
+}
+
+.btn-primary,
+.btn-default,
+.btn-default.best {
+    background: #fff;
+    border: 1px solid var(--color);
+    border-radius: 4px;
+    color: var(--color);
+}
+
+.btn-primary:hover,
+.btn-default:hover,
+.btn-default.best:hover {
+    color: #fff;
+    background-color: var(--color);
+    margin-top: 2px;
+}
+
+.btn-primary.focus,
+.btn-default:focus,
+.btn-default.best:focus {
+    color: #fff;
+    background-color: var(--color);
+    border-color: var(--color);
+}
+
+
+#article-list #article-list-menu > .btn.best {
+    color: var(--color);
+    border-color: var(--color);
+    border-radius: 4px;
+    border-bottom: solid 3px var(--color);
+}
+
+#article-list #article-list-menu > .btn.best:hover {
+    border-radius: 4px;
+    background-color: var(--color);
+    color: #fff;
+    margin-top: 2px;
+    border-bottom: solid 1px var(--color);
+}
+
+
+#article-list #article-list-menu > .btn.cog {
+    border-color: var(--color);
+    border-radius: 4px;
+    border-bottom: solid 3px var(--color);
+}
+
+#article-list #article-list-menu > .btn.cog:hover {
+    border-radius: 4px;
+    background-color: var(--color);
+    color: #fff;
+    margin-top: 2px;
+    border-bottom: solid 1px var(--color);
+}
+
+#score-area {
+    width: 0px;
+    visibility: hidden;
+}
+
+#tgd-home-nav > i {
+    color: var(--color);
+}
+
+#boardSearchForm > span:nth-child(2) > button {
+    border-radius: 8px 0px 0px 8px !important;
+}
+
+#boardSearchForm > span:nth-child(3) > button {
+    border-radius: 8px 0px 0px 8px !important;
+}
+
+#boardSearchForm > span:nth-child(5) > button {
+    border-radius: 0px 8px 8px 0px !important;
+}
+
+#nav > hr,
+#nav > div.nav-menu-area > div.right > a:hover,
+#nav > div.nav-menu-area > div.left > a:hover,
+#nav > div.nav-menu-area > div.right > a:hover {
+    color: var(--color);
+}

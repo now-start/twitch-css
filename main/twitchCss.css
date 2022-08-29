@@ -676,6 +676,7 @@ input[type='text'] {
 }
 
 #score-area {
+    width: 0px;
     visibility: hidden;
 }
 
