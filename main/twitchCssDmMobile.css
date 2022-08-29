@@ -85,7 +85,6 @@ html.mb.darkmode .dropdown-menu .divider {
 }
 
 html.mb.darkmode header > #header-area > a > h1 {
-    margin-left: 70px;
     background: var(--headerImgDm) no-repeat;
     background-size: auto 32px;
     width: 128px;
@@ -307,4 +306,13 @@ html.mb.darkmode #nav > div.nav-menu-area > div.right > a:hover {
 
 html.mb.darkmode #article-list > .article-list-row > .item > .list-title > a:visited {
     color: #666666 !important;
+}
+
+html.mb.darkmode #movetotop {
+    display: inline-block;
+    opacity: 1;
+    background: var(--moveToTopImg);
+    width: 50px;
+    height: 50px;
+    background-size: contain;
 }
