@@ -155,6 +155,10 @@ html.mb.darkmode a:focus {
     color: var(--colorDm);
 }
 
+#article-list > div:nth-child(3) > div {
+    background: var(--bgcolorDm2) !important;
+}
+
 html.mb.darkmode #article-list > .article-list-row {
     border: 2px solid var(--colorDm) !important;
     background: var(--bgcolorDm2) !important;
