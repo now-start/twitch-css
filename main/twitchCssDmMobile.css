@@ -156,6 +156,10 @@ html.mb.darkmode a:focus {
 }
 
 #article-list > div:nth-child(3) > div {
+    background: var(--bgcolorDm2);
+}
+
+html.mb.darkmode #article-list > .article-list-row > .item {
     background: var(--bgcolorDm2) !important;
 }
 
@@ -169,7 +173,7 @@ html.mb.darkmode #article-list > .article-list-row {
     margin-bottom: 0.5em;
 }
 
-html.mb.darkmode #article-list > .article-list-row.notice {
+html.mb.darkmode #article-list > .article-list-row.notice > .item {
     background-color: var(--bgcolorDm) !important;
 }
 
