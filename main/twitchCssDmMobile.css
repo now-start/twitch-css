@@ -274,6 +274,7 @@ html.mb.darkmode #article-list #article-list-menu > .btn.best:hover {
 
 html.mb.darkmode #article-list #article-list-menu > .btn.cog {
     background-color: #444444;
+    color: var(--colorDm);
     border-color: var(--colorDm);
     border-radius: 4px;
     border-bottom: solid 3px var(--colorDm);
