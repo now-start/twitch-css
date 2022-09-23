@@ -557,7 +557,7 @@ span#viewers,
 .fr-view,
 .fr-box.fr-basic.fr-element,
 input[type='text'] {
-    cursor: var(--cursorImg) 0 0, auto !important;
+    cursor: var(--cursorImg) 0 0, auto
 }
 
 #board-info #viewers-area {
