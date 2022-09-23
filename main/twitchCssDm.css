@@ -521,32 +521,32 @@ html.darkmode small.favo i.fa.fa-heart {
     animation: heartbeat 1s infinite;
 }
 
-/* 커서 관련 */
-/*html.darkmode html,*/
-/*html.darkmode body,*/
-/*html.darkmode .fr-popup.emoticons,*/
-/*html.darkmode .fr-top,*/
-/*html.darkmode select.form-control,*/
-/*html.darkmode input[type=checkbox],*/
-/*html.darkmode input[type=radio],*/
-/*html.darkmode .opt #right-search-form > #right-search-btn,*/
-/*html.darkmode #board-info #board-info-bottom #addFavoriteBtn,*/
-/*html.darkmode #article-list #article-option-area > #article-option-area-toggle-btn,*/
-/*html.darkmode #article-list > .article-list-row > .item > .list-title > .list-writer > span,*/
-/*html.darkmode .reply > .reply-header > .reply-writer.logged,*/
-/*html.darkmode .reply-menu,*/
-/*html.darkmode .btn,*/
-/*html.darkmode .fr-toolbar .fr-command.fr-btn,*/
-/*html.darkmode .fr-popup .fr-command.fr-btn,*/
-/*html.darkmode .fr-view img,*/
-/*html.darkmode .pull-left,*/
-/*html.darkmode span#viewers,*/
-/*html.darkmode #article-list #boardSearchForm .form-control,*/
-/*html.darkmode .fr-view,*/
-/*html.darkmode .fr-box.fr-basic.fr-element,*/
-/*html.darkmode input[type='text'] {*/
-/*    cursor: var(--cursorImgDm) 0 0, auto !important;*/
-/*}*/
+커서 관련
+html.darkmode html,
+html.darkmode body,
+html.darkmode .fr-popup.emoticons,
+html.darkmode .fr-top,
+html.darkmode select.form-control,
+html.darkmode input[type=checkbox],
+html.darkmode input[type=radio],
+html.darkmode .opt #right-search-form > #right-search-btn,
+html.darkmode #board-info #board-info-bottom #addFavoriteBtn,
+html.darkmode #article-list #article-option-area > #article-option-area-toggle-btn,
+html.darkmode #article-list > .article-list-row > .item > .list-title > .list-writer > span,
+html.darkmode .reply > .reply-header > .reply-writer.logged,
+html.darkmode .reply-menu,
+html.darkmode .btn,
+html.darkmode .fr-toolbar .fr-command.fr-btn,
+html.darkmode .fr-popup .fr-command.fr-btn,
+html.darkmode .fr-view img,
+html.darkmode .pull-left,
+html.darkmode span#viewers,
+html.darkmode #article-list #boardSearchForm .form-control,
+html.darkmode .fr-view,
+html.darkmode .fr-box.fr-basic.fr-element,
+html.darkmode input[type='text'] {
+    cursor: var(--cursorImgDm) 0 0, auto !important;
+}
 
 
 html.darkmode #board-info #viewers-area {
