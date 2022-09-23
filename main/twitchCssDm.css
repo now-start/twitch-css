@@ -521,18 +521,23 @@ html.darkmode small.favo i.fa.fa-heart {
     animation: heartbeat 1s infinite;
 }
 
-커서 관련
+/*커서 관련*/
 html.darkmode html,
 html.darkmode body,
+html.darkmode a,
 html.darkmode .fr-popup.emoticons,
 html.darkmode .fr-top,
 html.darkmode select.form-control,
+html.darkmode #header-bar > .row,
 html.darkmode input[type=checkbox],
 html.darkmode input[type=radio],
 html.darkmode .opt #right-search-form > #right-search-btn,
 html.darkmode #board-info #board-info-bottom #addFavoriteBtn,
 html.darkmode #article-list #article-option-area > #article-option-area-toggle-btn,
 html.darkmode #article-list > .article-list-row > .item > .list-title > .list-writer > span,
+html.darkmode #article-list #article-list-category > a:hover,
+html.darkmode #article-list #article-list-category #board-home-link-btn:hover,
+html.darkmode #main .menu-wrapper > a:hover,
 html.darkmode .reply > .reply-header > .reply-writer.logged,
 html.darkmode .reply-menu,
 html.darkmode .btn,
