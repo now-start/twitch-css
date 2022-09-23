@@ -2,6 +2,9 @@
     /* 트게더 문구 */
     --headerImgDm: url(https://now-start.github.io/twitchCss/resource/headerImgDm.png);
     --cursorImgDm: url(https://now-start.github.io/twitchCss/resource/cusorImgDm.png);
+    --backgroundImageDm: url(https://now-start.github.io/twitchCss/resource/backgroundImg.png);
+    --backgroundImageDm2: url(https://now-start.github.io/twitchCss/resource/backgroundImg2.png);
+    --backgroundImageDm3: url(https://now-start.github.io/twitchCss/resource/backgroundImg3.png);
     /* 색상 */
     --colorDm: #be6262;
     --bgcolorDm: #3e3e72;
@@ -15,10 +18,54 @@
     font-style: normal;
 }
 
+
+@keyframes snow {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+    }
+}
+
+@-moz-keyframes snow {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+    }
+}
+
+@-webkit-keyframes snow {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+
+    50% {
+    }
+
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+    }
+}
+
+@-ms-keyframes snow {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+    }
+}
+
 /* darkMode */
 html.darkmode, html.darkmode body,
 html.darkmode html {
-    background: linear-gradient(to bottom,var(--bgcolorDm2), var(--bgcolorDm2));
+    background: linear-gradient(to bottom, var(--bgcolorDm2), var(--bgcolorDm2));
     height: auto !important;
 }
 
@@ -29,10 +76,18 @@ html.darkmode body {
 
 }
 
+html.darkmode body {
+    background-image: var(--backgroundImageDm), var(--backgroundImageDm2), var(--backgroundImageDm3);
+    -webkit-animation: snow 25s linear infinite;
+    -moz-animation: snow 25s linear infinite;
+    -ms-animation: snow 25s linear infinite;
+    animation: snow 25s linear infinite;
+}
+
 /* 상단 메뉴 */
-html.darkmode header #header-bar>.row,
+html.darkmode header #header-bar > .row,
 html.darkmode #main .menu-wrapper,
-html.darkmode #main #main-content>div.frame {
+html.darkmode #main #main-content > div.frame {
     border-radius: 10px;
     border-top: 3px solid var(--colorDm) !important;
     border: 3px solid var(--colorDm);
