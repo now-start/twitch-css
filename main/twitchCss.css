@@ -88,7 +88,7 @@ body {
 }
 
 body {
-    background-image: var(--backgroundImage), var(--backgroundImage2), var(--backgroundImage3);
+    background-image: var(--backgroundImage), var(--backgroundImage2);
     -webkit-animation: snow 25s linear infinite;
     -moz-animation: snow 25s linear infinite;
     -ms-animation: snow 25s linear infinite;
