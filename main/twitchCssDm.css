@@ -2,9 +2,6 @@
     /* 트게더 문구 */
     --headerImgDm: url(https://now-start.github.io/twitchCss/resource/headerImgDm.png);
     --cursorImgDm: url(https://now-start.github.io/twitchCss/resource/cusorImgDm.png);
-    --backgroundImageDm: url(https://now-start.github.io/twitchCss/resource/backgroundImg.png);
-    --backgroundImageDm2: url(https://now-start.github.io/twitchCss/resource/backgroundImg2.png);
-    --backgroundImageDm3: url(https://now-start.github.io/twitchCss/resource/backgroundImg3.png);
     /* 색상 */
     --colorDm: #be6262;
     --bgcolorDm: #3e3e72;
@@ -77,7 +74,7 @@ html.darkmode body {
 }
 
 html.darkmode body {
-    background-image: var(--backgroundImageDm), var(--backgroundImageDm2), var(--backgroundImageDm3);
+    background-image: var(--backgroundImage), var(--backgroundImage2), var(--backgroundImage3);
     -webkit-animation: snow 25s linear infinite;
     -moz-animation: snow 25s linear infinite;
     -ms-animation: snow 25s linear infinite;
