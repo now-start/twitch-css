@@ -550,7 +550,7 @@ html.darkmode #article-list #boardSearchForm .form-control,
 html.darkmode .fr-view,
 html.darkmode .fr-box.fr-basic.fr-element,
 html.darkmode input[type='text'] {
-    cursor: var(--cursorImgDm) 0 0, auto
+    cursor: var(--cursorImgDm) 0 0, auto !important
 }
 
 
