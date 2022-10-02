@@ -14,6 +14,9 @@
     --preFix: "오짱단 ";
     /* 접속자 수 뒤 문구 */
     --postFix: "명이 치즈냥 머리 뽑는 중";
+    /*글자색*/
+    --textColor: #c7b0ab;
+    --readTextColot: #83686c;
     /* 색상 (줄) */
     --color: #ffa6b2;
     /* 색상 (노티 배경) */
@@ -762,6 +765,10 @@ input[type='text'] {
     animation-iteration-count: infinite;
 }
 
+#board-info-profile-img {
+    visibility: hidden;
+}
+
 .fa-square:before {
     color: var(--color);
 }
@@ -811,11 +818,11 @@ header #right-search-form>input[type='text'] {
 header #right-search-form>input[type=text]:hover,
 header #right-search-form>input[type=text]:focus {
     background: white;
-    border-color: #c7b0ab;
+    border-color: var(--textColor);
 }
 
 #article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
-    color: #83686c;
+    color: var(--readTextColor);
 }
 
 .form-control {
