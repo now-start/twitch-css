@@ -534,6 +534,7 @@ small.favo i.fa.fa-heart {
 /* 커서 관련 */
 html,
 body,
+body:hover,
 a,
 .fr-popup.emoticons,
 .fr-top,
@@ -559,6 +560,12 @@ span#viewers,
 #article-list #boardSearchForm .form-control,
 .fr-view,
 .fr-box.fr-basic.fr-element,
+#movetotop > img:hover,
+#board-info > h1,
+#viewers,
+#board-info #viewers-area #viewers:before,
+#board-info #viewers-area #viewers:after,
+#syno-nsc-ext-gen3 > footer > div,
 input[type='text'] {
     cursor: var(--cursorImg) 0 0, auto
 }
@@ -666,15 +673,14 @@ input[type='text'] {
     border-color: var(--color);
 }
 
-
-#article-list #article-list-menu>.btn.best {
+#article-list #article-list-menu > .btn.best {
     border-radius: 4px;
     border-bottom: solid 3px var(--color);
     border-color: var(--color);
     color: var(--color);
 }
 
-#article-list #article-list-menu>.btn.best:hover {
+#article-list #article-list-menu > .btn.best.enable {
     border-radius: 4px;
     margin-top: 2px;
     border-bottom: solid 1px var(--color);
@@ -683,14 +689,31 @@ input[type='text'] {
     color: white;
 }
 
-#article-list #article-list-menu>.btn.cog {
+#article-list #article-list-menu > .btn.best:hover {
+    border-radius: 4px;
+    margin-top: 2px;
+    border-bottom: solid 1px var(--color);
+    background-color: var(--color);
+    border-color: var(--color);
+    color: white;
+}
+
+#article-list #article-list-menu > .btn.best.enable:hover {
+    border-radius: 4px;
+    border-bottom: solid 3px var(--color);
+    background: white;
+    border-color: var(--color);
+    color: var(--color);
+}
+
+#article-list #article-list-menu > .btn.cog {
     border-radius: 4px;
     border-bottom: solid 3px var(--color);
     border-color: var(--color);
     color: var(--color);
 }
 
-#article-list #article-list-menu>.btn.cog:hover {
+#article-list #article-list-menu > .btn.cog:hover {
     border-radius: 4px;
     margin-top: 2px;
     border-bottom: solid 1px var(--color);

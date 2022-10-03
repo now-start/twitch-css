@@ -657,15 +657,14 @@ html.darkmode .btn-outline-success {
     border-color: var(--colorDm);
 }
 
-
-html.darkmode #article-list #article-list-menu>.btn.best {
+html.darkmode #article-list #article-list-menu > .btn.best {
     border-radius: 4px;
     border-bottom: solid 3px var(--colorDm);
     border-color: var(--colorDm);
     color: var(--colorDm);
 }
 
-html.darkmode #article-list #article-list-menu>.btn.best:hover {
+html.darkmode #article-list #article-list-menu > .btn.best.enable {
     border-radius: 4px;
     margin-top: 2px;
     border-bottom: solid 1px var(--colorDm);
@@ -674,14 +673,31 @@ html.darkmode #article-list #article-list-menu>.btn.best:hover {
     color: white;
 }
 
-html.darkmode #article-list #article-list-menu>.btn.cog {
+html.darkmode #article-list #article-list-menu > .btn.best:hover {
+    border-radius: 4px;
+    margin-top: 2px;
+    border-bottom: solid 1px var(--colorDm);
+    background-color: var(--colorDm);
+    border-color: var(--colorDm);
+    color: white;
+}
+
+html.darkmode #article-list #article-list-menu > .btn.best.enable:hover {
+    border-radius: 4px;
+    border-bottom: solid 3px var(--colorDm);
+    background: #242424;
+    border-color: var(--colorDm);
+    color: var(--colorDm);
+}
+
+html.darkmode #article-list #article-list-menu > .btn.cog {
     border-radius: 4px;
     border-bottom: solid 3px var(--colorDm);
     border-color: var(--colorDm);
     color: var(--colorDm);
 }
 
-html.darkmode #article-list #article-list-menu>.btn.cog:hover {
+html.darkmode #article-list #article-list-menu > .btn.cog:hover {
     border-radius: 4px;
     margin-top: 2px;
     border-bottom: solid 1px var(--colorDm);
@@ -737,7 +753,7 @@ html.darkmode #board-info h1 > a:not(.badge-live) {
 
 html.darkmode #board-info h1 > a::before {
     content: '';
-    background: var(--profileImg) no-repeat;
+    background: #242424 var(--profileImg) no-repeat;
     background-size: 105px 105px;
     width: 105px;
     height: 105px;
