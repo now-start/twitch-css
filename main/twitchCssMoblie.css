@@ -1,22 +1,32 @@
 :root {
-    /* 트게더 문구 */
-    --headerImg: url(https://now-start.github.io/twitchCss/resource/headerImg.png);
+    /*하이퍼파라미터*/
     /* 위로가기 이미지 */
     --moveToTopImg: url(https://now-start.github.io/twitchCss/resource/moveToTopImg.png);
     /* 프로필 이미지 */
     --profileImg: url(https://now-start.github.io/twitchCss/resource/profileImg.png);
-    /* 커서 이미지 */
-    --cursorImg: url(https://now-start.github.io/twitchCss/resource/cusorImg.png);
     /* 접속자 수 앞 문구 */
     --preFix: "오짱단 ";
     /* 접속자 수 뒤 문구 */
     --postFix: "명이 치바즈보를 외치는 중";
+    /*글자색*/
+    --textColor: #c7b0ab;
+    --readTextColor: #83686c;
+
+    /*일반모드 파라미터*/
+    /* 트게더 문구 */
+    --headerImg: url(https://now-start.github.io/twitchCss/resource/headerImg.png);
     /* 색상 (줄) */
     --color: #ffa6b2;
     /* 색상 (노티 배경) */
     --bgcolor: #ffebb1;
     /* 색상 (게시판 배경)*/
     --bgcolor2: #fff6d9;
+
+    /* 다크모드 파라미터 */
+    --headerImgDm: url(https://now-start.github.io/twitchCss/resource/headerImgDm.png);
+    --colorDm: #be6262;
+    --bgcolorDm: #3e3e72;
+    --bgcolorDm2: #242434;
 }
 
 @font-face {
@@ -24,6 +34,84 @@
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/Katuri.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+@keyframes snow {
+    0% {
+        background-position: 0 0, 0 0, 0 0;
+    }
+
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+    }
+}
+
+@-moz-keyframes snow {
+    0% {
+        background-position: 0 0, 0 0, 0 0;
+    }
+
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+    }
+}
+
+@-webkit-keyframes snow {
+    0% {
+        background-position: 0 0, 0 0, 0 0;
+    }
+
+    50% {
+    }
+
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+    }
+}
+
+@-ms-keyframes snow {
+    0% {
+        background-position: 0 0, 0 0, 0 0;
+    }
+
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+    }
+}
+
+@-webkit-keyframes text1 {
+    30% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 5px 5px var(--colorDm), 0 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+}
+
+@-moz-keyframes text1 {
+    30% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 5px 5px var(--colorDm), 0 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+}
+
+@keyframes text1 {
+    30% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 5px 5px var(--colorDm), 0 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+}
+
+@keyframes h1updown {
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(6%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
 }
 
 body {
@@ -41,18 +129,58 @@ nav#nav {
 
 nav#nav > .nav-header {
     background: var(--color);
-    color: #fff;
+    color: white;
+}
+
+#board-info h1 > a::before {
+    content: '';
+    background: white var(--profileImg) no-repeat;
+    background-size: 70px 70px;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 22px;
+    top: 180px;
+    margin-top: -24px;
+    z-index: 100;
+    border: 3px solid var(--color);
+    display: inline-block;
+    box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.8);
+    animation-name: h1updown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#board-info-profile-img {
+    visibility: hidden;
+}
+
+#board-info > h1 {
+    margin-left: 70px;
+}
+
+#board-info #viewers-area {
+    color: var(--color);
+}
+
+#board-info #viewers-area #viewers:before {
+    content: var(--preFix);
+    cursor: text;
+}
+
+#board-info #viewers-area #viewers:after {
+    content: var(--postFix);
+    cursor: text;
 }
 
 .dropdown.open .dropdown-menu,
 .input-group-btn.open .dropdown-menu {
     opacity: unset;
     transform: unset;
-    border: 2px solid #ffffff;
+    border: 2px solid var(--color);
     box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--color), 0 0 0 7px #fff;
     border-radius: 6px;
-    border-top: 2px solid var(--color) !important;
-    border: 2px solid var(--color);
 }
 
 .dropdown .dropdown-menu,
@@ -62,7 +190,7 @@ nav#nav > .nav-header {
     transform: scale(0);
     transform-origin: top;
     transition: all 0.4s cubic-bezier(0.18, 1.5, 0, 1);
-    padding: 8px 0 3px 0px;
+    padding: 8px 0 3px 0;
 }
 
 .dropdown-menu > li > a {
@@ -123,28 +251,11 @@ header > #header-search-bar #header-search-btn {
     background: var(--color);
 }
 
-#board-info #viewers-area {
-    color: var(--color);
-}
-
-#board-info #viewers-area #viewers:before {
-    content: var(--preFix);
-    cursor: text;
-}
-
-#board-info #viewers-area #viewers:after {
-    content: var(--postFix);
-    cursor: text;
-}
-
 #article-list #article-list-category {
     border-top: 1px var(--color);
     border-bottom: 1px var(--color);
     background-color: var(--bgcolor2);
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
+    border-radius: 6px;
     margin-top: 10px;
     margin-bottom: 10px;
     box-shadow: 0 0 0 2px var(--color),
@@ -157,7 +268,7 @@ header > #header-search-bar #header-search-btn {
 }
 
 #article-list > .article-list-row > .item > a.list-title > .list-writer.logged > span {
-    color: #83686c;
+    color: var(--readTextColor);
 }
 
 a,
@@ -169,10 +280,7 @@ a:focus {
 #article-list > .article-list-row {
     border: 2px solid var(--color);
     background: var(--bgcolor2);
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
+    border-radius: 6px;
     margin-bottom: 0.5em;
 }
 
@@ -182,6 +290,11 @@ a:focus {
 
 #article-list > .article-list-row > .item > .list-header > span {
     background-color: var(--color);
+}
+
+#article-list > .article-list-row > .item > .list-header.v0 > span {
+    color: var(--bgcolor2);
+    background: var(--bgcolor2);
 }
 
 #article-list > .article-list-row > .item > a.list-title > small.comment-count {
@@ -219,7 +332,7 @@ a:focus {
 .pagination > li > a:hover,
 .pagination > li > span:focus,
 .pagination > li > span:hover {
-    color: #fff;
+    color: white;
     background: var(--color);
     border: 1px solid var(--color);
     margin-top: 2px;
@@ -242,20 +355,20 @@ a:focus {
 }
 
 .btn-primary {
-    background: #fff;
+    background: white;
     border: 1px solid var(--color);
     border-radius: 4px;
     color: var(--color);
 }
 
 .btn-primary:hover {
-    color: #fff;
+    color: white;
     background-color: var(--color);
     margin-top: 2px;
 }
 
 .btn-primary.focus {
-    color: #fff;
+    color: white;
     background-color: var(--color);
     border-color: var(--color);
 }
@@ -268,12 +381,29 @@ a:focus {
     border-bottom: solid 3px var(--color);
 }
 
+#article-list #article-list-menu > .btn.best.enable {
+    border-radius: 4px;
+    margin-top: 2px;
+    border-bottom: solid 1px var(--color);
+    background-color: var(--color);
+    border-color: var(--color);
+    color: white;
+}
+
 #article-list #article-list-menu > .btn.best:hover {
     border-radius: 4px;
     background-color: var(--color);
-    color: #fff;
+    color: white;
     margin-top: 2px;
     border-bottom: solid 1px var(--color);
+}
+
+#article-list #article-list-menu > .btn.best.enable:hover {
+    border-radius: 4px;
+    border-bottom: solid 3px var(--color);
+    background: white;
+    border-color: var(--color);
+    color: var(--color);
 }
 
 
@@ -287,19 +417,9 @@ a:focus {
 #article-list #article-list-menu > .btn.cog:hover {
     border-radius: 4px;
     background-color: var(--color);
-    color: #fff;
+    color: white;
     margin-top: 2px;
     border-bottom: solid 1px var(--color);
-}
-
-#article-option-area-toggle-btn {
-    width: 0px;
-    visibility: hidden;
-}
-
-#score-area {
-    width: 0px;
-    visibility: hidden;
 }
 
 #tgd-home-nav > i {
@@ -328,4 +448,9 @@ a:focus {
     width: 50px;
     height: 50px;
     background-size: contain;
+}
+
+#score-area {
+    width: 0;
+    visibility: hidden;
 }
