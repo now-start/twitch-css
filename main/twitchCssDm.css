@@ -1,66 +1,3 @@
-:root {
-    /* 트게더 문구 */
-    --headerImgDm: url(https://now-start.github.io/twitchCss/resource/headerImgDm.png);
-    --cursorImgDm: url(https://now-start.github.io/twitchCss/resource/cusorImgDm.png);
-    --backgroundImageDm: url(https://now-start.github.io/twitchCss/resource/backgroundImgDm.png);
-    --backgroundImageDm2: url(https://now-start.github.io/twitchCss/resource/backgroundImgDm2.png);
-    /* 색상 */
-    --colorDm: #be6262;
-    --bgcolorDm: #3e3e72;
-    --bgcolorDm2: #242434;
-}
-
-@font-face {
-    font-family: 'Katuri';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/Katuri.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-@keyframes snow {
-    0% {
-        background-position: 0px 0px, 0px 0px, 0px 0px;
-    }
-
-    100% {
-        background-position: 500px 1000px, 400px 400px, 300px 300px;
-    }
-}
-
-@-moz-keyframes snow {
-    0% {
-        background-position: 0px 0px, 0px 0px, 0px 0px;
-    }
-
-    100% {
-        background-position: 500px 1000px, 400px 400px, 300px 300px;
-    }
-}
-
-@-webkit-keyframes snow {
-    0% {
-        background-position: 0px 0px, 0px 0px, 0px 0px;
-    }
-
-    50% {
-    }
-
-    100% {
-        background-position: 500px 1000px, 400px 400px, 300px 300px;
-    }
-}
-
-@-ms-keyframes snow {
-    0% {
-        background-position: 0px 0px, 0px 0px, 0px 0px;
-    }
-
-    100% {
-        background-position: 500px 1000px, 400px 400px, 300px 300px;
-    }
-}
-
 /* darkMode */
 html.darkmode, html.darkmode body,
 html.darkmode html {
@@ -70,17 +7,18 @@ html.darkmode html {
 
 html.darkmode body {
     letter-spacing: -0.05em !important;
-    background: transparent;
     font-family: 'Katuri', sans-serif;
-
-}
-
-html.darkmode body {
-    background-image: var(--backgroundImageDm), var(--backgroundImageDm2);
+    background: var(--backgroundImageDm), var(--backgroundImageDm2), var(--backgroundImageDm3);
     -webkit-animation: snow 25s linear infinite;
     -moz-animation: snow 25s linear infinite;
     -ms-animation: snow 25s linear infinite;
     animation: snow 25s linear infinite;
+}
+
+a,
+a:hover,
+a:focus {
+    color: var(--colorDm);
 }
 
 /* 상단 메뉴 */
@@ -88,17 +26,11 @@ html.darkmode header #header-bar > .row,
 html.darkmode #main .menu-wrapper,
 html.darkmode #main #main-content > div.frame {
     border-radius: 10px;
-    border-top: 3px solid var(--colorDm) !important;
     border: 3px solid var(--colorDm);
 }
 
-/*공지 숨기기 버튼*/
-html.darkmode #article-option-area-toggle-btn{
-    visibility: hidden;
-}
-
 /*헤더 제목*/
-html.darkmode header .row>div:nth-child(1)>a {
+html.darkmode header .row > div:nth-child(1) > a {
     display: block;
     width: 130px;
     height: 50px;
@@ -106,15 +38,95 @@ html.darkmode header .row>div:nth-child(1)>a {
     background-size: auto 50px;
 }
 
-/*기존 트게더 이미지 삭제*/
-html.darkmode header .row>div:nth-child(1)>a>img {
-    display: none;
+html.darkmode header #right-search-form > #right-search-btn {
+    color: var(--colorDm);
 }
-/*상단 메뉴 End*/
 
-/*최상단 메뉴*/
-html.darkmode #main .menu-wrapper a:nth-last-child(1) {
-    border-radius: 0px 0px 8px 8px;
+html.darkmode header #header-bar #header-top-notice strong.notice-badge {
+    background: var(--colorDm);
+}
+
+html.darkmode header #right-search-form > input[type='text'] {
+    background: var(--bgcolorDm2);
+    color: white;
+    margin-top: 0;
+    border: 3px SOLID var(--colorDm);
+    border-radius: 10px;
+}
+
+html.darkmode header #right-search-form > input[type=text]:hover,
+html.darkmode header #right-search-form > input[type=text]:focus {
+    background: var(--bgcolorDm2);
+    color: white;
+    border-color: var(--textColor);
+}
+
+html.darkmode #board-info #board-info-bottom a {
+    color: var(--colorDm);
+}
+
+html.darkmode #board-info h1 > a:not(.badge-live) {
+    padding-left: 55px;
+    font-size: 32px !important;
+    color: white;
+}
+
+html.darkmode #board-info h1 > a::before {
+    content: '';
+    background: #242424 var(--profileImg) no-repeat;
+    background-size: 105px 105px;
+    width: 105px;
+    height: 105px;
+    position: absolute;
+    left: 22px;
+    top: 0;
+    margin-top: -24px;
+    z-index: 100;
+    border: 3px solid var(--colorDm);
+    display: inline-block;
+    box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.8);
+    border-radius: 100%;
+    animation-name: h1updown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+html.darkmode #board-info #viewers-area {
+    color: var(--colorDm);
+    font-size: 18px;
+}
+
+html.darkmode #board-info #viewers-area #viewers:before {
+    content: var(--preFix);
+    color: var(--colorDm);
+    cursor: text;
+    font-size: 18px;
+}
+
+html.darkmode #board-info #viewers-area #viewers:after {
+    content: var(--postFix);
+    color: var(--colorDm);
+    cursor: text;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+html.darkmode #viewers-area > i {
+    padding-left: 3px;
+    padding-top: 1px;
+    color: var(--colorDm);
+}
+
+html.darkmode #board-info h1 {
+    width: calc(100% - 50px);
+    float: left;
+    border: 50px;
+}
+
+html.darkmode #board-info img {
+    float: left !important;
+    border: 2px SOLID var(--colorDm);
+    border-radius: 8px;
 }
 
 html.darkmode #main .menu-wrapper {
@@ -122,13 +134,13 @@ html.darkmode #main .menu-wrapper {
     border-top: none !important;
 }
 
-html.darkmode #main .menu-wrapper>.header {
+html.darkmode #main .menu-wrapper > .header {
     background: var(--colorDm);
     color: white;
     border-radius: 8px 8px 0 0;
 }
 
-html.darkmode #main .menu-wrapper>a>em {
+html.darkmode #main .menu-wrapper > a > em {
     color: var(--colorDm);
 }
 
@@ -137,66 +149,39 @@ html.darkmode #main .menu-wrapper .spacer {
 }
 
 html.darkmode #main .menu-wrapper a:nth-last-child(1) {
-    border-radius: 0px 0px 8px 8px;
+    border-radius: 0 0 8px 8px;
 }
 
-/*메뉴 에니메이션*/
-html.darkmode .menu-wrapper>a {
-    display: block;
-    width: 100%;
-    padding: 20px;
-    border-left: 0px solid;
-    position: relative;
-    z-index: 2;
-    text-decoration: none;
-    color: #444;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-}
-
-html.darkmode .menu-wrapper>a:after {
-    content: "";
-    height: 100%;
-    left: 0;
-    top: 0;
-    width: 0px;
-    position: absolute;
-    transition: all 0.3s ease 0s;
-    -webkit-transition: all 0.3s ease 0s;
-    z-index: -1;
-}
-
-html.darkmode .menu-wrapper>a:hover:after {
+html.darkmode .menu-wrapper > a:hover:after {
     width: 100%;
 }
 
-html.darkmode .menu-wrapper>a:first-child:after,
-html.darkmode .menu-wrapper>a:nth-child(1):after,
-html.darkmode .menu-wrapper>a:nth-child(2):after,
-html.darkmode .menu-wrapper>a:nth-child(3):after,
-html.darkmode .menu-wrapper>a:nth-child(4):after,
-html.darkmode .menu-wrapper>a:nth-child(5):after,
-html.darkmode .menu-wrapper>a:nth-child(6):after,
-html.darkmode .menu-wrapper>a:nth-child(7):after,
-html.darkmode .menu-wrapper>a:nth-child(8):after,
-html.darkmode .menu-wrapper>a:nth-child(9):after,
-html.darkmode .menu-wrapper>a:nth-child(10):after,
-html.darkmode .menu-wrapper>a:nth-child(11):after,
-html.darkmode .menu-wrapper>a:nth-child(12):after,
-html.darkmode .menu-wrapper>a:nth-child(13):after,
-html.darkmode .menu-wrapper>a:nth-child(14):after,
-html.darkmode .menu-wrapper>a:nth-child(15):after,
-html.darkmode .menu-wrapper>a:nth-child(16):after,
-html.darkmode .menu-wrapper>a:nth-child(17):after,
-html.darkmode .menu-wrapper>a:nth-child(18):after,
-html.darkmode .menu-wrapper>a:nth-child(19):after,
-html.darkmode .menu-wrapper>a:nth-child(20):after,
-html.darkmode .menu-wrapper>a:last-child:after {
+html.darkmode .menu-wrapper > a:first-child:after,
+html.darkmode .menu-wrapper > a:nth-child(1):after,
+html.darkmode .menu-wrapper > a:nth-child(2):after,
+html.darkmode .menu-wrapper > a:nth-child(3):after,
+html.darkmode .menu-wrapper > a:nth-child(4):after,
+html.darkmode .menu-wrapper > a:nth-child(5):after,
+html.darkmode .menu-wrapper > a:nth-child(6):after,
+html.darkmode .menu-wrapper > a:nth-child(7):after,
+html.darkmode .menu-wrapper > a:nth-child(8):after,
+html.darkmode .menu-wrapper > a:nth-child(9):after,
+html.darkmode .menu-wrapper > a:nth-child(10):after,
+html.darkmode .menu-wrapper > a:nth-child(11):after,
+html.darkmode .menu-wrapper > a:nth-child(12):after,
+html.darkmode .menu-wrapper > a:nth-child(13):after,
+html.darkmode .menu-wrapper > a:nth-child(14):after,
+html.darkmode .menu-wrapper > a:nth-child(15):after,
+html.darkmode .menu-wrapper > a:nth-child(16):after,
+html.darkmode .menu-wrapper > a:nth-child(17):after,
+html.darkmode .menu-wrapper > a:nth-child(18):after,
+html.darkmode .menu-wrapper > a:nth-child(19):after,
+html.darkmode .menu-wrapper > a:nth-child(20):after,
+html.darkmode .menu-wrapper > a:last-child:after {
     background-color: var(--colorDm);
 }
 
-html.darkmode #main .menu-wrapper #fav-shortcut-area>a {
+html.darkmode #main .menu-wrapper #fav-shortcut-area > a {
     display: block;
     width: 100%;
     border-left: 5px solid;
@@ -209,91 +194,40 @@ html.darkmode #main .menu-wrapper #fav-shortcut-area>a {
     -webkit-box-sizing: border-box;
 }
 
-html.darkmode #main .menu-wrapper #fav-shortcut-area>a {
+html.darkmode #main .menu-wrapper #fav-shortcut-area > a {
     border-left: 0px solid white;
 }
 
-html.darkmode #main .menu-wrapper #fav-shortcut-area>a:after {
-    content: "";
-    height: 100%;
-    left: 0;
-    top: 0;
-    width: 0px;
-    position: absolute;
-    transition: all 0.3s ease 0s;
-    -webkit-transition: all 0.3s ease 0s;
-    z-index: -1;
-}
-
-html.darkmode #main .menu-wrapper #fav-shortcut-area>a:hover:after {
-    width: 100%;
-}
-
-html.darkmode #main .menu-wrapper #fav-shortcut-area>a:after {
+html.darkmode #main .menu-wrapper #fav-shortcut-area > a:after {
     background-color: var(--colorDm);
 }
 
 /* 게시판 목록 */
-html.darkmode #main #main-content>div.frame {
-    border-top: 3px solid var(--colorDm) !important;
+html.darkmode #main #main-content > div.frame {
     border: 3px solid var(--colorDm);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
 }
 
-html.darkmode #article-reply-area #reply-real-area .reply>.reply-header,
-html.darkmode #article-reply-area #reply-best-area .reply>.reply-header {
-    background: #e8e8e8;
+html.darkmode #article-reply-area #reply-real-area .reply > .reply-header,
+html.darkmode #article-reply-area #reply-best-area .reply > .reply-header {
+    background: var(--bgcolorDm2);
 }
 
-html.darkmode #article-list>.article-list-row:hover {
-    -moz-animation: text1 1.4s ease-out 8ms;
-    animation: text1 1.4s ease-out 8ms;
-}
 
-html.darkmode header #right-search-form>#right-search-btn {
-    color: var(--colorDm);
-}
-
-html.darkmode #article-list>.article-list-row>.item>.list-checkbox,
-html.darkmode #article-list>.article-list-row>.item>.list-header,
-html.darkmode #article-list>.article-list-row>.item>.list-category,
-html.darkmode #article-list>.article-list-row>.item>.list-title,
-html.darkmode #article-list>.article-list-row>.item>.list-blocked,
-html.darkmode #article-list>.article-list-row>.item>.list-time {
-    border: 0;
-}
-
-html.darkmode #article-list>.article-list-row.notice {
+html.darkmode #article-list > .article-list-row.notice {
     background-color: var(--bgcolorDm);
     border-radius: 5px;
     margin: 2px 0;
 }
 
-html.darkmode #article-list>.article-list-row {
+html.darkmode #article-list > .article-list-row {
     border: 2px solid var(--bgcolorDm2);
     background-color: var(--bgcolorDm2);
     border-radius: 6px;
     margin: 4px 0;
 }
 
-html.darkmode header #right-search-form>#right-search-btn:hover,
-html.darkmode header #right-search-form>#right-search-btn:focus {
-    transform: scale(1.25);
-    transition: 0.2s;
-}
-
-html.darkmode header #header-bar #header-top-notice strong.notice-badge {
-    background: var(--colorDm);
-}
-
-html.darkmode #article-list>.article-list-row>.item>.list-title>.list-writer>span {
-    width: 120px !important;
-}
-
-html.darkmode #article-list>.article-list-row>.item>.list-title>a {
+html.darkmode #article-list > .article-list-row > .item > .list-title > a {
     color: white !important;
     text-decoration: none;
     line-height: 18px;
@@ -318,41 +252,12 @@ html.darkmode .input-group-btn.open .dropdown-menu {
     border: 2px solid var(--colorDm);
 }
 
-html.darkmode .dropdown .dropdown-menu,
-html.darkmode .input-group-btn .dropdown-menu {
-    display: block !important;
-    opacity: 0;
-    transform: scale(0);
-    transform-origin: top;
-    transition: all 0.4s cubic-bezier(0.18, 1.5, 0, 1);
-    padding: 8px 0 3px 0px;
-}
-
-html.darkmode .input-group-btn.btn {
-    border-radius: 8px;
-}
-
-html.darkmode .dropdown-menu>li>a {
-    transition: 0.1s;
-}
-
-html.darkmode .dropdown-menu>li>a:hover {
-    background: transparent;
-    transform: scaleX(1.04);
-    transition: 0.1s;
-}
-
-html.darkmode #latestDropdownMenu>li>a>span.delrow,
-html.darkmode #favoriteDropdownMenu>li>a>span.delrow {
+html.darkmode #latestDropdownMenu > li > a > span.delrow,
+html.darkmode #favoriteDropdownMenu > li > a > span.delrow {
     color: var(--colorDm);
 }
 
-html.darkmode #latestDropdownMenu>li>a>span.delrow:hover,
-html.darkmode #favoriteDropdownMenu>li>a>span.delrow:hover {
-    background: transparent;
-}
-
-html.darkmode #favoriteDropdownMenu>li>a>span.label.label-default {
+html.darkmode #favoriteDropdownMenu > li > a > span.label.label-default {
     background-color: var(--colorDm);
 }
 
@@ -366,10 +271,6 @@ html.darkmode .dropdown-menu .divider {
 html.darkmode #article-list #article-list-category {
     border-top: 3px solid var(--colorDm) !important;
     border: 3px solid var(--colorDm);
-    border-radius: 8px;
-}
-
-html.darkmode #article-list #article-list-category > a {
     border-radius: 8px;
 }
 
@@ -399,11 +300,6 @@ html.darkmode #article-list > .article-list-row > .item > .list-header.v0 > span
     background: var(--bgcolorDm2);
 }
 
-html.darkmode #article-list > .article-list-row:hover > .item > .list-header.v0 > span {
-    color: transparent;
-    background: transparent;
-}
-
 html.darkmode #article-list > .article-list-row > .item > .list-header.v1 > strong,
 html.darkmode #article-list > .article-list-row > .item > .list-header.v0 > strong {
     color: var(--colorDm);
@@ -413,33 +309,33 @@ html.darkmode #article-list > .article-list-row > .item > .list-title > small.co
     color: var(--colorDm);
 }
 
-html.darkmode .pagination>.active>a,
-html.darkmode .pagination>.active>a:focus,
-html.darkmode .pagination>.active>a:hover {
+html.darkmode .pagination > .active > a,
+html.darkmode .pagination > .active > a:focus,
+html.darkmode .pagination > .active > a:hover {
     border: 1px solid var(--colorDm);
 }
 
-html.darkmode .pagination>li>a,
-html.darkmode .pagination>li>span {
+html.darkmode .pagination > li > a,
+html.darkmode .pagination > li > span {
     color: white;
     border: 1px solid var(--colorDm);
     border-bottom: 3px solid var(--colorDm);
 }
 
-html.darkmode .pagination>.active>a,
-html.darkmode .pagination>.active>a:focus,
-html.darkmode .pagination>.active>a:hover,
-html.darkmode .pagination>.active>span,
-html.darkmode .pagination>.active>span:focus,
-html.darkmode .pagination>.active>span:hover {
+html.darkmode .pagination > .active > a,
+html.darkmode .pagination > .active > a:focus,
+html.darkmode .pagination > .active > a:hover,
+html.darkmode .pagination > .active > span,
+html.darkmode .pagination > .active > span:focus,
+html.darkmode .pagination > .active > span:hover {
     background: var(--colorDm);
     margin-top: 2px;
 }
 
-html.darkmode .pagination>li>a:focus,
-html.darkmode .pagination>li>a:hover,
-html.darkmode .pagination>li>span:focus,
-html.darkmode .pagination>li>span:hover {
+html.darkmode .pagination > li > a:focus,
+html.darkmode .pagination > li > a:hover,
+html.darkmode .pagination > li > span:focus,
+html.darkmode .pagination > li > span:hover {
     color: white;
     background: var(--colorDm);
     border: 1px solid var(--colorDm);
@@ -447,7 +343,7 @@ html.darkmode .pagination>li>span:hover {
     margin-top: 2px;
 }
 
-html.darkmode #article-content-wrapper>.header {
+html.darkmode #article-content-wrapper > .header {
     border-top: 2px solid var(--colorDm);
 }
 
@@ -460,149 +356,20 @@ html.darkmode #article-reply-area #reply-best-area .reply > .reply-header > .rep
     color: var(--colorDm) !important;
 }
 
-html.darkmode #article-info>h2 {
-
-}
-
-html.darkmode #article-info>h2>span.category {
+html.darkmode #article-info > h2 > span.category {
     color: var(--colorDm) !important;
 }
 
-html.darkmode #article-reply-area>.header h5 {
+html.darkmode #article-reply-area > .header h5 {
     color: var(--colorDm);
 }
 
 
-html.darkmode #main .menu-wrapper>a {
-    padding: 0.5em 1.4em 0.5em 0.7em !important;
-}
-
-html.darkmode #article-list>.article-list-row>.item>a.list-title>.list-writer.logged>span {
+html.darkmode #article-list > .article-list-row > .item > a.list-title > .list-writer.logged > span {
     color: white;
 }
 
-html.darkmode #article-list #article-list-menu {
-    box-sizing: border-box;
-    width: unset;
-    margin: 8px;
-}
-
-html.darkmode #article-list #boardSearchForm {
-    padding-bottom: 8px;
-    height: unset;
-}
-
-html.darkmode #article-list #article-list-menu>.btn.best {
-    border: 1px solid rgba(0, 0, 0, 0)
-}
-
-@-webkit-keyframes text1 {
-    30% {
-        opacity: 0.5;
-        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 5px 5px var(--colorDm), 0 0 0 5px rgba(255, 255, 255, 0.5);
-    }
-}
-
-@-moz-keyframes text1 {
-    30% {
-        opacity: 0.5;
-        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 5px 5px var(--colorDm), 0 0 0 5px rgba(255, 255, 255, 0.5);
-    }
-}
-
-@keyframes text1 {
-    30% {
-        opacity: 0.5;
-        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 5px 5px var(--colorDm), 0 0 0 5px rgba(255, 255, 255, 0.5);
-    }
-}
-
-html.darkmode small.favo i.fa.fa-heart {
-    animation: heartbeat 1s infinite;
-}
-
-/*커서 관련*/
-/*html.darkmode html,*/
-/*html.darkmode body,*/
-/*html.darkmode a,*/
-/*html.darkmode .fr-popup.emoticons,*/
-/*html.darkmode .fr-top,*/
-/*html.darkmode select.form-control,*/
-/*html.darkmode #header-bar > .row,*/
-/*html.darkmode input[type=checkbox],*/
-/*html.darkmode input[type=radio],*/
-/*html.darkmode .opt #right-search-form > #right-search-btn,*/
-/*html.darkmode #board-info #board-info-bottom #addFavoriteBtn,*/
-/*html.darkmode #article-list #article-option-area > #article-option-area-toggle-btn,*/
-/*html.darkmode #article-list > .article-list-row > .item > .list-title > .list-writer > span,*/
-/*html.darkmode #article-list #article-list-category > a:hover,*/
-/*html.darkmode #article-list #article-list-category #board-home-link-btn:hover,*/
-/*html.darkmode #main .menu-wrapper > a:hover,*/
-/*html.darkmode .reply > .reply-header > .reply-writer.logged,*/
-/*html.darkmode .reply-menu,*/
-/*html.darkmode .btn,*/
-/*html.darkmode .fr-toolbar .fr-command.fr-btn,*/
-/*html.darkmode .fr-popup .fr-command.fr-btn,*/
-/*html.darkmode .fr-view img,*/
-/*html.darkmode .pull-left,*/
-/*html.darkmode span#viewers,*/
-/*html.darkmode #article-list #boardSearchForm .form-control,*/
-/*html.darkmode .fr-view,*/
-/*html.darkmode .fr-box.fr-basic.fr-element,*/
-/*html.darkmode input[type='text'] {*/
-/*    cursor: var(--cursorImgDm) 0 0, auto !important*/
-/*}*/
-
-
-html.darkmode #board-info #viewers-area {
-    color: var(--colorDm);
-
-    font-size: 18px;
-}
-
-html.darkmode #board-info #viewers-area #viewers:before {
-    content: var(--preFix);
-    color: var(--colorDm);
-    cursor: text;
-
-    font-size: 18px;
-}
-
-html.darkmode #board-info #viewers-area #viewers:after {
-    content: var(--postFix);
-    color: var(--colorDm);
-    cursor: text;
-    font-weight: normal;
-    font-size: large;
-
-    font-size: 18px;
-}
-
-html.darkmode #board-info-bottom {
-    position: absolute;
-    top: 57px;
-    left: 480px;
-}
-
-html.darkmode #viewers-area>i {
-    padding-left: 3px;
-    padding-top: 1px;
-    color: var(--colorDm);
-}
-
-html.darkmode #board-info h1 {
-    width: calc(100% - 50px);
-    float: left;
-    border: 50px;
-}
-
-html.darkmode #board-info img {
-    float: left !important;
-    border: 2px SOLID var(--colorDm);
-    border-radius: 8px;
-}
-
-html.darkmode #article-list #article-list-menu>.btn.write {
+html.darkmode #article-list #article-list-menu > .btn.write {
     position: absolute;
     right: 0;
     border: solid 1px var(--colorDm);
@@ -610,7 +377,7 @@ html.darkmode #article-list #article-list-menu>.btn.write {
     border-radius: 4px;
 }
 
-html.darkmode #article-list #article-list-menu>.btn.write:hover {
+html.darkmode #article-list #article-list-menu > .btn.write:hover {
     position: absolute;
     right: 0;
     border: solid 1px var(--colorDm);
@@ -637,19 +404,6 @@ html.darkmode .btn-primary:focus {
     color: white;
     background-color: var(--colorDm);
     border-color: var(--colorDm);
-}
-
-html.darkmode .btn {
-    border-radius: 8px;
-}
-
-html.darkmode #boardSearchForm > input.form-control{
-    z-index: 100;
-}
-
-html.darkmode .btn-group-sm>.btn,
-html.darkmode .btn-sm {
-    border-radius: 8px;
 }
 
 html.darkmode .btn-outline-success {
@@ -706,7 +460,7 @@ html.darkmode #article-list #article-list-menu > .btn.cog:hover {
     color: white;
 }
 
-html.darkmode #article-list #article-list-menu>.btn.del {
+html.darkmode #article-list #article-list-menu > .btn.del {
     border-radius: 4px;
     border-bottom: solid 3px var(--colorDm);
     background-color: transparent;
@@ -714,7 +468,7 @@ html.darkmode #article-list #article-list-menu>.btn.del {
     color: var(--colorDm);
 }
 
-html.darkmode #article-list #article-list-menu>.btn.del:hover {
+html.darkmode #article-list #article-list-menu > .btn.del:hover {
     border-radius: 4px;
     margin-top: 2px;
     border-bottom: solid 1px var(--colorDm);
@@ -723,115 +477,22 @@ html.darkmode #article-list #article-list-menu>.btn.del:hover {
     color: white;
 }
 
-html.darkmode #movetotop img {
-    display: none
-}
-
-html.darkmode #movetotop {
-    display: inline-block;
-    opacity: 1;
-    background: var(--moveToTopImg);
-    width: 50px;
-    height: 50px;
-    background-size: contain;
-}
-
-html.darkmode #board-info #board-info-bottom a {
-    color: var(--colorDm);
-}
-
-#score-area {
-    width: 0px;
-    visibility: hidden;
-}
-
-html.darkmode #board-info h1 > a:not(.badge-live) {
-    padding-left: 55px;
-    font-size: 32px !important;
-    color: white;
-}
-
-html.darkmode #board-info h1 > a::before {
-    content: '';
-    background: #242424 var(--profileImg) no-repeat;
-    background-size: 105px 105px;
-    width: 105px;
-    height: 105px;
-    position: absolute;
-    left: 22px;
-    top: 0px;
-    margin-top: -24px;
-    z-index: 100;
-    border: 3px solid var(--colorDm);
-    border-radius: 50px;
-    display: inline-block;
-    box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);
-    border-radius: 100%;
-    animation-name: h1updown;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
-
 html.darkmode .fa-square:before {
     color: var(--colorDm);
 }
 
-@keyframes h1updown {
-    0% {
-        transform: translateY(0%);
-    }
-
-    50% {
-        transform: translateY(6%);
-    }
-
-    100% {
-        transform: translateY(0%);
-    }
-}
-
-html.darkmode #article-list>.article-list-row>.item>.list-title>a:visited {
+html.darkmode #article-list > .article-list-row > .item > .list-title > a:visited {
     color: #666666 !important;
 }
 
-
-html.darkmode .pagination>.active>a,
-html.darkmode .pagination>.active>a:focus,
-html.darkmode .pagination>.active>a:hover,
-html.darkmode .pagination>.active>span,
-html.darkmode .pagination>.active>span:focus,
-html.darkmode .pagination>.active>span:hover {
+html.darkmode .pagination > .active > a,
+html.darkmode .pagination > .active > a:focus,
+html.darkmode .pagination > .active > a:hover,
+html.darkmode .pagination > .active > span,
+html.darkmode .pagination > .active > span:focus,
+html.darkmode .pagination > .active > span:hover {
     background-color: var(--colorDm);
     border-color: var(--colorDm);
-}
-
-html.darkmode a,
-html.darkmode a:hover,
-html.darkmode a:focus {
-    color: var(--colorDm);
-}
-
-html.darkmode header #right-search-form>input[type='text'] {
-    background: var(--bgcolorDm2);
-    color: white;
-    margin-top: 0;
-    border: 3px SOLID var(--colorDm);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-radius: 10px;
-}
-
-html.darkmode header #right-search-form>input[type=text]:hover,
-html.darkmode header #right-search-form>input[type=text]:focus {
-    background: var(--bgcolorDm2);
-    color: white;
-    border-color: #c7b0ab;
-}
-
-html.darkmode #article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
-    color: #83686c;
 }
 
 html.darkmode .form-control {
@@ -844,16 +505,4 @@ html.darkmode .btn.square {
 
 html.darkmode header #tgd-home-nav {
     color: var(--colorDm);
-}
-
-html.darkmode #boardSearchForm > span:nth-child(2) > button {
-    border-radius: 8px 0px 0px 8px !important;
-}
-
-html.darkmode #boardSearchForm > span:nth-child(3) > button {
-    border-radius: 8px 0px 0px 8px !important;
-}
-
-html.darkmode #boardSearchForm > span:nth-child(4) > button {
-    border-radius: 0px 8px 8px 0px !important;
 }
