@@ -288,9 +288,9 @@ html.darkmode #article-list #article-list-category #board-home-link-btn {
     color: white;
 }
 
-#article-list > .article-list-row:hover {
-    color: var(--bgcolorDm2);
-    background: var(--bgcolorDm2);
+html.darkmode #article-list > .article-list-row:hover > .item > .list-header.v0 > span {
+    color: transparent;
+    background: transparent;
 }
 
 html.darkmode #article-list > .article-list-row > .item > .list-header > span {
