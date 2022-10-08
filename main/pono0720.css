@@ -1,0 +1,39 @@
+:root {
+    /*하이퍼파라미터*/
+    /* 위로가기 이미지 */
+    --moveToTopImg: url(https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_c082d4f45387417ab5e5f5759c0eefa4/default/light/1.0);
+    /* 프로필 이미지 */
+    --profileImg: url(https://static-cdn.jtvnw.net/jtv_user_pictures/78863ad5-0a61-4b4a-b3c9-12a310f216c9-profile_image-70x70.png);
+    /* 접속자 수 앞 문구 */
+    --preFix: "난쟁이 ";
+    /* 접속자 수 뒤 문구 */
+    --postFix: "명이 공주님 키우는 중";
+    /*글자색*/
+    --textColor: #40405e;
+    --readTextColor: #ababab;
+
+    /*일반모드 파라미터*/
+    /* 트게더 문구 */
+    --headerImg: url(https://now-start.github.io/twitchCss/resource/ponori.png);
+    /* 커서 이미지 */
+    --cursorImg: url(https://now-start.github.io/twitchCss/resource/ponoriCusor.png);
+    /*배경 애니메이션*/
+    --backgroundImage: url(https://now-start.github.io/twitchCss/resource/stars.png);
+    --backgroundImage2: url(https://now-start.github.io/twitchCss/resource/stars2.png);
+    /* 색상 (줄) */
+    --color: #61ade3;
+    /* 색상 (노티 배경) */
+    --bgcolor: #899aaf;
+    /* 색상 (게시판 배경)*/
+    --bgcolor2: #c8d0d8;
+
+    /*다크모드 파라미터*/
+    --headerImgDm: url(https://now-start.github.io/twitchCss/resource/ponoriDm.png);
+    --cursorImgDm: url(https://now-start.github.io/twitchCss/resource/ponoriCusor.png);
+    --backgroundImageDm: url(https://now-start.github.io/twitchCss/resource/star.png);
+    --backgroundImageDm2: url(https://now-start.github.io/twitchCss/resource/star2.png);
+    --backgroundImageDm3: url(https://now-start.github.io/twitchCss/resource/star3.png);
+    --colorDm: #a1918d;
+    --bgcolorDm: #3e3e72;
+    --bgcolorDm2: #242434;
+}
