@@ -403,7 +403,7 @@ header #right-search-form > input[type=text]:focus {
 /* 카테고리 */
 #article-list #article-list-category {
     background: white;
-    border: 3px solid var(--color);
+    border: 3px solid var(--color) !important;
     border-radius: 8px;
 }
 
@@ -685,7 +685,7 @@ small.favo i.fa.fa-heart {
 .input-group-btn.open .dropdown-menu {
     opacity: unset;
     transform: unset;
-    border: 2px solid white;
+    border: 2px solid var(--colorDm) !important;
     border-radius: 6px;
 }
 

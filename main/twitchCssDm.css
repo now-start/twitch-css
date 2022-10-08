@@ -195,7 +195,7 @@ html.darkmode #main .menu-wrapper #fav-shortcut-area > a {
 }
 
 html.darkmode #main .menu-wrapper #fav-shortcut-area > a {
-    border-left: 0px solid white;
+    border-left: 0 solid white;
 }
 
 html.darkmode #main .menu-wrapper #fav-shortcut-area > a:after {
@@ -246,10 +246,8 @@ html.darkmode .dropdown.open .dropdown-menu,
 html.darkmode .input-group-btn.open .dropdown-menu {
     opacity: unset;
     transform: unset;
-    border: 2px solid white;
     border-radius: 6px;
-    border-top: 2px solid var(--colorDm) !important;
-    border: 2px solid var(--colorDm);
+    border: 2px solid var(--colorDm) !important;
 }
 
 html.darkmode #latestDropdownMenu > li > a > span.delrow,
@@ -269,8 +267,7 @@ html.darkmode .dropdown-menu .divider {
 
 /* 카테고리 */
 html.darkmode #article-list #article-list-category {
-    border-top: 3px solid var(--colorDm) !important;
-    border: 3px solid var(--colorDm);
+    border: 3px solid var(--colorDm) !important;
     border-radius: 8px;
 }
 
