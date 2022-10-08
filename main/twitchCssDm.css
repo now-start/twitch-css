@@ -58,7 +58,7 @@ html.darkmode header #right-search-form > input[type=text]:hover,
 html.darkmode header #right-search-form > input[type=text]:focus {
     background: var(--bgcolorDm2);
     color: white;
-    border-color: var(--textColor);
+    border-color: var(--textColorDm);
 }
 
 html.darkmode #board-info #board-info-bottom a {
