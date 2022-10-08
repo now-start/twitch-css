@@ -58,7 +58,7 @@ html.darkmode header #right-search-form > input[type=text]:hover,
 html.darkmode header #right-search-form > input[type=text]:focus {
     background: var(--bgcolorDm2);
     color: white;
-    border-color: var(--textColorDm);
+    border-color: var(--textColor);
 }
 
 html.darkmode #board-info #board-info-bottom a {
@@ -479,7 +479,7 @@ html.darkmode .fa-square:before {
 }
 
 html.darkmode #article-list > .article-list-row > .item > .list-title > a:visited {
-    color: #666666 !important;
+    color: var(--readTextColor) !important;
 }
 
 html.darkmode .pagination > .active > a,

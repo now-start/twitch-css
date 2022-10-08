@@ -9,8 +9,8 @@
     /* 접속자 수 뒤 문구 */
     --postFix: "명이 치바즈보를 외치는 중";
     /*글자색*/
-    --textColor: #c7b0ab;
-    --readTextColor: #83686c;
+    --textColor: #83686c;
+    --readTextColor: #adadad;
 
     /*일반모드 파라미터*/
     /* 트게더 문구 */
@@ -268,7 +268,7 @@ header > #header-search-bar #header-search-btn {
 }
 
 #article-list > .article-list-row > .item > a.list-title > .list-writer.logged > span {
-    color: var(--readTextColor);
+    color: var(--textColor);
 }
 
 a,
@@ -434,7 +434,7 @@ a:focus {
 }
 
 #article-list > .article-list-row > .item > .list-title > a:visited {
-    color: #adadad !important;
+    color: var(--readTextColor) !important;
 }
 
 #movetotop img {

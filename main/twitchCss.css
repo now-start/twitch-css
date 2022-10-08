@@ -8,6 +8,9 @@
     --preFix: "오짱단 ";
     /* 접속자 수 뒤 문구 */
     --postFix: "명이 치즈냥 머리 뽑는 중";
+    /*글자색*/
+    --textColor: #83686c;
+    --readTextColor: #adadad;
 
     /*일반모드 파라미터*/
     /* 트게더 문구 */
@@ -17,9 +20,6 @@
     /*배경 애니메이션*/
     --backgroundImage: url(https://now-start.github.io/twitchCss/resource/stars.png);
     --backgroundImage2: url(https://now-start.github.io/twitchCss/resource/stars2.png);
-    /*글자색*/
-    --textColor: #c7b0ab;
-    --readTextColor: #83686c;
     /* 색상 (줄) */
     --color: #ffa6b2;
     /* 색상 (노티 배경) */
@@ -486,7 +486,7 @@ header #right-search-form > input[type=text]:focus {
 }
 
 #article-list > .article-list-row > .item > .list-title > .list-writer.logged > span {
-    color: var(--readTextColor);
+    color: var(--textColor);
 }
 
 #article-list > .article-list-row > .item > .list-title > a {
@@ -504,7 +504,7 @@ header #right-search-form > input[type=text]:focus {
 }
 
 #article-list > .article-list-row > .item > .list-title > a:visited {
-    color: #adadad !important;
+    color: var(--readTextColor) !important;
 }
 
 small.favo i.fa.fa-heart {

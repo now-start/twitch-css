@@ -282,8 +282,8 @@ html.mb.darkmode #article-list #article-list-menu > .btn.best.enable:hover {
     color: var(--colorDm);
 }
 
-#article-list > .article-list-row > .item > .list-title > a:visited {
-    color: #adadad !important;
+html.mb.darkmode #article-list > .article-list-row > .item > .list-title > a:visited {
+    color: var(--readTextColor) !important;
 }
 
 html.mb.darkmode #article-list #article-list-menu > .btn.cog {
