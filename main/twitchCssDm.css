@@ -15,9 +15,9 @@ html.darkmode body {
     animation: snow 25s linear infinite;
 }
 
-a,
-a:hover,
-a:focus {
+html.darkmode a,
+html.darkmode a:hover,
+html.darkmode a:focus {
     color: var(--colorDm);
 }
 
@@ -213,6 +213,14 @@ html.darkmode #article-reply-area #reply-best-area .reply > .reply-header {
     background: var(--bgcolorDm2);
 }
 
+html.darkmode #article-list > .article-list-row > .item > .list-checkbox,
+html.darkmode #article-list > .article-list-row > .item > .list-header,
+html.darkmode #article-list > .article-list-row > .item > .list-category,
+html.darkmode #article-list > .article-list-row > .item > .list-title,
+html.darkmode #article-list > .article-list-row > .item > .list-blocked,
+html.darkmode #article-list > .article-list-row > .item > .list-time {
+    border: 0;
+}
 
 html.darkmode #article-list > .article-list-row.notice {
     background-color: var(--bgcolorDm);
@@ -225,6 +233,10 @@ html.darkmode #article-list > .article-list-row {
     background-color: var(--bgcolorDm2);
     border-radius: 6px;
     margin: 4px 0;
+}
+
+html.darkmode #article-list > .article-list-row > .item > .list-title > .list-writer > span {
+    width: 120px !important;
 }
 
 html.darkmode #article-list > .article-list-row > .item > .list-title > a {
@@ -288,11 +300,6 @@ html.darkmode #article-list #article-list-category #board-home-link-btn {
     color: white;
 }
 
-html.darkmode #article-list > .article-list-row:hover > .item > .list-header.v0 > span {
-    color: transparent;
-    background: transparent;
-}
-
 html.darkmode #article-list > .article-list-row > .item > .list-header > span {
     background-color: var(--colorDm);
 }
@@ -300,6 +307,11 @@ html.darkmode #article-list > .article-list-row > .item > .list-header > span {
 html.darkmode #article-list > .article-list-row > .item > .list-header.v0 > span {
     color: var(--bgcolorDm2);
     background: var(--bgcolorDm2);
+}
+
+html.darkmode #article-list > .article-list-row:hover > .item > .list-header.v0 > span {
+    color: transparent;
+    background: transparent;
 }
 
 html.darkmode #article-list > .article-list-row > .item > .list-header.v1 > strong,
