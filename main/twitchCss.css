@@ -189,7 +189,7 @@ header #right-search-form > input[type='text'] {
 header #right-search-form > input[type=text]:hover,
 header #right-search-form > input[type=text]:focus {
     background: white;
-    border-color: var(--textColor);
+    border-color: var(--readTextColor);
 }
 
 /*메인*/
@@ -685,7 +685,7 @@ small.favo i.fa.fa-heart {
 .input-group-btn.open .dropdown-menu {
     opacity: unset;
     transform: unset;
-    border: 2px solid var(--colorDm) !important;
+    border: 2px solid var(--color) !important;
     border-radius: 6px;
 }
 
