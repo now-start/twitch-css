@@ -378,9 +378,8 @@ html.darkmode #article-reply-area > .header h5 {
     color: var(--colorDm);
 }
 
-
-html.darkmode #article-list > .article-list-row > .item > a.list-title > .list-writer.logged > span {
-    color: white;
+html.darkmode #article-list > .article-list-row > .item > .list-title > .list-writer.logged > span {
+    color: var(--textColor) !important;
 }
 
 html.darkmode #article-list #article-list-menu > .btn.write {
