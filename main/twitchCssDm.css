@@ -212,7 +212,7 @@ html.darkmode #main .menu-wrapper #fav-shortcut-area > a:after {
 
 /* 게시판 목록 */
 html.darkmode #main #main-content > div.frame {
-    border: 3px solid var(--colorDm);
+    border: 3px solid var(--colorDm) !important;
     border-radius: 10px;
 }
 
