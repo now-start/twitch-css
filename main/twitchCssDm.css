@@ -1,14 +1,21 @@
 /* darkMode */
 html.darkmode, html.darkmode body,
 html.darkmode html {
-    background: linear-gradient(to bottom, var(--bgcolorDm2), var(--bgcolorDm2));
+    background: linear-gradient(to bottom right, var(--bgcolorDm2), var(--bgcolorDm));
     height: auto !important;
+}
+
+html.darkmode header {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url(https://now-start.github.io/twitchCss/resource/header.png) no-repeat;
 }
 
 html.darkmode body {
     letter-spacing: -0.05em !important;
     font-family: 'Katuri', sans-serif;
-    background: var(--backgroundImageDm), var(--backgroundImageDm2), var(--backgroundImageDm3);
+    background: var(--backgroundImageDm), var(--backgroundImageDm2);
     -webkit-animation: snow 25s linear infinite;
     -moz-animation: snow 25s linear infinite;
     -ms-animation: snow 25s linear infinite;
