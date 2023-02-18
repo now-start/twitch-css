@@ -419,9 +419,7 @@ header #right-search-form > input[type=text]:focus {
     background: var(--bgcolor2);
 }
 
-#article-list > .article-list-row > .item > .list-header.v1 > strong,
-#article-list > .article-list-row > .item > .list-header.v0 > strong,
-#article-list > .article-list-row > .item > .list-header.v3 > strong {
+#article-list > .article-list-row > .item > .list-header > strong {
     color: var(--color);
 }
 

@@ -322,9 +322,7 @@ html.darkmode #article-list > .article-list-row:hover > .item > .list-header.v0 
     background: transparent;
 }
 
-html.darkmode #article-list > .article-list-row > .item > .list-header.v1 > strong,
-html.darkmode #article-list > .article-list-row > .item > .list-header.v0 > strong,
-html.darkmode #article-list > .article-list-row > .item > .list-header.v3 > strong {
+html.darkmode #article-list > .article-list-row > .item > .list-header > strong {
     color: var(--colorDm);
 }
 
