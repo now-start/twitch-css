@@ -323,7 +323,8 @@ html.darkmode #article-list > .article-list-row:hover > .item > .list-header.v0 
 }
 
 html.darkmode #article-list > .article-list-row > .item > .list-header.v1 > strong,
-html.darkmode #article-list > .article-list-row > .item > .list-header.v0 > strong {
+html.darkmode #article-list > .article-list-row > .item > .list-header.v0 > strong,
+html.darkmode #article-list > .article-list-row > .item > .list-header.v3 > strong {
     color: var(--colorDm);
 }
 
