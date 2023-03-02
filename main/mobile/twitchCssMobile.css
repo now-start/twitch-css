@@ -102,7 +102,7 @@ nav#nav > .nav-header {
 }
 
 #board-info h1 > a::before {
-    content: '';
+    content: var(--profileName);
     background: white var(--profileImg) no-repeat;
     background-size: 80px 80px;
     border-radius: 100%;

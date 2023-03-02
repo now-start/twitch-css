@@ -2,6 +2,7 @@
     /*하이퍼파라미터*/
     /* 위로가기 이미지 */
     --moveToTopImg: url(https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_c082d4f45387417ab5e5f5759c0eefa4/default/light/1.0);
+    --profileName: "";
     /* 프로필 이미지 */
     --profileImg: url(https://static-cdn.jtvnw.net/jtv_user_pictures/78863ad5-0a61-4b4a-b3c9-12a310f216c9-profile_image-70x70.png);
     /* 접속자 수 앞 문구 */
