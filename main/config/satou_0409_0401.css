@@ -1,9 +1,9 @@
 :root {
     /*하이퍼파라미터*/
     /* 위로가기 이미지 */
-    --moveToTopImg: url(https://now-start.github.io/twitchCss/resource/satou_0409/moveToTopImg.png);
+    --moveToTopImg: url(https://now-start.github.io/twitchCss/resource/satou_0409_0401/moveToTopImg.png);
     /* 프로필 이미지 */
-    --profileImg: url(https://now-start.github.io/twitchCss/resource/satou_0409/profileImg.png);
+    --profileImg: url(https://now-start.github.io/twitchCss/resource/satou_0409_0401/profileImg.jpg);
     /* 접속자 수 앞 문구 */
     --preFix: "옹짱당 ";
     /* 접속자 수 뒤 문구 */
@@ -14,9 +14,9 @@
 
     /*일반모드 파라미터*/
     /* 트게더 문구 */
-    --headerImg: url(https://now-start.github.io/twitchCss/resource/satou_0409/headerImg.png);
+    --headerImg: url(https://now-start.github.io/twitchCss/resource/satou_0409_0401/headerImg.png);
     /* 커서 이미지 */
-    --cursorImg: url(https://now-start.github.io/twitchCss/resource/satou_0409/cusorImg.png);
+    --cursorImg: url(https://now-start.github.io/twitchCss/resource/satou_0409_0401/cusorImg.png);
     /*배경 애니메이션*/
     --backgroundImage: url(https://now-start.github.io/twitchCss/resource/common/normal/stars1.png);
     --backgroundImage2: url(https://now-start.github.io/twitchCss/resource/common/normal/stars2.png);
@@ -28,8 +28,8 @@
     --bgcolor2: #fff6d9;
 
     /*다크모드 파라미터*/
-    --headerImgDm: url(https://now-start.github.io/twitchCss/resource/satou_0409/headerImgDm.png);
-    --cursorImgDm: url(https://now-start.github.io/twitchCss/resource/satou_0409/cusorImgDm.png);
+    --headerImgDm: url(https://now-start.github.io/twitchCss/resource/satou_0409_0401/headerImgDm.png);
+    --cursorImgDm: url(https://now-start.github.io/twitchCss/resource/satou_0409_0401/cusorImgDm.png);
     --backgroundImageDm: url(https://now-start.github.io/twitchCss/resource/common/darkmode/stars1.png);
     --backgroundImageDm2: url(https://now-start.github.io/twitchCss/resource/common/darkmode/stars2.png);
     --backgroundImageDm3: url(https://now-start.github.io/twitchCss/resource/common/darkmode/stars3.png);
