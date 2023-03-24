@@ -15,7 +15,7 @@
     --defaultColor2 : #808080;
 
     /* 특수 파라미터 */
-    --animation: "rotate";
+    --animation: rotate;
 
 
     /*일반모드 파라미터*/
