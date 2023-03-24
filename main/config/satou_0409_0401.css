@@ -8,7 +8,7 @@
     /* 접속자 수 앞 문구 */
     --preFix: "흑화한 오짱단 ";
     /* 접속자 수 뒤 문구 */
-    --postFix: "명이 치즈냥 폭풍으로 데려가는 중";
+    --postFix: "명이 치즈냥 시공의 폭풍으로 데려가는 중";
     /*글자색*/
     --textColor: #7c9793;
     --readTextColor: #adadad;
@@ -26,6 +26,7 @@
     --cursorImg: url(https://now-start.github.io/twitchCss/resource/satou_0409_0401/cusorImg.png);
     /*배경 애니메이션*/
     --backgroundImage: url(https://now-start.github.io/twitchCss/resource/satou_0409_0401/backgroundImg.png);
+    --backgroundImage2: url(https://now-start.github.io/twitchCss/resource/satou_0409_0401/backgroundImg.png);
     /* 색상 (줄) */
     --color: #00564d;
     /* 색상 (노티 배경) */
