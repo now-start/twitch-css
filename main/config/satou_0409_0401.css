@@ -16,8 +16,8 @@
     --defaultColor2 : #808080;
 
     /* 특수 파라미터 */
-    --animation: rotate 0.1s infinite;
-    --textanimation: text2 0.1s infinite;
+    --animation: rotate 0.2s infinite;
+    --textanimation: text2 0.2s infinite;
 
     /*일반모드 파라미터*/
     /* 트게더 문구 */
