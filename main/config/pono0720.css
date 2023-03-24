@@ -17,6 +17,7 @@
 
     /* 특수 파라미터 */
     --animation: h1updown;
+    ----animationCount: 2s;
 
     /*일반모드 파라미터*/
     /* 트게더 문구 */
