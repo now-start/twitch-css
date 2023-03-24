@@ -125,7 +125,7 @@ header .row > div:nth-child(1) > a > img {
 /*헤더 제목*/
 header .row > div:nth-child(1) > a {
     display: block;
-    width: 130px;
+    /*width: 130px;*/
     height: 50px;
     background: var(--headerImg) no-repeat;
     background-size: auto 50px;
