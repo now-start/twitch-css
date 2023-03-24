@@ -5,9 +5,9 @@
     /* 프로필 이미지 */
     --profileImg: url(https://now-start.github.io/twitchCss/resource/satou_0409_0401/profileImg.png);
     /* 접속자 수 앞 문구 */
-    --preFix: "옹짱당 ";
+    --preFix: "흑화한 오짱단 ";
     /* 접속자 수 뒤 문구 */
-    --postFix: "명잉 칭증냥 멍링 뽕능 중";
+    --postFix: "명이 치즈냥 머리 뽑는 중";
     /*글자색*/
     --textColor: #7c9793;
     --readTextColor: #adadad;
