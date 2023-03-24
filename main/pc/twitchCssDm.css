@@ -56,7 +56,7 @@ html.darkmode header #header-bar #header-top-notice strong.notice-badge {
 
 html.darkmode header #right-search-form > input[type='text'] {
     background: var(--bgcolorDm2);
-    color: white;
+    color: var(--defaultColor);
     margin-top: 0;
     border: 3px SOLID var(--colorDm);
     border-radius: 10px;
@@ -65,7 +65,7 @@ html.darkmode header #right-search-form > input[type='text'] {
 html.darkmode header #right-search-form > input[type=text]:hover,
 html.darkmode header #right-search-form > input[type=text]:focus {
     background: var(--bgcolorDm2);
-    color: white;
+    color: var(--defaultColor);
     border-color: var(--textColor);
 }
 
@@ -76,7 +76,7 @@ html.darkmode #board-info #board-info-bottom a {
 html.darkmode #board-info h1 > a:not(.badge-live) {
     padding-left: 55px;
     font-size: 32px !important;
-    color: white;
+    color: var(--defaultColor);
 }
 
 html.darkmode #board-info h1 > a::before {
@@ -92,7 +92,7 @@ html.darkmode #board-info h1 > a::before {
     z-index: 100;
     border: 3px solid var(--colorDm);
     display: inline-block;
-    box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px -5px var(--defaultColor2);
     border-radius: 100%;
     animation-name: h1updown;
     animation-duration: 2s;
@@ -144,7 +144,7 @@ html.darkmode #main .menu-wrapper {
 
 html.darkmode #main .menu-wrapper > .header {
     background: var(--colorDm);
-    color: white;
+    color: var(--defaultColor);
     border-radius: 8px 8px 0 0;
 }
 
@@ -196,14 +196,14 @@ html.darkmode #main .menu-wrapper #fav-shortcut-area > a {
     position: relative;
     z-index: 2;
     text-decoration: none;
-    color: white;
+    color: var(--defaultColor);
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
 
 html.darkmode #main .menu-wrapper #fav-shortcut-area > a {
-    border-left: 0 solid white;
+    border-left: 0 solid var(--defaultColor);
 }
 
 html.darkmode #main .menu-wrapper #fav-shortcut-area > a:after {
@@ -248,7 +248,7 @@ html.darkmode #article-list > .article-list-row > .item > .list-title > .list-wr
 }
 
 html.darkmode #article-list > .article-list-row > .item > .list-title > a {
-    color: white !important;
+    color: var(--defaultColor) !important;
     text-decoration: none;
     line-height: 18px;
     word-break: break-all;
@@ -305,7 +305,7 @@ html.darkmode #article-list #article-list-category #board-home-link-btn.active {
 
 html.darkmode #article-list #article-list-category #board-home-link-btn {
     background-color: #242424 !important;
-    color: white;
+    color: var(--defaultColor);
 }
 
 html.darkmode #article-list > .article-list-row > .item > .list-header > span {
@@ -338,7 +338,7 @@ html.darkmode .pagination > .active > a:hover {
 
 html.darkmode .pagination > li > a,
 html.darkmode .pagination > li > span {
-    color: white;
+    color: var(--defaultColor);
     border: 1px solid var(--colorDm);
     border-bottom: 3px solid var(--colorDm);
 }
@@ -357,7 +357,7 @@ html.darkmode .pagination > li > a:focus,
 html.darkmode .pagination > li > a:hover,
 html.darkmode .pagination > li > span:focus,
 html.darkmode .pagination > li > span:hover {
-    color: white;
+    color: var(--defaultColor);
     background: var(--colorDm);
     border: 1px solid var(--colorDm);
 
@@ -414,14 +414,14 @@ html.darkmode .btn-primary {
 }
 
 html.darkmode .btn-primary:hover {
-    color: white;
+    color: var(--defaultColor);
     background-color: var(--colorDm);
     margin-top: 2px;
 }
 
 html.darkmode .btn-primary.focus,
 html.darkmode .btn-primary:focus {
-    color: white;
+    color: var(--defaultColor);
     background-color: var(--colorDm);
     border-color: var(--colorDm);
 }
@@ -444,7 +444,7 @@ html.darkmode #article-list #article-list-menu > .btn.best.enable {
     border-bottom: solid 1px var(--colorDm);
     background-color: var(--colorDm);
     border-color: var(--colorDm);
-    color: white;
+    color: var(--defaultColor);
 }
 
 html.darkmode #article-list #article-list-menu > .btn.best:hover {
@@ -453,7 +453,7 @@ html.darkmode #article-list #article-list-menu > .btn.best:hover {
     border-bottom: solid 1px var(--colorDm);
     background-color: var(--colorDm);
     border-color: var(--colorDm);
-    color: white;
+    color: var(--defaultColor);
 }
 
 html.darkmode #article-list #article-list-menu > .btn.best.enable:hover {
@@ -477,7 +477,7 @@ html.darkmode #article-list #article-list-menu > .btn.cog:hover {
     border-bottom: solid 1px var(--colorDm);
     background-color: var(--colorDm);
     border-color: var(--colorDm);
-    color: white;
+    color: var(--defaultColor);
 }
 
 html.darkmode #article-list #article-list-menu > .btn.del {
@@ -494,7 +494,7 @@ html.darkmode #article-list #article-list-menu > .btn.del:hover {
     border-bottom: solid 1px var(--colorDm);
     background-color: var(--colorDm);
     border-color: var(--colorDm);
-    color: white;
+    color: var(--defaultColor);
 }
 
 html.darkmode .fa-square:before {

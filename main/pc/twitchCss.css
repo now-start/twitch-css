@@ -140,7 +140,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 }
 
 header #right-search-form > input[type='text'] {
-    background: white;
+    background: var(--defaultColor);
     margin-top: 0;
     border: 3px SOLID var(--color);
     border-radius: 10px;
@@ -148,7 +148,7 @@ header #right-search-form > input[type='text'] {
 
 header #right-search-form > input[type=text]:hover,
 header #right-search-form > input[type=text]:focus {
-    background: white;
+    background: var(--defaultColor);
     border-color: var(--readTextColor);
 }
 
@@ -160,12 +160,12 @@ header #right-search-form > input[type=text]:focus {
 #board-info h1 > a:not(.badge-live) {
     padding-left: 55px;
     font-size: 32px !important;
-    color: #000000;
+    color: var(--defaultColor2);
 }
 
 #board-info h1 > a::before {
     content: '';
-    background: white var(--profileImg) no-repeat;
+    background: var(--defaultColor) var(--profileImg) no-repeat;
     background-size: 105px 105px;
     border-radius: 100%;
     width: 105px;
@@ -177,7 +177,7 @@ header #right-search-form > input[type=text]:focus {
     z-index: 100;
     border: 3px solid var(--color);
     display: inline-block;
-    box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px -5px var(--defaultColor2);
     animation-name: h1updown;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -244,7 +244,7 @@ header #right-search-form > input[type=text]:focus {
 
 #main .menu-wrapper > .header {
     background: var(--color);
-    color: black;
+    color: var(--defaultColor2);
     border-radius: 8px 8px 0 0;
 }
 
@@ -320,14 +320,14 @@ header #right-search-form > input[type=text]:focus {
     position: relative;
     z-index: 2;
     text-decoration: none;
-    color: black;
+    color: var(--defaultColor2);
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
 
 #main .menu-wrapper #fav-shortcut-area > a {
-    border-left: 0 solid white;
+    border-left: 0 solid var(--defaultColor);
 }
 
 #main .menu-wrapper #fav-shortcut-area > a:after {
@@ -362,13 +362,13 @@ header #right-search-form > input[type=text]:focus {
 
 /* 카테고리 */
 #article-list #article-list-category {
-    background: white;
+    background: var(--defaultColor);
     border: 3px solid var(--color) !important;
     border-radius: 8px;
 }
 
 #article-list #article-list-category > a {
-    background: white;
+    background: var(--defaultColor);
     border-radius: 8px;
 }
 
@@ -385,7 +385,7 @@ header #right-search-form > input[type=text]:focus {
 }
 
 #article-list #article-list-category #board-home-link-btn {
-    color: black;
+    color: var(--defaultColor2);
 }
 
 /*공지 숨기기 버튼*/
@@ -449,7 +449,7 @@ header #right-search-form > input[type=text]:focus {
 }
 
 #article-list > .article-list-row > .item > .list-title > a {
-    color: #000000 !important;
+    color: var(--defaultColor2) !important;
     text-decoration: none;
     line-height: 18px;
     word-break: break-all;
@@ -515,7 +515,7 @@ small.favo i.fa.fa-heart {
 .pagination > li > a:hover,
 .pagination > li > span:focus,
 .pagination > li > span:hover {
-    color: white;
+    color: var(--defaultColor);
     background: var(--color);
     border: 1px solid var(--color);
 
@@ -539,7 +539,7 @@ small.favo i.fa.fa-heart {
 }
 
 .btn-primary {
-    background: white;
+    background: var(--defaultColor);
     color: var(--color);
     border: 1px solid var(--color);
     border-radius: 4px;
@@ -551,14 +551,14 @@ small.favo i.fa.fa-heart {
 }
 
 .btn-primary:hover {
-    color: white;
+    color: var(--defaultColor);
     background-color: var(--color);
     margin-top: 2px;
 }
 
 .btn-primary.focus,
 .btn-primary:focus {
-    color: white;
+    color: var(--defaultColor);
     background-color: var(--color);
     border-color: var(--color);
 }
@@ -586,7 +586,7 @@ small.favo i.fa.fa-heart {
     border-bottom: solid 1px var(--color);
     background-color: var(--color);
     border-color: var(--color);
-    color: white;
+    color: var(--defaultColor);
 }
 
 #article-list #article-list-menu > .btn.best:hover {
@@ -595,13 +595,13 @@ small.favo i.fa.fa-heart {
     border-bottom: solid 1px var(--color);
     background-color: var(--color);
     border-color: var(--color);
-    color: white;
+    color: var(--defaultColor);
 }
 
 #article-list #article-list-menu > .btn.best.enable:hover {
     border-radius: 4px;
     border-bottom: solid 3px var(--color);
-    background: white;
+    background: var(--defaultColor);
     border-color: var(--color);
     color: var(--color);
 }
@@ -619,13 +619,13 @@ small.favo i.fa.fa-heart {
     border-bottom: solid 1px var(--color);
     background-color: var(--color);
     border-color: var(--color);
-    color: white;
+    color: var(--defaultColor);
 }
 
 #article-list #article-list-menu > .btn.del {
     border-radius: 4px;
     border-bottom: solid 3px var(--color);
-    background-color: white;
+    background-color: var(--defaultColor);
     border-color: var(--color);
     color: var(--color);
 }
@@ -636,7 +636,7 @@ small.favo i.fa.fa-heart {
     border-bottom: solid 1px var(--color);
     background-color: var(--color);
     border-color: var(--color);
-    color: white;
+    color: var(--defaultColor);
 }
 
 /* 드롭다운 버튼 및 인풋 박스 */
@@ -699,7 +699,7 @@ header #tgd-home-nav {
 /* enter 게시판 */
 #article-reply-area #reply-real-area .reply > .reply-header,
 #article-reply-area #reply-best-area .reply > .reply-header {
-    background: white;
+    background: var(--defaultColor);
 }
 
 #latestDropdownMenu > li > a > span.delrow,

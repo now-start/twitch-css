@@ -98,12 +98,12 @@ nav#nav {
 
 nav#nav > .nav-header {
     background: var(--color);
-    color: white;
+    color: var(--defaultColor);
 }
 
 #board-info h1 > a::before {
     content: var(--profileName);
-    background: white var(--profileImg) no-repeat;
+    background: var(--defaultColor) var(--profileImg) no-repeat;
     background-size: 80px 80px;
     border-radius: 100%;
     width: 80px;
@@ -115,7 +115,7 @@ nav#nav > .nav-header {
     z-index: 100;
     border: 3px solid var(--color);
     display: inline-block;
-    box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px -5px var(--defaultColor2);
     animation-name: h1updown;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -148,7 +148,7 @@ nav#nav > .nav-header {
     opacity: unset;
     transform: unset;
     border: 2px solid var(--color);
-    box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--color), 0 0 0 7px #fff;
+    box-shadow: 0 0 0 2px var(--defaultColor), 0 0 0 4px var(--color), 0 0 0 7px var(--defaultColor);
     border-radius: 6px;
 }
 
@@ -228,7 +228,7 @@ header > #header-search-bar #header-search-btn {
     margin-top: 10px;
     margin-bottom: 10px;
     box-shadow: 0 0 0 2px var(--color),
-    0 0 0 3px #fff,
+    0 0 0 3px var(--defaultColor),
     0 0 0 4px var(--color);
 }
 
@@ -301,7 +301,7 @@ a:focus {
 .pagination > li > a:hover,
 .pagination > li > span:focus,
 .pagination > li > span:hover {
-    color: white;
+    color: var(--defaultColor);
     background: var(--color);
     border: 1px solid var(--color);
     margin-top: 2px;
@@ -324,20 +324,20 @@ a:focus {
 }
 
 .btn-primary {
-    background: white;
+    background: var(--defaultColor);
     border: 1px solid var(--color);
     border-radius: 4px;
     color: var(--color);
 }
 
 .btn-primary:hover {
-    color: white;
+    color: var(--defaultColor);
     background-color: var(--color);
     margin-top: 2px;
 }
 
 .btn-primary.focus {
-    color: white;
+    color: var(--defaultColor);
     background-color: var(--color);
     border-color: var(--color);
 }
@@ -356,13 +356,13 @@ a:focus {
     border-bottom: solid 1px var(--color);
     background-color: var(--color);
     border-color: var(--color);
-    color: white;
+    color: var(--defaultColor);
 }
 
 #article-list #article-list-menu > .btn.best:hover {
     border-radius: 4px;
     background-color: var(--color);
-    color: white;
+    color: var(--defaultColor);
     margin-top: 2px;
     border-bottom: solid 1px var(--color);
 }
@@ -370,7 +370,7 @@ a:focus {
 #article-list #article-list-menu > .btn.best.enable:hover {
     border-radius: 4px;
     border-bottom: solid 3px var(--color);
-    background: white;
+    background: var(--defaultColor);
     border-color: var(--color);
     color: var(--color);
 }
@@ -386,7 +386,7 @@ a:focus {
 #article-list #article-list-menu > .btn.cog:hover {
     border-radius: 4px;
     background-color: var(--color);
-    color: white;
+    color: var(--defaultColor);
     margin-top: 2px;
     border-bottom: solid 1px var(--color);
 }

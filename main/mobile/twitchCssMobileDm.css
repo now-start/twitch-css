@@ -14,7 +14,7 @@ html.mb.darkmode nav#nav {
 
 html.mb.darkmode #board-info h1 > a::before {
     content: '';
-    background: white var(--profileImg) no-repeat;
+    background: var(--defaultColor) var(--profileImg) no-repeat;
     background-size: 80px 80px;
     border-radius: 100%;
     width: 80px;
@@ -26,7 +26,7 @@ html.mb.darkmode #board-info h1 > a::before {
     z-index: 100;
     border: 3px solid var(--colorDm);
     display: inline-block;
-    box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px -5px var(--defaultColor2);
     animation-name: h1updown;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -34,7 +34,7 @@ html.mb.darkmode #board-info h1 > a::before {
 
 html.mb.darkmode nav#nav > .nav-header {
     background: var(--colorDm);
-    color: white;
+    color: var(--defaultColor);
 }
 
 html.mb.darkmode .dropdown.open .dropdown-menu,
@@ -198,7 +198,7 @@ html.mb.darkmode .pagination > .active > a:hover,
 html.mb.darkmode .pagination > .active > span,
 html.mb.darkmode .pagination > .active > span:focus,
 html.mb.darkmode .pagination > .active > span:hover {
-    color: white;
+    color: var(--defaultColor);
     background: var(--colorDm);
     margin-top: 2px;
 }
@@ -207,7 +207,7 @@ html.mb.darkmode .pagination > li > a:focus,
 html.mb.darkmode .pagination > li > a:hover,
 html.mb.darkmode .pagination > li > span:focus,
 html.mb.darkmode .pagination > li > span:hover {
-    color: white;
+    color: var(--defaultColor);
     background: var(--colorDm);
     border: 1px solid var(--colorDm);
     margin-top: 2px;
@@ -237,13 +237,13 @@ html.mb.darkmode .btn-primary {
 }
 
 html.mb.darkmode .btn-primary:hover {
-    color: white;
+    color: var(--defaultColor);
     background-color: var(--colorDm);
     margin-top: 2px;
 }
 
 html.mb.darkmode .btn-primary.focus {
-    color: white;
+    color: var(--defaultColor);
     background-color: var(--colorDm);
     border-color: var(--colorDm);
 }
@@ -263,13 +263,13 @@ html.mb.darkmode #article-list #article-list-menu > .btn.best.enable {
     border-bottom: solid 1px var(--colorDm);
     background-color: var(--colorDm);
     border-color: var(--colorDm);
-    color: white;
+    color: var(--defaultColor);
 }
 
 html.mb.darkmode #article-list #article-list-menu > .btn.best:hover {
     border-radius: 4px;
     background-color: var(--colorDm);
-    color: white;
+    color: var(--defaultColor);
     margin-top: 2px;
     border-bottom: solid 1px var(--colorDm);
 }
@@ -277,7 +277,7 @@ html.mb.darkmode #article-list #article-list-menu > .btn.best:hover {
 html.mb.darkmode #article-list #article-list-menu > .btn.best.enable:hover {
     border-radius: 4px;
     border-bottom: solid 3px var(--colorDm);
-    background: white;
+    background: var(--defaultColor);
     border-color: var(--colorDm);
     color: var(--colorDm);
 }
@@ -297,7 +297,7 @@ html.mb.darkmode #article-list #article-list-menu > .btn.cog {
 html.mb.darkmode #article-list #article-list-menu > .btn.cog:hover {
     border-radius: 4px;
     background-color: var(--colorDm);
-    color: white;
+    color: var(--defaultColor);
     margin-top: 2px;
     border-bottom: solid 1px var(--colorDm);
 }
