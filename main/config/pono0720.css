@@ -12,6 +12,8 @@
     /*글자색*/
     --textColor: #83686c;
     --readTextColor: #949494;
+    --defaultColor : #ffffff;
+    --defaultColor2 : #000000;
 
     /*일반모드 파라미터*/
     /* 트게더 문구 */
@@ -34,7 +36,7 @@
     --backgroundImageDm: url(https://now-start.github.io/twitchCss/resource/common/darkmode/stars1.png);
     --backgroundImageDm2: url(https://now-start.github.io/twitchCss/resource/common/darkmode/stars2.png);
     --backgroundImageDm3: url(https://now-start.github.io/twitchCss/resource/common/darkmode/stars3.png);
-    --colorDm: #a1918d;
+    --colorDm: #ff3400;
     --bgcolorDm: #3e3e72;
     --bgcolorDm2: #242434;
 }
