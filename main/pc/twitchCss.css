@@ -80,12 +80,6 @@
     }
 }
 
-@keyframes rotate {
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 /* defaultMod */
 html {
     background: linear-gradient(to bottom, var(--bgcolor2), var(--bgcolor));
