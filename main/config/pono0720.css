@@ -16,9 +16,8 @@
     --defaultColor2 : #000000;
 
     /* 특수 파라미터 */
-    --animation: h1updown;
-    --animationCount: 2s;
-    --textanimation: text1;
+    --animation: h1updown 2s infinite;
+    --textanimation: text1 1.4s infinite;
 
     /*일반모드 파라미터*/
     /* 트게더 문구 */

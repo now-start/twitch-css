@@ -215,9 +215,7 @@ header #right-search-form > input[type=text]:focus {
     border: 3px solid var(--color);
     display: inline-block;
     box-shadow: 0 0 20px -5px var(--defaultColor2);
-    animation-name: var(--animation);
-    animation-duration: var(--animationCount);
-    animation-iteration-count: infinite;
+    animation: var(--animation);
 }
 
 #board-info-profile-img {
@@ -432,8 +430,8 @@ header #right-search-form > input[type=text]:focus {
 
 /*메인 게시판*/
 #article-list > .article-list-row:hover {
-    -moz-animation: var(--textanimation) 1.4s ease-out 8ms;
-    animation: var(--textanimation) 1.4s ease-out 8ms;
+    -moz-animation: var(--textanimation) ease-out 8ms;
+    animation: var(--textanimation) ease-out 8ms;
 }
 
 /*게시판*/
