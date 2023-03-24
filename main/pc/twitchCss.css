@@ -50,6 +50,9 @@
         opacity: 0.5;
         box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 5px 5px var(--colorDm), 0 0 0 5px rgba(255, 255, 255, 0.5);
     }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @-moz-keyframes text1 {
@@ -57,12 +60,18 @@
         opacity: 0.5;
         box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 5px 5px var(--colorDm), 0 0 0 5px rgba(255, 255, 255, 0.5);
     }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes text1 {
     30% {
         opacity: 0.5;
         box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 5px 5px var(--colorDm), 0 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }
 
