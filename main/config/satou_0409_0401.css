@@ -9,7 +9,7 @@
     /* 접속자 수 뒤 문구 */
     --postFix: "명잉 칭증냥 멍링 뽕능 중";
     /*글자색*/
-    --textColor: #83686c;
+    --textColor: #7c9793;
     --readTextColor: #adadad;
 
     /*일반모드 파라미터*/
@@ -21,11 +21,11 @@
     --backgroundImage: url(https://now-start.github.io/twitchCss/resource/common/normal/stars1.png);
     --backgroundImage2: url(https://now-start.github.io/twitchCss/resource/common/normal/stars2.png);
     /* 색상 (줄) */
-    --color: #ffa6b2;
+    --color: #00564d;
     /* 색상 (노티 배경) */
-    --bgcolor: #ffebb1;
+    --bgcolor: #00144d;
     /* 색상 (게시판 배경)*/
-    --bgcolor2: #fff6d9;
+    --bgcolor2: #000926;
 
     /*다크모드 파라미터*/
     --headerImgDm: url(https://now-start.github.io/twitchCss/resource/satou_0409_0401/headerImgDm.png);
