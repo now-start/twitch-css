@@ -80,9 +80,64 @@
     }
 }
 
+/* 0401용 테스트 */
 @keyframes rotate {
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes text2 {
+    30% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 5px 5px var(--colorDm), 0 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(6%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@-moz-keyframes text2 {
+    30% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 5px 5px var(--colorDm), 0 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(6%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes text2 {
+    30% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 5px 5px var(--colorDm), 0 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(6%);
+    }
+
+    100% {
+        transform: translateY(0%);
     }
 }
 
@@ -401,8 +456,8 @@ header #right-search-form > input[type=text]:focus {
 
 /*메인 게시판*/
 #article-list > .article-list-row:hover {
-    -moz-animation: text1 1.4s ease-out 8ms;
-    animation: text1 1.4s ease-out 8ms;
+    -moz-animation: var(--textanimation) 1.4s ease-out 8ms;
+    animation: var(--textanimation) 1.4s ease-out 8ms;
 }
 
 /*게시판*/
