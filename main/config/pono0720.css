@@ -25,8 +25,8 @@
     /* 커서 이미지 */
     --cursorImg: url(https://now-start.github.io/twitchCss/resource/pono0720/ponoriCusor.png);
     /*배경 애니메이션*/
-    --backgroundImage: url(https://now-start.github.io/twitchCss/resource/common/normal/stars1.png);
-    --backgroundImage2: url(https://now-start.github.io/twitchCss/resource/common/normal/stars2.png);
+    --backgroundImage: url(https://now-start.github.io/twitchCss/resource/common/backgroundImg/normal/stars1.png);
+    --backgroundImage2: url(https://now-start.github.io/twitchCss/resource/common/backgroundImg/normal/stars2.png);
     /* 색상 (줄) */
     --color: #61ade3;
     /* 색상 (노티 배경) */
@@ -37,9 +37,9 @@
     /*다크모드 파라미터*/
     --headerImgDm: url(https://now-start.github.io/twitchCss/resource/pono0720/ponoriDm.png);
     --cursorImgDm: url(https://now-start.github.io/twitchCss/resource/pono0720/ponoriCusor.png);
-    --backgroundImageDm: url(https://now-start.github.io/twitchCss/resource/common/darkmode/stars1.png);
-    --backgroundImageDm2: url(https://now-start.github.io/twitchCss/resource/common/darkmode/stars2.png);
-    --backgroundImageDm3: url(https://now-start.github.io/twitchCss/resource/common/darkmode/stars3.png);
+    --backgroundImageDm: url(https://now-start.github.io/twitchCss/resource/common/backgroundImg/darkmode/stars1.png);
+    --backgroundImageDm2: url(https://now-start.github.io/twitchCss/resource/common/backgroundImg/darkmode/stars2.png);
+    --backgroundImageDm3: url(https://now-start.github.io/twitchCss/resource/common/backgroundImg/darkmode/stars3.png);
     --colorDm: #ff3400;
     --bgcolorDm: #3e3e72;
     --bgcolorDm2: #242434;
