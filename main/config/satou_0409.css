@@ -15,6 +15,9 @@
     --defaultColor : #000000;
     --defaultColor2 : #000000;
 
+    /* 특수 파라미터 */
+    --animation: "h1updown";
+
     /*일반모드 파라미터*/
     /* 트게더 문구 */
     --headerImg: url(https://now-start.github.io/twitchCss/resource/satou_0409/headerImg.png);
