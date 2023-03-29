@@ -83,7 +83,7 @@
 /* 0401용 테스트 */
 @keyframes rotate {
     100% {
-        transform: rotate(360deg);
+        transform: rotateX(360deg);
     }
 }
 
@@ -93,7 +93,7 @@
         box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 5px 5px var(--colorDm), 0 0 0 5px rgba(255, 255, 255, 0.5);
     }
     100% {
-        transform: rotate(360deg);
+        transform: rotateX(360deg);
     }
 }
 
@@ -103,7 +103,7 @@
         box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 5px 5px var(--colorDm), 0 0 0 5px rgba(255, 255, 255, 0.5);
     }
     100% {
-        transform: rotate(360deg);
+        transform: rotateX(360deg);
     }
 }
 
@@ -113,7 +113,7 @@
         box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 5px 5px var(--colorDm), 0 0 0 5px rgba(255, 255, 255, 0.5);
     }
     100% {
-        transform: rotate(360deg);
+        transform: rotateX(360deg);
     }
 }
 
