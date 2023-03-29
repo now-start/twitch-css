@@ -89,7 +89,7 @@
 
 @-webkit-keyframes text2 {
     30% {
-        opacity: 0.5;
+        opacity: 0.1;
         box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 5px 5px var(--colorDm), 0 0 0 5px rgba(255, 255, 255, 0.5);
     }
     100% {
@@ -99,7 +99,7 @@
 
 @-moz-keyframes text2 {
     30% {
-        opacity: 0.5;
+        opacity: 0.1;
         box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 5px 5px var(--colorDm), 0 0 0 5px rgba(255, 255, 255, 0.5);
     }
     100% {
@@ -109,13 +109,14 @@
 
 @keyframes text2 {
     30% {
-        opacity: 0.5;
+        opacity: 0.1;
         box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 5px 5px var(--colorDm), 0 0 0 5px rgba(255, 255, 255, 0.5);
     }
     100% {
         transform: rotateX(360deg);
     }
 }
+/* end 0401 */
 
 /* defaultMod */
 html {
