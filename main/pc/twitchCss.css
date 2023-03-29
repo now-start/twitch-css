@@ -83,7 +83,7 @@
 /* 0401용 테스트 */
 @keyframes rotate {
     100% {
-        transform: rotateX(360deg);
+        transform: rotate(360deg);
     }
 }
 
