@@ -1,2 +1,2 @@
-# twitchCss
-twitchCss
+# twitch-css
+twitch-css
