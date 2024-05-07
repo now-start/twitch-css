@@ -6,9 +6,9 @@
     /* 프로필 이미지 */
     --profileImg: url(https://now-start.github.io/twitch-css/resource/satou_0409/profileImg.png);
     /* 접속자 수 앞 문구 */
-    --preFix: "오짱단 ";
+    --preFix: "제리 ";
     /* 접속자 수 뒤 문구 */
-    --postFix: "명이 치즈냥 머리 뽑는 중";
+    --postFix: "명이 치지직으로 이주 중";
     /*글자색*/
     --textColor: #83686c;
     --readTextColor: #adadad;
